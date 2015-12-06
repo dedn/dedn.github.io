@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Howe Work</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery.1.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $("#navbar").removeClass("default");
+            $("#logo").removeClass("default-logo");
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 20) {
+                    $("#navbar").addClass("default").fadeIn('fast');
+                } else {
+                    $("#navbar").removeClass("default").fadeIn('fast');
+                };
+            });
+
+            $('a[href^="#"]').click(function () {
+                elementClick = $(this).attr("href");
+                destination = $(elementClick).offset().top;
+                if($.browser.safari){
+                    $('body').animate( { scrollTop: destination }, 1000 );
+                } else {
+                    $('html').animate( { scrollTop: destination }, 1000 );
+                }
+                return false;
+            });
+        });
+    </script>
+</head>
+<body class="home">
+<section id="home" class="hero">
+    <header id="navbar" class="navbar navbar-fixed-top main-nav">
+        <div class="container">
+            <h1 id="logo"><a href="#home">Lazy Day</a></h1>
+            <ul class="nav">
+                <div class="itemsMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#who">Who</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#portfolio">Services</a></li>
+                <li><a href="#who">Blog</a></li>
+                <li><a href="#our-team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+               </div>
+            </ul>
+          </div>
+     </header>>
+     </header>
+    <div class="hero-body">
+        <h2 class="hero-title">Hello we are<br><span> Lazzy day</span></h2>
+    </div>
+    <a href="#about" class="cta-button"><i class="fa fa-angle-down fa-lg"></i></a>
+</section>
+<section id="who" class="who">
+    <div class="container clearfix">
+        <h2 class="title">Who we are</h2>
+        <span class="doted"></span>
+        <p>
+            We are a bunch of designers, marketers and web developers trying to make a living in the crazy web industry.
+            We love to ship projects and take lots of vacations, sleeping untill noon for a while
+
+        </p>
+
+        <div class="row">
+            <div class="col-hl">
+                    <img src="images/coffee.jpg" alt="Mans of coffe">
+            </div>
+            <div class="col-hl">
+                <h3>Our Skills</h3>
+                <ul>
+                    <li>
+                        Procrastination
+                        <span class="skills procrastination"></span>
+                    <li>
+                    <li>
+                    Imagination
+                    <span class="skills imagination"></span>
+                    <li>
+                    <li>
+                    Movie watching
+                        <span class="skills movie"></span>
+                    <li>
+                    <li>
+                    Efficiency
+                        <span class="skills efficiency"></span>
+                    <li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="button-center">
+            <a class="button our_work_button clearfix" href="#">See our work</a>
+         </div>
+        </div>
+</section>
+<section id="paralla" class="parallax">
+    <div class="container clearfix">
+             <div>
+                <h2 class="title">Laziness works.</h2>
+                 <p>
+                     And the simple way to incorporate its health benefits<br>
+                     into your life is simply to take a nap.
+                 </p>
+                <span class="doted"></span>
+             </div>
+    </div>
+</section>
+<section id="work" class="work">
+    <div class="container clearfix">
+        <h2 class="title">What We DO</h2>
+        <span class="doted"></span>
+        <div class="row">
+            <ul class="features">
+                <li class="linear-view">
+                    <div class="background-container">
+
+                          <i class="fa fa-bullseye fa-2x"></i>
+
+
+                    </div>
+                    <h3 class="feature-title">yawning</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consecte
+                        tur adipiscing elit. Sed ac neque eu purus tincidunt bibendum.
+                    </p>
+                </li>
+                <li class="linear-view">
+                    <div class="background-container">
+
+                    <i class="fa fa-clock-o fa-flip-horizontal fa-2x"></i>
+                    </div>
+                    <h3 class="feature-title">procrastinating</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consecte
+                        tur adipiscing elit. Sed ac neque eu purus tincidunt bibendum.
+                    </p>
+                </li>
+                <li class="linear-view clearfix">
+                    <div class="background-container">
+                    <i class="fa fa-power-off fa-2x"></i>
+                    </div>
+                    <h3 class="feature-title">napping</h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consecte
+                        tur adipiscing elit. Sed ac neque eu purus tincidunt bibendum.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+</section>
+<section id="our-team"  class="team">
+    <div class="container clearfix">
+        <h2 class="title">OuR Team</h2>
+        <span class="doted"></span>
+        <div class="row">
+            <div class="col-left left-margin clearfix ">
+                    <img src="images/cosmo.png" alt="Our team image">
+                    <div class="clearfix">
+                        <h3 class="name">Jonh Snow</h3>
+                        <span>C.e.o</span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consecte
+                            tur adipiscing elit. Sed ac neque eu purus tincidunt bibendum.
+                        </p>
+                   </div>
+            </div>
+                <div class="col-right right-margin clearfix">
+                <img src="images/cosmo.png" alt="Our team image">
+                <div class="clearfix">
+                    <h3 class="name">Scarlet O'hara</h3>
+                        <span>Graphic designer</span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consecte
+                            tur adipiscing elit. Sed ac neque eu purus tincidunt bibendum.
+                        </p>
+                </div>
+            </div>
+            <div class="col-left right-margin-s clearfix">
+                <img src="images/cosmo.png" alt="Our team image">
+                <div class="clearfix">
+                    <h3 class="name">Jonh Snow</h3>
+                        <span>Web developer</span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consecte
+                            tur adipiscing elit. Sed ac neque eu purus tincidunt bibendum.
+                        </p>
+                </div>
+            </div>
+            <div class="col-right left-margin-s  clearfix">
+                <img src="images/cosmo.png" alt="Our team image">
+                <div class="clearfix">
+                    <h3 class="name">Diana Ross</h3>
+                        <span>Photographer</span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consecte
+                            tur adipiscing elit. Sed ac neque eu purus tincidunt bibendum.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="portfolio" class="portfolio">
+    <div class="row text-center widt-max">
+        <div class="col-lg-12">
+            <h2 class="title">our work</h2>
+            <span class="doted"></span>
+        </div>
+    </div>
+    <div class="container clearfix">
+       <div class="row">
+            <div class="portfolio-list">
+                <div class="adaptive-portfolio">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio3.jpg" alt="work-item-1">
+                        <div class="item-overlay">
+                            <a href="#" class="read-more"><i class="fa fa-search"></i></a>
+                            <h4 class="portfolio-title">Beach photo session</h4>
+                                <span>Photography</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="adaptive-portfolio">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio3.jpg" alt="work-item-1">
+                        <div class="item-overlay">
+                            <a href="#" class="read-more"><i class="fa fa-search"></i></a>
+                            <h4 class="portfolio-title">Beach photo session</h4>
+                            <span>Photography</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="adaptive-portfolio">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio3.jpg" alt="work-item-1">
+                        <div class="item-overlay">
+                            <a href="#" class="read-more"><i class="fa fa-search"></i></a>
+                            <h4 class="portfolio-title">Beach photo session</h4>
+                            <span>Photography</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="adaptive-portfolio">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio3.jpg" alt="work-item-1">
+                        <div class="item-overlay">
+                            <a href="#" class="read-more"><i class="fa fa-search"></i></a>
+                            <h4 class="portfolio-title">Beach photo session</h4>
+                            <span>Photography</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="adaptive-portfolio">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio3.jpg" alt="work-item-1">
+
+                        <div class="item-overlay">
+                            <a href="#" class="read-more"><i class="fa fa-search"></i></a>
+                            <h4 class="portfolio-title">Beach photo session</h4>
+                            <span>Photography</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="adaptive-portfolio">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio3.jpg" alt="work-item-1">
+
+                        <div class="item-overlay">
+                            <a href="#" class="read-more"><i class="fa fa-search"></i></a>
+                            <h4 class="portfolio-title">Beach photo session</h4>
+                            <span>Photography</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact">
+    <div class="container clearfix">
+        <h2 class="title">Contact US</h2>
+        <span class="doted"></span>
+        <span class="map">
+        <span class="pin">
+             <img src="images/cosmo.png" alt="we are here">
+        </span>
+        </span>
+    </div>
+    <footer>
+        <div class="container row">
+        <div class="social-bar">
+            <a href="#"><i class="fa fa-facebook fa-2x "></i></a><a href="#"><i class="fa fa-twitter fa-2x  "></i></a><a href="#"><i class="fa fa-google-plus fa-2x "></i></a><a href="#"><i class="fa fa-linkedin fa-2x "></i></a><a href="#"><i class="fa fa-bullseye fa-2x"></i></a>
+        </div>
+        <p>Copyright © 2012 <span>Little NEKO</span> / All rights reserved.</p>
+        </div>
+    </footer>
+</section>
+
+
+
+</body>
+</html>

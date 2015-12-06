@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Lovelo-LineBold";
+  src: url("../_fonts/Lovelo_LineBold/Lovelo_Line_Bold.eot?") format("eot"), url("../_fonts/Lovelo_LineBold/Lovelo_Line_Bold.woff") format("woff"), url("../_fonts/Lovelo_LineBold/Lovelo_Line_Bold.ttf") format("truetype"), url("../_fonts/Lovelo_LineBold/Lovelo_Line_Bold.svg#Lovelo-LineBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lovelo-Black";
+  src: url("../_fonts/Lovelo_Black/Lovelo_Black.eot?") format("eot"), url("../_fonts/Lovelo_Black/Lovelo_Black.woff") format("woff"), url("../_fonts/Lovelo_Black/Lovelo_Black.ttf") format("truetype"), url("../_fonts/Lovelo_Black/Lovelo_Black.svg#Lovelo-Black") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../_fonts/helvetica/helveticaneuecyr-roman.otf");
+}
