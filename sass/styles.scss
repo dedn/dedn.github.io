@@ -17,14 +17,14 @@ img {
 }
 .title{
   margin: 0 0 15px;
-  font:400 31px/26px 'LoveloBlack';
+  font:400 31px/26px 'Lovelo-Black';
   text-transform: uppercase;
   text-align:center;
 }
 .hero {
-position: relative;
-height: 100vh;
-background: url("../images/bg_header.jpg") fixed center center/cover no-repeat; }
+  position: relative;
+  height: 100vh;
+  background: url("../images/bg_header.jpg") fixed center center/cover no-repeat; }
 
 .hero .hero-body {
   position: absolute;
@@ -36,10 +36,10 @@ background: url("../images/bg_header.jpg") fixed center center/cover no-repeat; 
 
 .hero .hero-title {
   color: #fff;
-      font:400 58px/150px 'LoveloBlack', sans-serif;
-      text-transform: uppercase;
-    span{
-      font:400 150px/10px 'LoveloBlack', sans-serif;
+      font:400 58px/150px 'Lovelo-Black';
+        text-transform: uppercase;
+         span{
+            font:400 150px/10px 'Helvetica Neue';
     }
 }
 .hero .cta-button {
@@ -75,16 +75,7 @@ background: url("../images/bg_header.jpg") fixed center center/cover no-repeat; 
 #logo:hover {
   border:3px solid #fff;
   transition:border-right 0.8s, border-bottom 1.2s, border-left 2.5s;
-  /*border-right: 3px solid #000;
-  transition:border-right 0.5s;
-  border-bottom: 3px solid #000;
-  transition:border-bottom 1s;
-  border-left: 3px solid #000;
-  transition:border-left 2s;
-  border-top: 3px solid #000;
-  transition:border-top 3s;*/
-
-}
+  }
 #navbar{
   position: absolute;
   left: 0;
@@ -109,23 +100,21 @@ background: url("../images/bg_header.jpg") fixed center center/cover no-repeat; 
      li {
       float: left;
       margin-right: 35px;
-      a {
-        text-decoration: none;
-        color: white;
-        text-transform: uppercase;
-        font: bold 12px/62px 'HelveticaNeue';
-        &:hover {
-          color: #fff;
-          border-bottom: 2px solid #ffffff;
-          transition: 0.5s;
+       a {
+          text-decoration: none;
+          color: white;
+          text-transform: uppercase;
+          font: bold 12px/62px 'Helvetica Neue';
+             &:hover {
+              color: #fff;
+              border-bottom: 2px solid #ffffff;
+              transition: 0.5s;
         }
       }
     }
   }
 
-.nav li:last-child{
-  margin-right: 0;
-}
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAP---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -202,10 +191,10 @@ background: url("../images/bg_header.jpg") fixed center center/cover no-repeat; 
 /*----------------------------------------------------------------------------------*/
 .who{
   background-color:#fff;
+  padding: 60px 0;
     .title{
       margin-top:100px;
       margin-bottom: 20px;
-
     }
 }
 .who p{
@@ -232,7 +221,7 @@ background: url("../images/bg_header.jpg") fixed center center/cover no-repeat; 
   padding-left: 15px;
 }
    h3{
-     font:bold 24px/26px 'LoveloBlack',sans-serif;
+     font:bold 24px/26px 'Lovelo-Black';
      text-transform: uppercase;
    }
 .col-hl{
@@ -246,7 +235,7 @@ background: url("../images/bg_header.jpg") fixed center center/cover no-repeat; 
 }
 .our_work_button {
   width: 267px;
-  margin: 5% 0 10% 25%;
+  margin: 5% 0 10% 30%;
 }
 @media (min-width: 992px) {
   .our_work_button {
@@ -257,8 +246,8 @@ background: url("../images/bg_header.jpg") fixed center center/cover no-repeat; 
 }
 .who a {
   background-color: #9f7a40;
-  font: bold 25px/45px 'Open Sans', sans-serif;
-  padding: 20px 0;
+  font: bold 25px/45px 'Lovelo-Black';
+  padding: 20px;
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
@@ -270,9 +259,9 @@ background: url("../images/bg_header.jpg") fixed center center/cover no-repeat; 
       background-color:#fff;
       color: #9f7a40;
       transition: 1s;
-
   }
 }
+
 /*---------------------------SKILS------------------------------------------------*/
 .skills {
   display:block;
@@ -339,7 +328,7 @@ background: url("../images/bg_header.jpg") fixed center center/cover no-repeat; 
 .parallax .title{
   position: relative;
   z-index: 9;
-  font:bold 62px/62px 'LoveloBlack', sans-serif;
+  font:bold 62px/62px 'Lovelo-Black';
   margin-bottom: 20px;
   }
 .parallax .doted {
@@ -384,7 +373,7 @@ background: url("../images/bg_header.jpg") fixed center center/cover no-repeat; 
   }
 }
 .feature-title {
-  font:bold 18px/24px 'LoveloBlack', sans-serif;
+  font:bold 18px/24px 'Lovelo-Black';
 }
 @media (min-width: 768px){
   .linear-view {
@@ -423,7 +412,7 @@ background: url("../images/bg_header.jpg") fixed center center/cover no-repeat; 
   padding:60px 0;
   color: #333;
    h3{
-     font:bold 18px/24px 'LoveloBlack', sans-serif;
+     font:bold 18px/24px 'Lovelo-Black';
    }
 }
 .row{
@@ -504,7 +493,7 @@ background: url("../images/bg_header.jpg") fixed center center/cover no-repeat; 
       width: 100%;
       margin-bottom: 15px;
       color: #fff;
-      font:18px/24px 'LoveloBlack', sans-serif;
+      font:18px/24px 'Lovelo-Black';
       text-align: center;
       text-transform: uppercase;
   }
