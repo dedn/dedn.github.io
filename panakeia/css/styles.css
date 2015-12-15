@@ -212,7 +212,7 @@ img {
 .hero {
   padding-top: 0;
   position: relative;
-  height: 205vh;
+  min-height: 1800px;
   background: url("../images/background.jpg") fixed center center/cover no-repeat;
 }
 /* line 37, ../sass/styles.scss */
@@ -314,7 +314,7 @@ li p {
 @media (min-width: 769px) {
   /* line 108, ../sass/styles.scss */
   .hero {
-    height: 130vh;
+    min-height: 1000px;
   }
 
   /* line 111, ../sass/styles.scss */
