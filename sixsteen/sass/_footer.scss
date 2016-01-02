@@ -30,7 +30,7 @@ footer {
       line-height: 41px;
       &:hover {
         transform: scale(1.1);
-        transition: 0.5s;
+        transition: 0.2s;
       }
     }
 
@@ -45,7 +45,9 @@ footer {
     transition: 2s;
   }
   .copyright{
-    margin-top: 15px;
+    margin-top: 25px;
   }
-
+  .social-networks{
+    @include span(last)
+  }
 }

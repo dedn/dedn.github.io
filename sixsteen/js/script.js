@@ -32,3 +32,18 @@ $(document).ready(function(){
                 return false;
             });
         });
+
+
+/*
+$('.filter').ready(function() {
+
+    $('.filter').bxSlider({
+        responsive:'true',
+        auto:'true',
+        pause:'4000',
+        pager: 'false',
+        controls:'false'
+
+    });
+})
+    */

@@ -5,6 +5,11 @@
   }
   li{
    margin-bottom: 30px;
+    &:hover{
+      transition: 0.5s;
+      transform: scale(1.1);
+
+    }
   }
 }
 

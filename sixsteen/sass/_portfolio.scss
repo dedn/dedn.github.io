@@ -95,15 +95,22 @@
 }
 @media(min-width: 1140px) {
   .portfolio-big {
-    @include span(6 of 12);
+    @include span(6 of 12 after);
     transition: 2s;
 
 
   }
-  .portfolio-small{
-    @include span(4 of 12);
+  .portfolio .last-big{
+    @include span(last);
+  }
+
+  .portfolio .portfolio-small{
+    @include span(4 of 12 after );
     transition: 2s;
 
+  }
+  .portfolio .last-smal{
+    @include span(last);
   }
   .row{
     margin: 0 auto;

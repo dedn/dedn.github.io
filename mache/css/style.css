@@ -838,7 +838,7 @@ img {
   max-width: 360px;
   height: 390px;
   background: #f4f4f4;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
 }
 /* line 395, ../sass/style.scss */
 .portfolio-group .grid h5 {
@@ -932,26 +932,20 @@ img {
 @media (min-width: 769px) {
   /* line 476, ../sass/style.scss */
   .grid {
-    width: 32.20339%;
+    width: 49.15254%;
     float: left;
     transition: 2s;
   }
   /* line 66, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
-  .grid:nth-child(3n + 1) {
+  .grid:nth-child(2n + 1) {
     margin-left: 0;
     margin-right: -100%;
     clear: both;
     margin-left: 0;
   }
   /* line 66, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
-  .grid:nth-child(3n + 2) {
-    margin-left: 33.89831%;
-    margin-right: -100%;
-    clear: none;
-  }
-  /* line 66, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
-  .grid:nth-child(3n + 3) {
-    margin-left: 67.79661%;
+  .grid:nth-child(2n + 2) {
+    margin-left: 50.84746%;
     margin-right: -100%;
     clear: none;
   }
@@ -962,45 +956,8 @@ img {
     margin: 0 auto;
   }
 }
-/*---------------------------additional------------------------*/
-/* line 488, ../sass/style.scss */
-.additional {
-  background: url("../images/additional-bg.jpg") fixed center/cover no-repeat;
-}
-/* line 490, ../sass/style.scss */
-.additional p {
-  margin: 50px auto;
-  font: 300 15px/30px 'Lato';
-  color: #fff;
-  text-align: center;
-}
-/* line 496, ../sass/style.scss */
-.additional .title {
-  color: #fff;
-}
-/* line 499, ../sass/style.scss */
-.additional a {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  height: 50px;
-  background: #ed145b;
-  color: #fff;
-  text-align: center;
-  border-radius: 24px;
-  font: 700 15px/50px 'Lato';
-  text-transform: uppercase;
-}
-/* line 511, ../sass/style.scss */
-.additional a:hover {
-  background: #f4f4f4;
-  color: #ed145b;
-  transition: 0.5s;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-@media (min-width: 769px) {
-  /* line 521, ../sass/style.scss */
+@media (min-width: 1024px) {
+  /* line 488, ../sass/style.scss */
   .grid {
     width: 32.20339%;
     float: left;
@@ -1026,25 +983,62 @@ img {
     clear: none;
   }
 
-  /* line 527, ../sass/style.scss */
+  /* line 494, ../sass/style.scss */
   .portfolio p {
     width: 680px;
     margin: 0 auto;
   }
 }
+/*---------------------------additional------------------------*/
+/* line 500, ../sass/style.scss */
+.additional {
+  background: url("../images/additional-bg.jpg") fixed center/cover no-repeat;
+}
+/* line 502, ../sass/style.scss */
+.additional p {
+  margin: 50px auto;
+  font: 300 15px/30px 'Lato';
+  color: #fff;
+  text-align: center;
+}
+/* line 508, ../sass/style.scss */
+.additional .title {
+  color: #fff;
+}
+/* line 511, ../sass/style.scss */
+.additional a {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  background: #ed145b;
+  color: #fff;
+  text-align: center;
+  border-radius: 24px;
+  font: 700 15px/50px 'Lato';
+  text-transform: uppercase;
+}
+/* line 523, ../sass/style.scss */
+.additional a:hover {
+  background: #f4f4f4;
+  color: #ed145b;
+  transition: 0.5s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
 /*---------------------------DOWNLOAD------------------------*/
-/* line 534, ../sass/style.scss */
+/* line 535, ../sass/style.scss */
 .download {
   background: #f4f4f4;
 }
-/* line 536, ../sass/style.scss */
+/* line 537, ../sass/style.scss */
 .download p {
   margin: 50px auto;
   font: 300 15px/30px 'Lato';
   color: #5a5a5a;
   text-align: center;
 }
-/* line 542, ../sass/style.scss */
+/* line 543, ../sass/style.scss */
 .download a {
   display: block;
   margin: 0 auto;
@@ -1057,7 +1051,7 @@ img {
   font: 700 15px/50px 'Lato';
   text-transform: uppercase;
 }
-/* line 554, ../sass/style.scss */
+/* line 555, ../sass/style.scss */
 .download a:hover {
   background: #f4f4f4;
   color: #ed145b;
@@ -1065,13 +1059,13 @@ img {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* line 563, ../sass/style.scss */
+/* line 564, ../sass/style.scss */
 .download-img {
   display: none;
 }
 
 @media (min-width: 769px) {
-  /* line 569, ../sass/style.scss */
+  /* line 570, ../sass/style.scss */
   .download-img {
     display: block;
     width: 57.62712%;
@@ -1079,69 +1073,69 @@ img {
     margin-left: 0;
   }
 
-  /* line 575, ../sass/style.scss */
+  /* line 576, ../sass/style.scss */
   .download-text-section {
     width: 40.67797%;
     float: left;
     margin-left: 1.69492%;
   }
 
-  /* line 578, ../sass/style.scss */
+  /* line 579, ../sass/style.scss */
   .download .title {
     text-align: left;
   }
 
-  /* line 581, ../sass/style.scss */
+  /* line 582, ../sass/style.scss */
   .download .line {
     text-align: left;
     margin-left: 0;
   }
 
-  /* line 585, ../sass/style.scss */
+  /* line 586, ../sass/style.scss */
   .download h3, .download p {
     text-align: left;
   }
 
-  /* line 588, ../sass/style.scss */
+  /* line 589, ../sass/style.scss */
   a {
     margin-left: 0;
   }
 }
 /*---------------------------footer------------------------*/
-/* line 595, ../sass/style.scss */
+/* line 596, ../sass/style.scss */
 footer {
   background: #2b2b2b;
 }
-/* line 597, ../sass/style.scss */
+/* line 598, ../sass/style.scss */
 footer p {
   font: 300 15px/40px 'Lato';
   text-align: center;
   margin: 0 auto;
   color: #fff;
 }
-/* line 603, ../sass/style.scss */
+/* line 604, ../sass/style.scss */
 footer img {
   margin: 0 auto;
   display: block;
 }
 
-/* line 609, ../sass/style.scss */
+/* line 610, ../sass/style.scss */
 .row-footer {
   margin: 0 auto;
   text-align: center;
 }
 
 @media (min-width: 769px) {
-  /* line 616, ../sass/style.scss */
+  /* line 617, ../sass/style.scss */
   .copyright {
     float: left;
   }
 
-  /* line 620, ../sass/style.scss */
+  /* line 621, ../sass/style.scss */
   .row-footer {
     float: right;
   }
-  /* line 622, ../sass/style.scss */
+  /* line 623, ../sass/style.scss */
   .row-footer p, .row-footer img {
     display: inline-block;
   }
