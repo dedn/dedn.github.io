@@ -589,31 +589,32 @@ img {
   margin: 50px auto;
   font: italic 300 25px/40px 'Lato';
   color: #fff;
+  max-width: 800px;
 }
-/* line 194, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .intro .row {
   text-align: center;
 }
 
 /*-------------------------- PRICES---------------------------------*/
-/* line 199, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 .prices {
   background: #f4f4f4;
 }
-/* line 201, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .prices p {
   color: #5a5a5a;
   font: 300 15px/30px 'Lato';
   text-align: center;
   margin-bottom: 50px;
 }
-/* line 207, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 .prices p .row {
   text-align: center;
   margin: 0 auto;
 }
 
-/* line 214, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 .prices-box {
   position: relative;
   width: 262px;
@@ -622,7 +623,7 @@ img {
   background: #fff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 221, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 .prices-box li:first-child {
   height: 130px;
   background: #5a5a5a;
@@ -631,15 +632,15 @@ img {
   padding-top: 40px;
   font: 700 50px/0px "Lato";
 }
-/* line 228, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .prices-box li:first-child span {
   font: 700 15px/0px "Lato";
 }
-/* line 231, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .prices-box li:first-child .dollar {
   font: 700 20px/20px "Lato";
 }
-/* line 235, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 .prices-box li:nth-child(2) {
   position: relative;
   top: -25px;
@@ -653,20 +654,20 @@ img {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 249, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 .prices-box li:nth-child(3) {
   text-align: center;
   font: 300 15px/38px 'Lato';
   color: #5a5a5a;
   margin-bottom: 40px;
 }
-/* line 255, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 .prices-box li:last-child {
   margin: 0 auto;
   width: 200px;
   height: 50px;
 }
-/* line 259, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 .prices-box li:last-child a {
   display: block;
   width: 200px;
@@ -677,7 +678,7 @@ img {
   border-radius: 24px;
   font: 700 15px/50px 'Lato';
 }
-/* line 269, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 .prices-box li:last-child a:hover {
   background: #f4f4f4;
   color: #ed145b;
@@ -686,7 +687,7 @@ img {
 }
 
 @media (min-width: 769px) {
-  /* line 280, ../sass/style.scss */
+  /* line 282, ../sass/style.scss */
   .prices-box-1,
   .prices-box-2,
   .prices-box-3,
@@ -697,77 +698,77 @@ img {
     max-width: 262px;
   }
 
-  /* line 288, ../sass/style.scss */
+  /* line 290, ../sass/style.scss */
   .prices-box-1 {
     margin-left: 1.69492%;
   }
 
-  /* line 292, ../sass/style.scss */
+  /* line 294, ../sass/style.scss */
   .prices p {
     width: 680px;
     margin: 0 auto;
   }
 }
 /*-------------------------- INFO---------------------------------*/
-/* line 298, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .info {
   background: #fff;
 }
 
-/* line 302, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 .info-group {
   margin: 30px auto;
   text-align: left;
   margin-bottom: 30px;
 }
-/* line 306, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 .info-group li {
   margin-bottom: 40px;
 }
-/* line 308, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 .info-group li span {
   font: 400 15px 'Lato';
   color: #ed145b;
   text-transform: uppercase;
   text-align: left;
 }
-/* line 314, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 .info-group li p {
   color: #5a5a5a;
   font: 300 15px/30px 'Lato';
   text-align: left;
   margin-top: 20px;
 }
-/* line 320, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 .info-group li .text-info {
   max-width: 340px;
 }
 
-/* line 327, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 .icon-info {
   float: left;
   height: 135px;
   margin-right: 15px;
 }
 
-/* line 333, ../sass/style.scss */
+/* line 335, ../sass/style.scss */
 .communications {
   background: #ed145b;
   min-height: 200px;
   padding: 30px 0 10px;
 }
-/* line 337, ../sass/style.scss */
+/* line 339, ../sass/style.scss */
 .communications p {
   color: white;
   font: 300 38px/38px 'Lato';
   margin: 0px auto;
   text-align: center;
 }
-/* line 342, ../sass/style.scss */
+/* line 344, ../sass/style.scss */
 .communications p span {
   font: 700 38px/38px 'Lato';
 }
-/* line 346, ../sass/style.scss */
+/* line 348, ../sass/style.scss */
 .communications a {
   display: block;
   width: 200px;
@@ -779,7 +780,7 @@ img {
   text-align: center;
   margin: 30px auto;
 }
-/* line 356, ../sass/style.scss */
+/* line 358, ../sass/style.scss */
 .communications a:hover {
   background: #f4f4f4;
   color: #ed145b;
@@ -788,7 +789,7 @@ img {
 }
 
 @media (min-width: 769px) {
-  /* line 367, ../sass/style.scss */
+  /* line 369, ../sass/style.scss */
   .info-group li {
     width: 32.20339%;
     float: left;
@@ -816,11 +817,11 @@ img {
   }
 }
 /*------------------Portfolio----------------------------*/
-/* line 376, ../sass/style.scss */
+/* line 378, ../sass/style.scss */
 .portfolio {
   background: #fff;
 }
-/* line 378, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 .portfolio p {
   color: #5a5a5a;
   font: 300 15px/30px 'Lato';
@@ -828,43 +829,43 @@ img {
   margin-bottom: 50px;
 }
 
-/* line 385, ../sass/style.scss */
+/* line 387, ../sass/style.scss */
 .portfolio-group {
   margin: 50px auto;
 }
-/* line 388, ../sass/style.scss */
+/* line 390, ../sass/style.scss */
 .portfolio-group .grid {
   max-width: 360px;
   height: 390px;
   background: #f4f4f4;
   margin-bottom: 40px;
 }
-/* line 393, ../sass/style.scss */
+/* line 395, ../sass/style.scss */
 .portfolio-group .grid h5 {
   font: 400 15px/30px 'Lato';
   color: #5a5a5a;
   text-align: left;
   margin: 0 0 15px 20px;
 }
-/* line 399, ../sass/style.scss */
+/* line 401, ../sass/style.scss */
 .portfolio-group .grid p {
   text-align: left;
   margin-left: 20px;
   margin-bottom: 10px;
 }
 
-/* line 406, ../sass/style.scss */
+/* line 408, ../sass/style.scss */
 .img-main {
   position: relative;
 }
 
-/* line 411, ../sass/style.scss */
+/* line 413, ../sass/style.scss */
 .img-decor {
   position: absolute;
   bottom: 4px;
 }
 
-/* line 416, ../sass/style.scss */
+/* line 418, ../sass/style.scss */
 .rollover {
   position: absolute;
   top: 0;
@@ -876,12 +877,12 @@ img {
   z-index: 99;
   opacity: 0;
 }
-/* line 426, ../sass/style.scss */
+/* line 428, ../sass/style.scss */
 .rollover:hover {
   transition: 0.5s;
   opacity: 0.85;
 }
-/* line 431, ../sass/style.scss */
+/* line 433, ../sass/style.scss */
 .rollover a {
   display: block;
   margin: 100px auto 0;
@@ -889,19 +890,19 @@ img {
   height: 45px;
   text-align: center;
 }
-/* line 437, ../sass/style.scss */
+/* line 439, ../sass/style.scss */
 .rollover a .fa {
   color: #fff;
   text-align: center;
   font-size: 40px;
 }
-/* line 441, ../sass/style.scss */
+/* line 443, ../sass/style.scss */
 .rollover a .fa:hover {
   transform: scale(1.4);
   transition: 0.2s;
 }
 
-/* line 450, ../sass/style.scss */
+/* line 452, ../sass/style.scss */
 .arrow {
   display: block;
   text-align: center;
@@ -911,25 +912,25 @@ img {
   font: 400 15px/30px 'Lato';
 }
 
-/* line 458, ../sass/style.scss */
+/* line 460, ../sass/style.scss */
 .arrow-down {
   display: block;
   margin: 0 auto 30px;
   text-align: center;
 }
-/* line 462, ../sass/style.scss */
+/* line 464, ../sass/style.scss */
 .arrow-down .fa {
   color: #ed145b;
   font-size: 15px;
 }
-/* line 465, ../sass/style.scss */
+/* line 467, ../sass/style.scss */
 .arrow-down .fa:hover {
   transform: scale(1.6);
   transition: 0.2s;
 }
 
 @media (min-width: 769px) {
-  /* line 474, ../sass/style.scss */
+  /* line 476, ../sass/style.scss */
   .grid {
     width: 32.20339%;
     float: left;
@@ -955,29 +956,29 @@ img {
     clear: none;
   }
 
-  /* line 480, ../sass/style.scss */
+  /* line 482, ../sass/style.scss */
   .portfolio p {
     width: 680px;
     margin: 0 auto;
   }
 }
 /*---------------------------additional------------------------*/
-/* line 486, ../sass/style.scss */
+/* line 488, ../sass/style.scss */
 .additional {
   background: url("../images/additional-bg.jpg") fixed center/cover no-repeat;
 }
-/* line 488, ../sass/style.scss */
+/* line 490, ../sass/style.scss */
 .additional p {
   margin: 50px auto;
   font: 300 15px/30px 'Lato';
   color: #fff;
   text-align: center;
 }
-/* line 494, ../sass/style.scss */
+/* line 496, ../sass/style.scss */
 .additional .title {
   color: #fff;
 }
-/* line 497, ../sass/style.scss */
+/* line 499, ../sass/style.scss */
 .additional a {
   display: block;
   margin: 0 auto;
@@ -990,7 +991,7 @@ img {
   font: 700 15px/50px 'Lato';
   text-transform: uppercase;
 }
-/* line 509, ../sass/style.scss */
+/* line 511, ../sass/style.scss */
 .additional a:hover {
   background: #f4f4f4;
   color: #ed145b;
@@ -999,7 +1000,7 @@ img {
 }
 
 @media (min-width: 769px) {
-  /* line 519, ../sass/style.scss */
+  /* line 521, ../sass/style.scss */
   .grid {
     width: 32.20339%;
     float: left;
@@ -1025,25 +1026,25 @@ img {
     clear: none;
   }
 
-  /* line 525, ../sass/style.scss */
+  /* line 527, ../sass/style.scss */
   .portfolio p {
     width: 680px;
     margin: 0 auto;
   }
 }
 /*---------------------------DOWNLOAD------------------------*/
-/* line 532, ../sass/style.scss */
+/* line 534, ../sass/style.scss */
 .download {
   background: #f4f4f4;
 }
-/* line 534, ../sass/style.scss */
+/* line 536, ../sass/style.scss */
 .download p {
   margin: 50px auto;
   font: 300 15px/30px 'Lato';
   color: #5a5a5a;
   text-align: center;
 }
-/* line 540, ../sass/style.scss */
+/* line 542, ../sass/style.scss */
 .download a {
   display: block;
   margin: 0 auto;
@@ -1056,7 +1057,7 @@ img {
   font: 700 15px/50px 'Lato';
   text-transform: uppercase;
 }
-/* line 552, ../sass/style.scss */
+/* line 554, ../sass/style.scss */
 .download a:hover {
   background: #f4f4f4;
   color: #ed145b;
@@ -1064,13 +1065,13 @@ img {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* line 561, ../sass/style.scss */
+/* line 563, ../sass/style.scss */
 .download-img {
   display: none;
 }
 
 @media (min-width: 769px) {
-  /* line 567, ../sass/style.scss */
+  /* line 569, ../sass/style.scss */
   .download-img {
     display: block;
     width: 57.62712%;
@@ -1078,69 +1079,69 @@ img {
     margin-left: 0;
   }
 
-  /* line 573, ../sass/style.scss */
+  /* line 575, ../sass/style.scss */
   .download-text-section {
     width: 40.67797%;
     float: left;
     margin-left: 1.69492%;
   }
 
-  /* line 576, ../sass/style.scss */
+  /* line 578, ../sass/style.scss */
   .download .title {
     text-align: left;
   }
 
-  /* line 579, ../sass/style.scss */
+  /* line 581, ../sass/style.scss */
   .download .line {
     text-align: left;
     margin-left: 0;
   }
 
-  /* line 583, ../sass/style.scss */
+  /* line 585, ../sass/style.scss */
   .download h3, .download p {
     text-align: left;
   }
 
-  /* line 586, ../sass/style.scss */
+  /* line 588, ../sass/style.scss */
   a {
     margin-left: 0;
   }
 }
 /*---------------------------footer------------------------*/
-/* line 593, ../sass/style.scss */
+/* line 595, ../sass/style.scss */
 footer {
   background: #2b2b2b;
 }
-/* line 595, ../sass/style.scss */
+/* line 597, ../sass/style.scss */
 footer p {
   font: 300 15px/40px 'Lato';
   text-align: center;
   margin: 0 auto;
   color: #fff;
 }
-/* line 601, ../sass/style.scss */
+/* line 603, ../sass/style.scss */
 footer img {
   margin: 0 auto;
   display: block;
 }
 
-/* line 607, ../sass/style.scss */
+/* line 609, ../sass/style.scss */
 .row-footer {
   margin: 0 auto;
   text-align: center;
 }
 
 @media (min-width: 769px) {
-  /* line 614, ../sass/style.scss */
+  /* line 616, ../sass/style.scss */
   .copyright {
     float: left;
   }
 
-  /* line 618, ../sass/style.scss */
+  /* line 620, ../sass/style.scss */
   .row-footer {
     float: right;
   }
-  /* line 620, ../sass/style.scss */
+  /* line 622, ../sass/style.scss */
   .row-footer p, .row-footer img {
     display: inline-block;
   }
