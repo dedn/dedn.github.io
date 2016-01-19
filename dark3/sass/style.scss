@@ -3,6 +3,7 @@
 /*@import "grids";*/
 @import "reset";
 @import "fonts";
+@import "grids";
 @import "../bower_components/Slidebars/dist/slidebars.css";
 /*@import "../bower_components/bxslider/bx_styles/bx_styles.css";*/
 
@@ -38,7 +39,30 @@ body {
 
 }
 
+@mixin logo {
+  position: relative;
+  width: 211px;
+  height: 54px;
+   margin-left: -5px;
+  transform: translate(-50%, 0);
+  left: 50%;
+  .line {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 24px;
+    width: 70px;
+    height: 3px;
+    background: #000;
+    opacity: 0.2;
+  }
+  img {
+    position: relative;
+    z-index: 9;
+    margin: 5px 0 0 -10px
+  }
 
+}
 
 $nav-header-bg: #1f1f1f;
 @mixin text-form {
@@ -66,28 +90,8 @@ a:hover, a:focus, input:hover {
 }
 
 .logo {
-  position: relative;
-  width: 211px;
-  height: 54px;
   background-image: linear-gradient(to top, #313131 0%, #2a2a2a 100%);
-  margin-left: -5px;
-  transform: translate(-50%, 0);
-  left: 50%;
-  .line {
-    position: absolute;
-    display: block;
-    right: 0;
-    top: 24px;
-    width: 70px;
-    height: 3px;
-    background: #000;
-    opacity: 0.2;
-  }
-  img {
-    position: relative;
-    z-index: 9;
-    margin: 5px 0 0 -10px
-  }
+  @include logo;
 
 }
 
@@ -301,7 +305,8 @@ a:hover, a:focus, input:hover {
   }
 
 }
-.post-header{
+
+.post-header {
   text-align: left;
   height: 33px;
   background-image: linear-gradient(to top, #0f0f0f 0%, #0f0f0f 100%, #1a1a1a 100%);
@@ -321,7 +326,7 @@ a:hover, a:focus, input:hover {
     font: 400 11px 'Arial';
     color: #ef8605;
     text-transform: uppercase;
-        &:before {
+    &:before {
       content: url("../images/arrow-title.png");
       position: absolute;
       width: 27px;
@@ -348,8 +353,9 @@ a:hover, a:focus, input:hover {
     }
   }
 }
+
 .post-info {
-float: left;
+  float: left;
   position: relative;
   padding: 2px 0 2px 5px;
   text-align: left;
@@ -369,11 +375,11 @@ float: left;
     font: 400 9px 'Arial';
     color: black;
     margin-right: 10px;
-    a{
+    a {
       font: 400 9px 'Arial';
     }
-    img{
-      margin-right:3px ;
+    img {
+      margin-right: 3px;
     }
     .fa {
       color: #b0b0b0;
@@ -390,21 +396,24 @@ float: left;
     }
   }
 }
+
 .post-main {
+  position: relative;
   padding: 15px 5px;
   text-align: right;
   background: white;
   margin-top: 45px;
+
   &:before {
-    display: none;
     content: "";
     position: absolute;
-    width: 65%;
+    width: 40%;
     height: 15px;
-    left: 10px;
-    bottom: 10px;
+    left: 5px;
+    bottom: 13px;
     background: url("../images/post-diagonal-lines.png") repeat-x;
   }
+
   img {
     float: left;
     margin-right: 5px;
@@ -434,7 +443,6 @@ float: left;
     background: -webkit-linear-gradient(top, #894b17 0%, #ef8605 100%);
     background: linear-gradient(to bottom, #894b17 0%, #ef8605 100%);
 
-
     &:before {
       position: absolute;
       content: "";
@@ -451,18 +459,19 @@ float: left;
   }
 }
 
-.namber-page{
+.namber-page {
+  background: #fff;
   display: inline-block;
   position: relative;
-  margin-top: 20px;
-  width: 280px;
+  width: 100%;
   text-align: center;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.21);
-    }
+  transform: translate(-50%, 0);
+  left: 50%;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
 
-
-
-.page-numbers {
+.pagination {
   position: relative;
   display: inline-block;
   padding: 10px 25px;
@@ -475,77 +484,195 @@ float: left;
       font: 400 13px 'Arial';
       color: #ef8605;
 
-
       &:hover {
         color: #fff;
         text-decoration: none;
       }
     }
   }
-  &:before{
+  &:before {
     position: absolute;
     content: "";
     width: 28px;
     height: 27px;
     top: 5px;
     right: -35px;
-    background: url("../images/prev-page-icon.png");
+    background: url("../images/next-page-icon.png");
 
   }
-  &:after{
+  &:after {
     position: absolute;
     content: "";
     width: 28px;
     height: 27px;
     top: 5px;
     left: -35px;
-    background: url("../images/next-page-icon.png");
+    background: url("../images/prev-page-icon.png");
 
   }
 }
 
-/*
+/*---------------------------------FOOTER----------------------------------*/
 
-  .page-numbers {
-    display: inline-block;
-    padding: 10px 25px;
-    background: #121212;
-    li {
-      display: inline-block;
-      margin: 0 1px;
-      a {
-        font: 400 13px 'Arial';
-        color: #ef8605;
-        @include transition(all, .3s, ease);
+footer .container {
 
-        &:hover {
-          color: #fff;
-          text-decoration: none;
-        }
+  background-color: #0c0c0c;
+  box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.1);
+  &:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 100%;
+    background: #1e1e1e;
+  }
+  .logo-footer {
+    padding-top: 30px;
+    @include logo;
+    .logo {
+      background-image: none;
+      img {
+        margin: 5px 0 0 10px;
       }
     }
   }
-  .change-page {
-    display: inline-block;
+  .copyright{
     position: relative;
-    margin-top: 20px;
-    width: 280px;
-    .prev-button, .next-button {
+    max-width: 450px;
+    font: 400 12px 'Arial';
+    text-align: left;
+    color: #fff;
+    padding: 5px 5px 5px 10px;
+    &:before, &:after {
       position: absolute;
-      top: 4px;
-      @include transition(all, .3s, ease);
+      content: "";
+      height: 83px;
+      width: 2px;
+      background: url("../images/vertical-line.png") center no-repeat;
+    }
+    &:before {
+      top: 0;
+      left: 5px;
+    }
+    &:after {
+      top: 0;
+      right: 10px;
+    }
+    a{
+      color: #fff;
+      text-transform: uppercase;
+    }
+      span{
+        display: block;
+        font: 400 11px 'Arial';
+      color: #bfbfbf;
+        margin: 10px 0;
+    }
+    .author{
+      display: block;
+      font: 700 15px 'MyriadPro Cond';
+      color: #484848;
+      position: relative;
+      text-align: right;
+    }
 
-      &:hover {
-        opacity: 0.7;
-        cursor: pointer;
-      }
+  }
+  .square{
+    padding: gutter();
+    @include span(180px);
+    li{
+      @include gallery(2 of 4);
+      margin-right: 10px;
+      width:84px ;
+      height:29px ;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      margin-bottom: 4px;
+
     }
-    .next-button {
-      right: 0;
+  }
+ .up-button{
+   float: right;
+   margin-right: 5%;
+   margin-top: 20px;
+   color: #494949;
+   font: 11px 'MyriadPro Cond';
+    span{
+      display: block;
+      text-align: center;
     }
-    .prev-button {
+
+ }
+}
+
+/*footer {
+  .container {
+    position: relative;
+    max-width: 958px;
+    padding: 30px 20px 10px;
+    border: 1px solid #1f1f1f;
+    text-align: center;
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0;
       left: 0;
+      height: 19px;
+      width: 100%;
+      background: url("../images/content-before.png") center repeat-x;
     }
+  }
+  .logo, .copyright-info, .up-button {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+
+  }
+  .copyright-info {
+    position: relative;
+    max-width: 450px;
+    font-size: 12px;
+    color: white;
+    text-align: left;
+    &:before, &:after {
+      position: absolute;
+      content: "";
+      height: 83px;
+      width: 2px;
+      background: url("../images/before-after-copyright.png") center no-repeat;
+    }
+    &:before {
+      top: -26px;
+      left: -13px;
+    }
+    &:after {
+      top: -26px;
+      right: -13px;
+    }
+    a {
+      color: white;
+    }
+    .rules {
+      display: block;
+      margin-top: 5px;
+      font-size: 11px;
+    }
+    .author {
+      position: absolute;
+      bottom: -21px;
+      right: 0;
+      font: 15px 'MyriadProBoldCondensed';
+      color: #484848;
+    }
+  }
+  .up-button {
+    @include transition(all, .3s, ease);
+    &:hover {
+      opacity: 0.7;
+    }
+    img {
+      display: block;
+    }
+    font: 11px 'MyriadProBoldCondensed';
+    color: #494949;
   }
 }
 */
