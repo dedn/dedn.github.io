@@ -16,13 +16,8 @@
   clear: both;
 }
 
-.alfavit {
-  display: none;
-}
 .container {
   @include container;
-}
-body {
 }
 
 @mixin header-nav {
@@ -72,18 +67,18 @@ $nav-header-bg: #1f1f1f;
 a:hover, a:focus, input:hover {
   transition: 0.2s;
 }
+
 .main .container:after {
   content: " ";
   display: none;
   clear: both
 }
+
 /*--------------------------------------M-header-----------------------------------------*/
 #sb-site {
-
   background-image: linear-gradient(to top, #020202 0%, #020202 47%, #2d2d2d 99%, #2d2d2d 100%);
-  .container{
-    background:#1f1f1f;
-
+  .container {
+    background: #1f1f1f;
   }
 }
 
@@ -99,7 +94,6 @@ a:hover, a:focus, input:hover {
 .logo {
   background-image: linear-gradient(to top, #313131 0%, #2a2a2a 100%);
   @include logo;
-
 }
 
 .iconMenu {
@@ -195,13 +189,14 @@ a:hover, a:focus, input:hover {
   }
 }
 
-/*--------------------------------------------DESKTOP------------------------------------------------------------------------*/
+/*-----------------------------------------DESKTOP----------------------------*/
 /*---------------------------------------CONTROL-PANEL------------------------*/
 
 .hero-body,
 .hero-desctop,
+.alfavit,
 .left-side-bar,
-#sb-site .right-sidebar{
+#sb-site .right-sidebar {
   display: none;
 }
 
@@ -218,7 +213,7 @@ a:hover, a:focus, input:hover {
   .hero-desctop,
   .contact,
   .left-side-bar,
-  #sb-site .right-sidebar{
+  #sb-site .right-sidebar {
     display: block;
 
   }
@@ -302,9 +297,7 @@ a:hover, a:focus, input:hover {
       border: 1px solid rgba(255, 255, 255, 0.15);
       border-top: none;
       border-radius: 0 0 10px 10px;
-
     }
-
   }
   .alfavit {
     position: absolute;
@@ -320,10 +313,8 @@ a:hover, a:focus, input:hover {
     border-right: 1px solid #5A5A5A;
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.6);
-
     li {
       display: inline-block;
-
       a {
         margin: 0 5px;
         font: 15px/45px 'Myriad Pro';
@@ -336,16 +327,14 @@ a:hover, a:focus, input:hover {
       }
     }
   }
-
 }
 
 .alfavit ul li:first-child {
   margin-left: 80px;
-
 }
-/*---------------------------contact-------------------------------------*/
-.contact{
 
+/*---------------------------------------CONTACT------------------------*/
+.contact {
   margin: 0 auto;
   width: 990px;
   height: 50px;
@@ -354,7 +343,7 @@ a:hover, a:focus, input:hover {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.63);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  .container{
+  .container {
     width: 975px;
     height: 43px;
     background-image: linear-gradient(to top, #2a2a2a 0%, #1f1f1f 52%, #5d5d5d 100%);
@@ -362,8 +351,7 @@ a:hover, a:focus, input:hover {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin: 7px auto 0;
-
-    .logo-contact{
+    .logo-contact {
       margin-left: 70px;
       margin-right: 40px;
       font: 15px 'Myriad Pro';
@@ -380,87 +368,95 @@ a:hover, a:focus, input:hover {
   }
   .logo-contact,
   .search-form,
-  .links{
+  .links {
     display: inline-block;
-     }
+  }
 }
 
-  .search-form {
-    position: relative;
-    margin-right: 130px;
-    margin-top: 10px;
+.search-form {
+  position: relative;
+  margin-right: 130px;
+  margin-top: 10px;
 
-    input[type="text"]{
-      height: 25px;
-      width: 240px;
-      padding-left: 20px;
-      padding-right: 40px;
-      border-radius: 15px;
-      border: 1px solid #454545;
-      background: #343434;
-      background: linear-gradient(to bottom,  #262626 0%,#323232 100%);
-      font: italic 12px/14px 'Myriad Pro';
-      color: #848484;
-      &:focus{
-       background: #2f2f2f;
+  input[type="text"] {
+    height: 25px;
+    width: 240px;
+    padding-left: 20px;
+    padding-right: 40px;
+    border-radius: 15px;
+    border: 1px solid #454545;
+    background: #343434;
+    background: linear-gradient(to bottom, #262626 0%, #323232 100%);
+    font: italic 12px/14px 'Myriad Pro';
+    color: #848484;
+    &:focus {
+      box-shadow: 0px 0px 5px rgba(255, 255, 255, 1.5);
 
-      }
     }
-    input[type="submit"] {
-      position: absolute;
-      height: 32px;
-      width: 27px;
-      top: 0;
-      right: 10px;
-      border: none;
-      background: url("../images/search-contact-icon.png") center no-repeat transparent;
-      cursor: pointer;
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-    ::-webkit-input-placeholder {color:#848484;}
-    ::-moz-placeholder          {color:#848484;}
-    :-moz-placeholder           {color:#848484;}
-    :-ms-input-placeholder      {color:#848484;}
   }
+  input[type="submit"] {
+    position: absolute;
+    height: 32px;
+    width: 27px;
+    top: 0;
+    right: 10px;
+    border: none;
+    background: url("../images/search-contact-icon.png") center no-repeat transparent;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  ::-webkit-input-placeholder {
+    color: #848484;
+  }
+  ::-moz-placeholder {
+    color: #848484;
+  }
+  :-moz-placeholder {
+    color: #848484;
+  }
+  :-ms-input-placeholder {
+    color: #848484;
+  }
+}
 
 .links {
-    li {
-      display: inline-block;
-      margin-right: 10px;
-      &:after {
-        content: url("../images/dots.png");
-        height: 10px;
-        width: 3px;
-        margin-left: 10px;
-      }
-      &:last-child:after {
-        content: "";
-        margin-left: 0;
-      }
-      a {
-        font: 13px 'Myriad Pro';
-        color: white;
-        text-shadow: 0 1px 4px rgba(0, 3, 1, 0.65);
-        background: -webkit-linear-gradient(top, #FFFFFF, #898989);
-        background: linear-gradient(top, #FFFFFF, #898989);
-        text-transform: uppercase;
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    &:after {
+      content: url("../images/dots.png");
+      height: 10px;
+      width: 3px;
+      margin-left: 10px;
+    }
+    &:last-child:after {
+      content: "";
+      margin-left: 0;
+    }
+    a {
+      font: 13px 'Myriad Pro';
+      color: white;
+      text-shadow: 0 1px 4px rgba(0, 3, 1, 0.65);
+      background: -webkit-linear-gradient(top, #FFFFFF, #898989);
+      background: linear-gradient(top, #FFFFFF, #898989);
+      text-transform: uppercase;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      &:hover {
+        background: -webkit-linear-gradient(top, #FF9F17, #b87700);
+        background: linear-gradient(top, #FF9F17, #b87700);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        &:hover {
-          background: -webkit-linear-gradient(top, #FF9F17, #b87700);
-          background: linear-gradient(top, #FF9F17, #b87700);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
 
-        }
       }
-
     }
   }
+}
+
 /*--------------------------------------NEWS---------------------------------------*/
-.news{
+.news {
   margin-bottom: 20px;
 }
 
@@ -475,7 +471,6 @@ a:hover, a:focus, input:hover {
     margin: 10px 0 0 15px;
     background: url("../images/news-1.png") no-repeat left;
     padding-left: 30px;
-
   }
   ul {
     box-shadow: inset 0 0 16px rgba(255, 255, 255, 0.1);
@@ -491,34 +486,34 @@ a:hover, a:focus, input:hover {
         background: url(../images/arrow.png) no-repeat 20px 0;
         padding-left: 40px;
       }
-
     }
   }
 }
-@media(min-width: 769px){
-  .news .container{
 
-    .grid{
-      @include span(4 of 12 );
-      &:last-of-type{
+@media(min-width: 769px) {
+  .news .container {
+    .grid {
+      @include span(4 of 12);
+      &:last-of-type {
         @include last;
       }
 
     }
   }
-
 }
+
 /*----------------------LEFT-Right-BAR-----------------------------------------*/
-.center-grid{
+.center-grid {
   @include span(12 of 12);
- }
+}
+
 @media(min-width: 769px) {
   .center-grid {
     @include span(6 of 12);
   }
 }
 
-.left-side-bar{
+.left-side-bar {
   @include span(3 of 12);
   font: 400 12px "Arial";
   color: #fff;
@@ -532,21 +527,20 @@ a:hover, a:focus, input:hover {
       transition: 0.2s;
     }
   }
-.sb-close {
+  .sb-close {
 
-  height: 30px;
-  background: url("../images/arrow.png") no-repeat 15px -18px, url("../images/dashed.png") no-repeat bottom #1a1a1a;
-}
-.header {
-  @include header-nav;
-
-}
-  .reclame{
+    height: 30px;
+    background: url("../images/arrow.png") no-repeat 15px -18px, url("../images/dashed.png") no-repeat bottom #1a1a1a;
+  }
+  .header {
+    @include header-nav;
+  }
+  .reclame {
     background: $nav-header-bg;
-    a{
+    a {
       display: block;
       position: relative;
-      span{
+      span {
         position: absolute;
         left: 50%;
         transform: translate(-50%, 140%);
@@ -559,7 +553,6 @@ a:hover, a:focus, input:hover {
   }
 }
 
-
 .right-sidebar {
   @include span(3 of 12 last);
 
@@ -571,20 +564,18 @@ a:hover, a:focus, input:hover {
     background: url("../images/right-sidebar-title.png") center no-repeat black;
   }
   .block-title {
-    display:block;
+    display: block;
     text-align: center;
-    font: 14px/43px 'MyriadProBoldCondensed';
+    font: 14px/43px 'MyriadPro Cond';
     color: #e58106;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.33);
     text-transform: uppercase;
   }
-
   .gallery, .video, .advertise, .advertising-poll {
     display: inline-block;
     max-width: 209px;
     vertical-align: top;
   }
-
   .gallery {
     padding-bottom: 25px;
     margin-bottom: 30px;
@@ -618,9 +609,8 @@ a:hover, a:focus, input:hover {
     background: -webkit-linear-gradient(to top, #834719 0%, #f28804 100%);
     background: -moz-linear-gradient(to top, #834719 0%, #f28804 100%);
     background: linear-gradient(to top, #834719 0%, #f28804 100%);
-
     &:hover {
-      opacity: 0.7;
+      box-shadow: 0px 0px 5px rgba(255, 255, 255, 1.5);
     }
   }
 
@@ -633,7 +623,7 @@ a:hover, a:focus, input:hover {
       margin-top: 10px;
       text-align: center;
       position: relative;
-      left:50%;
+      left: 50%;
       transform: translate(-50%, 0);
     }
     .banner-text {
@@ -672,10 +662,8 @@ a:hover, a:focus, input:hover {
     .marked-button, .unmarked-button {
       display: inline-block;
       margin-top: 15px;
-
-
       &:hover {
-        opacity: 0.7;
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 1.5);
       }
     }
     .marked-button {
@@ -696,45 +684,33 @@ a:hover, a:focus, input:hover {
     }
   }
 }
-
-/*---------------------------------------------NAV-DESKTOP---------------------*/
-.colleft {
-  display: none;
-}
-
 /*----------------------------------------------------------------------------*/
 .intro {
-
   .fa {
     font-size: 60px;
     color: #ed145b;
-
   }
   p {
     margin: 50px auto;
     font: italic 300 25px/40px 'Lato';
     color: #fff;
     max-width: 800px;
-
   }
   .row {
     text-align: center;
     position: relative;
   }
 }
-
 .bxslider {
   li {
     position: relative;
     span {
-
       display: block;
       position: absolute;
       top: 0;
       background: rgba(0, 0, 0, 0.5);
       height: 32px;
       width: 100%;
-
       p {
         font: 400 11px/32px 'AGLettericaCondensed';
         margin: 0;
@@ -742,28 +718,27 @@ a:hover, a:focus, input:hover {
     }
   }
 }
+
 @media(min-width: 769px) {
-  #bx-pager{
-    min-width:100%;
+  #bx-pager {
+    min-width: 100%;
     position: absolute;
-    left:50%;
+    left: 50%;
     transform: translate(-51%, 0);
     bottom: 0;
-    background:rgba(0, 0, 0, 0.5) ;
-
+    background: rgba(0, 0, 0, 0.5);
   }
-
 }
 
 /*-------------------------------POST---------------------------------------------------------*/
 #posts {
-
   max-width: 550px;
   margin: 0 auto;
   overflow: hidden;
   @include span (12 of 12);
 }
-@media(min-width: 769px)   {
+
+@media(min-width: 769px) {
   #posts {
     @include span (6 of 12);
   }
@@ -811,7 +786,6 @@ a:hover, a:focus, input:hover {
   text-align: left;
   height: 33px;
   background-image: linear-gradient(to top, #0f0f0f 0%, #0f0f0f 100%, #1a1a1a 100%);
-
   h4 {
     display: inline-block;
     float: left;
@@ -906,7 +880,6 @@ a:hover, a:focus, input:hover {
   text-align: right;
   background: white;
   margin-top: 40px;
-
   &:before {
     content: "";
     position: absolute;
@@ -916,18 +889,16 @@ a:hover, a:focus, input:hover {
     bottom: 13px;
     background: url("../images/post-diagonal-lines.png") repeat-x;
   }
-
   img {
     float: left;
     margin-right: 5px;
     margin-bottom: 5px;
   }
   p {
-    font:11px/15px 'Arial';
+    font: 11px/15px 'Arial';
     color: #7d7d7d;
     text-align: left;
     margin-bottom: 10px;
-
   }
   .bold-text {
     color: #2f2f2f;
@@ -937,7 +908,6 @@ a:hover, a:focus, input:hover {
     font-size: 11px;
     color: black;
   }
-
   .more-button {
     position: relative;
     margin-left: 10px;
@@ -945,7 +915,6 @@ a:hover, a:focus, input:hover {
     background: -moz-linear-gradient(top, #894b17 0%, #ef8605 100%);
     background: -webkit-linear-gradient(top, #894b17 0%, #ef8605 100%);
     background: linear-gradient(to bottom, #894b17 0%, #ef8605 100%);
-
     &:before {
       position: absolute;
       content: "";
@@ -957,11 +926,10 @@ a:hover, a:focus, input:hover {
     }
     &:hover {
       text-decoration: none;
-      opacity: 0.7;
+      box-shadow: 0px 0px 5px rgba(28, 28, 28, 1.5);
     }
   }
 }
-
 .namber-page {
   background: #fff;
   display: inline-block;
@@ -971,14 +939,12 @@ a:hover, a:focus, input:hover {
   transform: translate(-50%, 0);
   left: 50%;
   padding-bottom: 10px;
-  }
-
+}
 .pagination {
   position: relative;
   display: inline-block;
   padding: 10px 25px;
   background: #121212;
-
   li {
     display: inline-block;
     margin: 0 1px;
@@ -1002,7 +968,6 @@ a:hover, a:focus, input:hover {
     background: url("../images/next-page-icon.png");
     cursor: pointer;
     transform: scale(1.1);
-
   }
   &:after {
     position: absolute;
@@ -1014,24 +979,20 @@ a:hover, a:focus, input:hover {
     background: url("../images/prev-page-icon.png");
     cursor: pointer;
     transform: scale(1.1);
-
   }
 }
 .down-banner {
-
   display: none;
   position: relative;
   padding-left: 5px;
   text-align: left;
   border: 1px solid black;
   box-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.36);
-
-  .banner-pic img{
+  .banner-pic img {
     max-width: 100%;
     margin-top: 10px;
     margin-left: 10px;
     vertical-align: top;
-
   }
   .banner-text {
     position: absolute;
@@ -1041,23 +1002,20 @@ a:hover, a:focus, input:hover {
     color: #1f1f1f;
     text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.41);
   }
-
 }
-
-@media(min-width: 769px){
+@media(min-width: 769px) {
   .down-banner {
     display: block;
   }
-  .post-main{
-    &:before{
+  .post-main {
+    &:before {
       width: 60%;
     }
   }
 }
+
 /*---------------------------------FOOTER----------------------------------*/
-
 footer .container {
-
   background-color: #0c0c0c;
   box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.1);
   &:before {
@@ -1130,7 +1088,6 @@ footer .container {
       position: relative;
       text-align: right;
     }
-
   }
   .square {
     padding: gutter();
@@ -1142,7 +1099,6 @@ footer .container {
       height: 29px;
       border: 1px solid rgba(255, 255, 255, 0.16);
       margin-bottom: 4px;
-
     }
   }
   .up-button {
@@ -1154,38 +1110,40 @@ footer .container {
     span {
       display: block;
       text-align: center;
+      &:hover {
+        box-shadow: 0px 2px 2px rgba(255, 255, 255, 1.5);
+      }
     }
-
   }
 }
 
-@media(min-width: 769px){
-  footer{
+@media(min-width: 769px) {
+  footer {
     height: 136px;
     position: relative;
     margin-top: 19px;
   }
-  footer .container{
-    &:before{
-      top:-19px
+  footer .container {
+    &:before {
+      top: -19px
     }
-    .logo-footer{
+    .logo-footer {
       transform: translate(-50%, -15%);
     }
   }
-  footer .container .square-group{
+  footer .container .square-group {
     margin-top: 10px;
-    .up-button{
+    .up-button {
       margin-right: 10%;
     }
   }
-  .footer-grid:first-child{
-     @include span(3 of 12);
-   }
-  .footer-grid:nth-child(2){
+  .footer-grid:first-child {
+    @include span(3 of 12);
+  }
+  .footer-grid:nth-child(2) {
     @include span(5 of 12);
   }
-  .footer-grid:last-child{
+  .footer-grid:last-child {
     @include span(4 of 12 last);
   }
 }
