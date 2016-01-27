@@ -1,0 +1,453 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 4, ../sass/_reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/_reset.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font: 20px 'Open sans', sans-serif;
+  background: #fff;
+}
+
+/* line 6, ../sass/_reset.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+/* line 12, ../sass/_reset.scss */
+select, input, textarea {
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_reset.scss */
+textarea {
+  vertical-align: top;
+}
+
+/* line 14, ../sass/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 15, ../sass/_reset.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_reset.scss */
+img, fieldset {
+  border: 0;
+}
+
+/* line 17, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, ../sass/_reset.scss */
+a:link, a:visited {
+  font: 12px Tahoma, sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 19, ../sass/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 23, ../sass/_reset.scss */
+.float-r {
+  float: right !important;
+}
+
+/* line 24, ../sass/_reset.scss */
+.float-l {
+  float: left !important;
+}
+
+/* line 25, ../sass/_reset.scss */
+.no-float {
+  float: none !important;
+}
+
+/* line 26, ../sass/_reset.scss */
+.no-border {
+  border: 0 !important;
+}
+
+/* line 27, ../sass/_reset.scss */
+.no-bg {
+  background: none !important;
+}
+
+/* line 28, ../sass/_reset.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/* line 29, ../sass/_reset.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 30, ../sass/_reset.scss */
+.no-display {
+  display: none !important;
+}
+
+/* line 31, ../sass/_reset.scss */
+.display {
+  display: block !important;
+}
+
+/* line 32, ../sass/_reset.scss */
+.inline {
+  display: inline !important;
+}
+
+/* line 33, ../sass/_reset.scss */
+.overflow {
+  overflow: hidden !important;
+}
+
+/* line 34, ../sass/_reset.scss */
+.align-r {
+  text-align: right !important;
+}
+
+/* line 35, ../sass/_reset.scss */
+.align-l {
+  text-align: left !important;
+}
+
+/* line 36, ../sass/_reset.scss */
+.align-c {
+  text-align: center !important;
+}
+
+/* line 37, ../sass/_reset.scss */
+.clear {
+  clear: both;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*---------------------------------HEADER-----------------------------------*/
+/* line 3, ../sass/_header.scss */
+.hero {
+  position: relative;
+  min-height: 600px;
+  padding: 0 5px 5px 5px;
+  background: #c2255b;
+  color: #f7f7f7;
+}
+/* line 9, ../sass/_header.scss */
+.hero .hero-body {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+/* line 16, ../sass/_header.scss */
+.hero .hero-body .baner {
+  background: #6aad44;
+  position: relative;
+  top: 0;
+}
+/* line 20, ../sass/_header.scss */
+.hero .hero-body .baner h1 {
+  font: 500 30px 'Relewey';
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  /* line 32, ../sass/_header.scss */
+  .hero {
+    min-height: 800px;
+  }
+  /* line 34, ../sass/_header.scss */
+  .hero .hero-body {
+    top: 70%;
+  }
+  /* line 39, ../sass/_header.scss */
+  .hero .baner {
+    width: 480px;
+    height: 320px;
+  }
+}
+/*-------------------------NAV---------------------------------*/
+/* line 50, ../sass/_header.scss */
+#hero .logo {
+  float: left;
+}
+/* line 52, ../sass/_header.scss */
+#hero .logo img {
+  padding-left: 10px;
+}
+
+/* line 57, ../sass/_header.scss */
+#navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.06);
+}
+
+/* line 67, ../sass/_header.scss */
+#navbar.default {
+  position: fixed;
+  top: 0;
+  transition-duration: 2s;
+}
+
+/* line 74, ../sass/_header.scss */
+.iconMenu {
+  float: right;
+  padding-top: 15px;
+  margin-right: 10px;
+}
+
+/* line 81, ../sass/_header.scss */
+.nav li {
+  float: left;
+  margin-right: 35px;
+  text-align: center;
+  padding: 5px 10px;
+}
+/* line 86, ../sass/_header.scss */
+.nav li a {
+  text-decoration: none;
+  font: 400 20px 'Raleway', sans-serif;
+  color: #000;
+  text-transform: uppercase;
+}
+/* line 92, ../sass/_header.scss */
+.nav li:hover {
+  transition: 0.3s;
+  color: #c2265c;
+}
+
+/* line 99, ../sass/_header.scss */
+.itemsMenu li {
+  display: inline;
+  padding-right: 35px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 104, ../sass/_header.scss */
+.itemsMenu li a {
+  padding: 5px 10px;
+}
+/* line 106, ../sass/_header.scss */
+.itemsMenu li a:hover {
+  transition: 0.5s;
+}
+
+/* line 114, ../sass/_header.scss */
+.iconMenu {
+  color: #c4275f;
+  cursor: pointer;
+  display: none;
+}
+
+/* line 123, ../sass/_header.scss */
+.showitems {
+  display: block !important;
+  transition: 1s;
+}
+
+/* line 128, ../sass/_header.scss */
+.iconMenu {
+  display: block;
+}
+
+/* line 132, ../sass/_header.scss */
+.itemsMenu {
+  display: none;
+}
+
+/* line 136, ../sass/_header.scss */
+.itemsMenu li {
+  display: block;
+  padding: 5px;
+}
+
+@media (min-width: 1024px) {
+  /* line 142, ../sass/_header.scss */
+  .itemsMenu {
+    display: block;
+  }
+
+  /* line 145, ../sass/_header.scss */
+  .iconMenu {
+    display: none;
+  }
+
+  /* line 148, ../sass/_header.scss */
+  .itemsMenu li {
+    padding: 5px 10px;
+    width: auto;
+    float: right;
+    margin-top: 15px;
+  }
+}
+/* line 7, ../sass/style.scss */
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 13, ../sass/style.scss */
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 17, ../sass/style.scss */
+a:hover, a:focus, input:hover {
+  transition: 0.2s;
+}
+
+/* line 21, ../sass/style.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 25, ../sass/style.scss */
+h2 {
+  padding: 0 50px;
+  text-align: center;
+  color: #373737;
+  font: 500 36px/50px 'Relewey', sans-serif;
+}
+
+/* line 35, ../sass/style.scss */
+.product {
+  background: #f3f3f3;
+}
+/* line 38, ../sass/style.scss */
+.product .title-text {
+  text-align: center;
+  color: #373737;
+  font: 300 16px/24px 'Open Sans', sans-serif;
+}
+/* line 43, ../sass/style.scss */
+.product .rolover {
+  position: relative;
+  max-width: 254px;
+  height: 100%;
+  margin: 20px auto;
+  border: 3px solid #e1e1e1;
+}
+/* line 49, ../sass/style.scss */
+.product .rolover span {
+  display: block;
+  height: 49px;
+  background-color: rgba(225, 225, 225, 0.9);
+  font: 600 18px/50px 'Open Sans';
+  padding-left: 10px;
+}
+/* line 58, ../sass/style.scss */
+.product .rolover div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(225, 225, 225, 0.9);
+  opacity: 0;
+}
+/* line 68, ../sass/style.scss */
+.product .rolover div:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+/* line 72, ../sass/style.scss */
+.product .rolover div h3 {
+  font: 600 18px/50px 'Open Sans';
+  color: #000;
+}
+/* line 76, ../sass/style.scss */
+.product .rolover div p {
+  font: 300 18px/24px 'Open Sans';
+  margin-bottom: 40px;
+}
+/* line 80, ../sass/style.scss */
+.product .rolover div a {
+  display: inline-block;
+  width: 104px;
+  height: 29px;
+  background-color: #2797d5;
+  font: 300 15px/29px 'Open Sans';
+  color: #fff;
+}
+/* line 87, ../sass/style.scss */
+.product .rolover div a:hover {
+  box-shadow: 0 1px 1px rgba(0, 3, 1, 0.65);
+}
+/* line 91, ../sass/style.scss */
+.product .rolover div .read-more-button {
+  background: #6aad44;
+}
+
+/* line 99, ../sass/style.scss */
+.slider2 {
+  background: #fff;
+}
+/* line 101, ../sass/style.scss */
+.slider2 h4 {
+  font: 400 24px/50px 'Roboto';
+  color: #434343;
+  text-align: center;
+}
+/* line 106, ../sass/style.scss */
+.slider2 p {
+  font: 300 14px/24px 'Roboto';
+  text-align: center;
+}
