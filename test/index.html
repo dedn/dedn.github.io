@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skewed</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/animate.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+<body>
+<div class="wrapper">
+    <header>
+        <div class="container">
+            <h1><a href="#" class="logo"><img src="images/logo.png" alt="Main logo"></a></h1>
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Parallax</a></li>
+                    <li><a href="#">Principals</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Achievements</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <ul class="hero-slider">
+                <li class="slide slide-1">
+                    <h1 class="hero-title fadeIn wow">
+                        Skewed 1 is a <span class="marked">slightly wonky</span> landing page template
+                    </h1>
+                </li>
+                <li class="slide slide-2 fadeIn wow">
+                    <h1 class="hero-title">
+                        Skewed 2 is a <span class="marked">slightly wonky</span> landing page template
+                    </h1>
+                </li>
+                <li class="slide slide-3 fadeIn wow">
+                    <h1 class="hero-title">
+                        Skewed 3 is a <span class="marked">slightly wonky</span> landing page template
+                    </h1>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="section-info">
+                <h2 class="section-title">About Us</h2>
+                <span class="section-description">Dolor sit amet, consectetur adipiscing elit.</span>
+                <p class="fadeInLeft wow" data-wow-delay="1s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum enim diam, at condimentum purus facilisis in. Aenean convallis tempor nulla, in elementum odio ornare vitae. In faucibus tempus ante vitae pretium. Ut facilisis elit sapien, sed suscipit ex auctor vitae. </p>
+                <a href="#" class="find-more-btn">Find out more</a>
+            </div>
+            <img class="fadeInRight wow" data-wow-delay="1.2s" src="images/about-us-photo.jpg" alt="About image">
+        </div>
+    </section>
+    <section class="presentation">
+        <div class="container">
+            <h2 class="section-title">Video Presentation</h2>
+            <span class="section-description">The button below can stop video. Just try :)</span>
+            <div class="video-controls tada wow " data-wow-iteration="3" data-wow-delay="2s">
+                <img src="images/play-btn.png" onclick="playVid()" class="play-video">
+                <img src="images/pause-btn.png" onclick="pauseVid()" class="pause-video">
+            </div>
+            <video autoplay loop id="video" class="bg-presentation">
+                <source src="videos/main-video.webm" type="video/webm">
+                <source src="videos/main-video.ogv" type="video/ogg">
+                <source src="videos/main-video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title">Meet The Team</h2>
+            <span class="section-description">Dolor sit amet, consectetur adipiscing elit.</span>
+            <ul class="team-list">
+                <li class="flipInX wow" data-wow-duration="1.5s">
+                    <img src="images/team-1.jpg" alt="Teammate-photo-1" class="teammate-photo">
+                    <h3>Jonathan Smith</h3>
+                    <span>Designer</span>
+                </li>
+                <li class="flipInX wow" data-wow-duration="1.5s" data-wow-delay=".3s">
+                    <img src="images/team-2.jpg" alt="Teammate-photo-1" class="teammate-photo">
+                    <h3>Jonathan Smith</h3>
+                    <span>Designer</span>
+                </li>
+                <li class="flipInX wow" data-wow-duration="1.5s" data-wow-delay=".6s">
+                    <img src="images/team-3.jpg" alt="Teammate-photo-1" class="teammate-photo">
+                    <h3>Jonathan Smith</h3>
+                    <span>Designer</span>
+                </li>
+                <li class="flipInX wow" data-wow-duration="1.5s" data-wow-delay=".9s">
+                    <img src="images/team-4.jpg" alt="Teammate-photo-1" class="teammate-photo">
+                    <h3>Jonathan Smith</h3>
+                    <span>Designer</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="parallax">
+        <div class="container">
+            <h2 class="section-title">Here’s Some Parallax</h2>
+            <span class="section-description">(If you’re into that kind of thing)</span>
+            <p class="fadeInLeft wow" data-wow-delay=".5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum enim diam, at condimentum purus facilisis in. Aenean convallis tempor nulla, in elementum odio ornare vitae. In faucibus tempus ante vitae pretium. Ut facilisis elit sapien, sed suscipit ex auctor vitae. </p>
+            <a href="#" class="find-more-btn">Find out more</a>
+        </div>
+        <img class="parallax-bg" src="images/parallax.jpg" alt="Parallax img">
+    </section>
+    <section class="principles">
+        <div class="container">
+            <div class="section-info">
+                <h2 class="section-title">Our Principles</h2>
+                <span class="section-description">Dolor sit amet, consectetur adipiscing elit.</span>
+                <p class="fadeInLeft wow" data-wow-delay="1s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum enim diam, at condimentum purus facilisis in. Aenean convallis tempor nulla, in elementum odio ornare vitae. In faucibus tempus ante vitae pretium. Ut facilisis elit sapien, sed suscipit ex auctor vitae. </p>
+                <a href="#" class="find-more-btn">Find out more</a>
+            </div>
+            <img class="fadeInLeft wow" data-wow-delay="1.2s"src="images/principles-photo.jpg" alt="About image">
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <span class="section-description">Some of our latest work</span>
+            <ul class="portfolio-list">
+                <li>
+                    <img src="images/project-1.jpg" alt="Porftolio img 1">
+                    <div class="rollover">
+                        <span class="fa fa-search"></span>
+                    </div>
+                </li>
+                <li data-wow-delay=".2s">
+                    <img src="images/project-2.jpg" alt="Porftolio img 1">
+                    <div class="rollover">
+                        <span class="fa fa-search"></span>
+                    </div>
+                </li>
+                <li data-wow-delay=".4s">
+                    <img src="images/project-3.jpg" alt="Porftolio img 1">
+                    <div class="rollover">
+                        <span class="fa fa-search"></span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/project-4.jpg" alt="Porftolio img 1">
+                    <div class="rollover">
+                        <span class="fa fa-search"></span>
+                    </div>
+                </li>
+                <li data-wow-delay=".2s">
+                    <img src="images/project-5.jpg" alt="Porftolio img 1">
+                    <div class="rollover">
+                        <span class="fa fa-search"></span>
+                    </div>
+                </li>
+                <li data-wow-delay=".4s">
+                    <img src="images/project-6.jpg" alt="Porftolio img 1">
+                    <div class="rollover">
+                        <span class="fa fa-search"></span>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/project-7.jpg" alt="Porftolio img 1">
+                    <div class="rollover">
+                        <span class="fa fa-search"></span>
+                    </div>
+                </li>
+                <li data-wow-delay=".2s">
+                    <img src="images/project-8.jpg" alt="Porftolio img 1">
+                    <div class="rollover">
+                        <span class="fa fa-search"></span>
+                    </div>
+                </li>
+                <li data-wow-delay=".4s">
+                    <img src="images/project-9.jpg" alt="Porftolio img 1">
+                    <div class="rollover">
+                        <span class="fa fa-search"></span>
+                    </div>
+                </li>
+                <li >
+                    <img src="images/project-10.jpg" alt="Porftolio img 1">
+                    <div class="rollover">
+                        <span class="fa fa-search"></span>
+                    </div>
+                </li>
+                <li data-wow-delay=".2s">
+                    <img src="images/project-11.jpg" alt="Porftolio img 1">
+                    <div class="rollover">
+                        <span class="fa fa-search"></span>
+                    </div>
+                </li>
+                <li data-wow-delay=".4s">
+                    <img src="images/project-12.jpg" alt="Porftolio img 1">
+                    <div class="rollover">
+                        <span class="fa fa-search"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="achievements">
+        <div class="container">
+            <h2 class="section-title">Our Achievements</h2>
+            <span class="section-description">We keep track of this stuff!</span>
+            <ul class="achievements-list">
+                <li>
+                    <span class="fa fa-flag-o"></span>
+                    <span class="counter-1"></span>
+                    <span class="caption">Projects Completed</span>
+                </li>
+                <li data-wow-delay=".2s">
+                    <span class="fa fa-smile-o"></span>
+                    <span class="counter-2"></span>
+                    <span class="caption">Happy Clients</span>
+                </li>
+                <li data-wow-delay=".4s">
+                    <span class="fa fa-lightbulb-o"></span>
+                    <span class="counter-3"></span>
+                    <span class="caption">Problems Solved</span>
+                </li>
+                <li data-wow-delay=".6s">
+                    <span class="fa fa-moon-o"></span>
+                    <span class="counter-4"></span>
+                    <span class="caption">All-nighters Pulled</span>
+                </li>
+            </ul>
+            <div class="quotations">
+                <ul class="quotations-slider">
+                    <li class="slide slide-1">
+                        <q>1 Lorem ipsum dolor sit amet, consectetur <span class="marked">adipiscing elit</span>. Fusce tristique finibus felis, eget molestie eros placerat vitae. Ut ut ipsum augue.</q>
+                        <span class="author">- Alfred Johnson, CEO Youtech</span>
+                    </li>
+                    <li class="slide slide-2">
+                        <q>2 Lorem ipsum dolor sit amet, consectetur <span class="marked">adipiscing elit</span>. Fusce tristique finibus felis, eget molestie eros placerat vitae. Ut ut ipsum augue.</q>
+                        <span class="author">- Alfred Johnson, CEO Youtech</span>
+                    </li>
+                    <li class="slide slide-3">
+                        <q>3 Lorem ipsum dolor sit amet, consectetur <span class="marked">adipiscing elit</span>. Fusce tristique finibus felis, eget molestie eros placerat vitae. Ut ut ipsum augue.</q>
+                        <span class="author">- Alfred Johnson, CEO Youtech</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="section-title">Keep Up To Date</h2>
+            <span class="section-description">Subscribe to our mailing list</span>
+            <form action="#" class="newsletter-form">
+                <input class="name-input" type="text" data-wow-delay=".5s" name="name" placeholder="Your name">
+                <input class="email-input" data-wow-delay=".7s" type="email" name="email" placeholder="Your email">
+                <input class="submit" data-wow-delay=".9s" type="submit" name="submit" value="Subscribe">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+            <span class="copyright">Copyright 2015 <a href="#" class="marked">Skewed</a>. All Rights Reserved </span>
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="javascript/jquery.simpleslider.js"></script>
+<script src="javascript/wow.min.js"></script>
+<script src="javascript/script.js"></script>
+</body>

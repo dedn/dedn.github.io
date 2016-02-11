@@ -1,0 +1,166 @@
+$yellow: #f7cc4b;
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1000;
+  //background-color: red;
+  .container {
+    height: 100px;
+  }
+}
+.logo {
+  float: left;
+  margin-top: 35px;
+  margin-left: 30px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.main-nav {
+  float: right;
+  margin-right: 30px;
+  margin-top: 30px;
+  li {
+    display: inline-block;
+    margin: 5px;
+  }
+  a {
+    font: 500 14px/28px 'Roboto';
+    color: #bbb;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 810px) {
+  .button_container {
+    position: fixed;
+    top: 37px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity .25s ease;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &.active {
+      opacity: .5;
+      .top {
+        transform: translateY(11px) translateX(0) rotate(45deg);
+        background: black;
+      }
+      .middle {
+        opacity: 0;
+        background: black;
+      }
+
+      .bottom {
+        transform: translateY(-11px) translateX(0) rotate(-45deg);
+        background: black;
+      }
+    }
+
+    span {
+      background: $yellow;
+      border: none;
+      height: 5px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition:  all .35s ease;
+      cursor: pointer;
+
+      &:nth-of-type(2) {
+        top: 11px;
+      }
+
+      &:nth-of-type(3) {
+        top: 22px;
+      }
+    }
+  }
+
+  nav {
+    position: fixed;
+    background: $yellow;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+
+    &.open {
+      opacity: .9;
+      visibility: visible;
+      height: 100%;
+
+      li {
+        animation: fadeInRight .5s ease forwards;
+        animation-delay: .35s;
+
+        &:nth-of-type(2) {
+          animation-delay: .4s;
+        }
+        &:nth-of-type(3) {
+          animation-delay: .5s;
+        }
+        &:nth-of-type(4) {
+          animation-delay: .6s;
+        }
+        &:nth-of-type(5) {
+          animation-delay: .7s;
+        }
+        &:nth-of-type(6) {
+          animation-delay: .8s;
+        }
+        &:nth-of-type(7) {
+          animation-delay: .9s;
+        }
+      }
+    }
+  }
+
+  .main-nav {
+    float: none;
+    margin-right: 0;
+    margin-top: 90px;
+    li {
+      display: block;
+      opacity: 0;
+    }
+    a {
+      display: block;
+      margin: 35px;
+      font-size: 24px;
+      color: rgba(0, 0, 0, 0.5);
+      transition: .4s;
+      &:hover {
+        font-weight: 600;
+        color: black;
+      }
+    }
+  }
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+}

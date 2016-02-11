@@ -1,0 +1,27 @@
+@import "grids";
+@import "compass/reset";
+
+@import "main_styles/header";
+@import "main_styles/content";
+@import "main_styles/footer";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
+
+.container {
+  @include container();
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  .section-title {
+    color: #222;
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+  }
+  .section-description {
+    display: block;
+    margin: 20px 0 30px;
+    font: 300 20px/28px Roboto,sans-serif;
+    color: #f7cc4b;
+  }
+}
