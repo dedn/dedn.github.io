@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>home work 3</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>  
+	<div id="wrapper">
+		<form action="#">
+			<fieldset class="fieldset1">   
+				<legend>Коротко о себе</legend>
+				<p><label for="firstname">Имя: </label><input type="text" name="firstname" id="firstname" /></p>
+				<p><label for="lastname">Фамилия: </label><input type="text" name="lastname" id="lastname"/></p>
+				<p>Пол: <label><input type="radio" name="man_or_woman"   value="man" checked="checked" class="input" />Мужской</label> <label><input type="radio" name="man_or_woman"  value="woman" />Женский </label></p>
+				<p><label for="age">Возраст: </label><input type="text" name="age" id="age"  /><label for="age"> лет</label></p>
+			</fieldset>
+			<fieldset class="fieldset2">
+				<legend>Подробней о себе</legend>
+				<p><label>Молодой человек<input type="radio" name="man_or_woman_Block_podrobney" value="man Block podrobney" checked="checked" /></label></p>
+				<p><label>Девушка<input type="radio" name="man_or_woman_Block_podrobney" value="woman Block podrobney" /></label></p>
+				<p><input type="text" name="Date_of_Birth" id="Date_of_Birth" /><label for="Date_of_Birth"> Дата рождения</label></p>
+				<p><input type="text" name="family_status" id="family_status" /><label for="family_status"> Семейное положение</label></p>
+				<p><input type="text" name="social_status" id="social_status" /><label for="social_status"> Социальный статус</label></p>
+				<p><input type="text" name="location" id="location" /><label for="location"> Местожительства</label></p>
+				<p class="header">Что вы обычно делаете на выходных</p>
+				<p><input type="checkbox" name="weekend" value="sleep" id="sleep" /><label for="sleep"> Сплю</label></p> 
+				<p><input type="checkbox" name="weekend" value="Walking_with_friends" id="Walking_with_friends" /><label for="Walking_with_friends"> Гуляю с друзьями</label></p>
+				<p><input type="checkbox" name="weekend" value="fishing" id="fishing" /><label for="fishing"> Хожу на рыбалку</label></p>
+				<p><input type="checkbox" name="weekend" value="play" id="play" /><label for="play"> Играю в игры</label></p>
+				<p class="header">Рассказать о формах в книге, посвящённой HTML:</p>
+				<p>
+					<select>
+						<option>Site frequency:</option>
+					</select>
+				</p>
+				<p class="header">Сколько книг вы прочли за свою жизнь:</p>
+				<p><label><input type="radio" name="book" value="0-10" />0-10</label></p>
+				<p><label><input type="radio" name="book" value="11-20" />11-20</label></p>
+				<p><label><input type="radio" name="book" value="21-50" />21-50</label></p>
+				<p><label><input type="radio" name="book" value="50" />50+</label></p>
+				
+				<p class="header">Ваши коментарии:</p>
+				<textarea name="textarea" rows="10" cols="40"></textarea>
+				<p>
+					<select size="3" multiple="multiple" name="select"> 
+						<option value="one">Первая позиция:</option> 
+						<option value="two" selected="selected" >Вторая позиция:</option> 
+						<option value="three">Третья позиция:</option>
+					</select>
+				</p>
+			</fieldset>
+			<fieldset class="fieldset3">
+				<legend>И в заключение</legend>
+				<input type="text" name="hide" value=" Это поле было введено до вас" readonly="readonly" />
+				<p class="headerset3"><label for="emaillabel">Email:</label></p> 
+				<input type="text" name="email" id="emaillabel" />
+				<p class="headerset3">Хотите подписаться на самую модную рассылку спама?</p> 
+				<i> Выберите категории</i>
+				<p><input type="checkbox" name="chekboxone[]" value="1" id="equipment" /><label for="equipment"> Оборудование</label></p>
+				<p><input type="checkbox" name="chekboxone[]" value="2" id="lunches" /><label for="lunches"> Как приготовить обеды</label></p>
+				<p><input type="checkbox" name="chekboxone[]" value="3" id="milion" /><label for="milion"> Заработай миллион за два дня!</label></p>
+				<p class="header">На сколько сложная задача:</p>
+				<p><label><input type="radio"  name="level" value="easy" checked="checked" />Совсем нет</label></p>
+				<p><label><input type="radio"  name="level" value="middle" />Так себе</label></p>
+				<p><label><input type="radio"  name="level" value="hard" />Еле справился</label></p>
+			</fieldset>
+			<p><input type="submit" value="Отправить" /></p>
+		</form>
+	</div>
+</body>
+</html>
+
+<!-- почитай http://alistapart.com/article/prettyaccessibleforms, почитай о чекбоксах, не нужно плодить класссы CSS, если это излишнее. -->
