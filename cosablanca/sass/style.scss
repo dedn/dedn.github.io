@@ -348,6 +348,7 @@ a:hover, a:focus, input:hover {
 .selection {
   padding: 120px 0 100px;
 }
+
 .selection-block {
   li {
     margin: 30px auto;
@@ -536,7 +537,7 @@ a:hover, a:focus, input:hover {
     padding: 65px 0 25px 0;
     text-align: left;
     @include span(4 of 12 inside);
-    &:before{
+    &:before {
       position: absolute;
       content: " ";
       display: block;
@@ -544,7 +545,7 @@ a:hover, a:focus, input:hover {
       width: 228%;
       top: 0;
       left: -886px;
-      background:#f2f2f2 ;
+      background: #f2f2f2;
     }
   }
   .contact-grid-right {
@@ -562,7 +563,7 @@ a:hover, a:focus, input:hover {
     position: relative;
     min-height: 400px;
     padding: 100px 20px 0 100px;
-    &:after{
+    &:after {
       position: absolute;
       content: " ";
       display: block;
@@ -570,7 +571,7 @@ a:hover, a:focus, input:hover {
       width: 129%;
       top: 0;
       right: -1000px;
-      background:#e4e4e4;
+      background: #e4e4e4;
     }
   }
   input[type=button] {
