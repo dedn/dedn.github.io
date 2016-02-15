@@ -1,10 +1,9 @@
-
+//filter
 $(function(){
     $("#Container2").mixItUp({
         selectors: {
             target:'.mix',
             filter:'.filter'
-
         },
         controls: {
             enable:true,
@@ -15,11 +14,10 @@ $(function(){
             effects:'rotateX stagger',
             duration:700
         }
-
     });
 });
 
-
+//iconMenu
 $(function() {
     $('.iconMenu').click(function() {
         if($('.itemsMenu').is(':visible')) {
@@ -30,7 +28,7 @@ $(function() {
         }
     });
 });
-
+//Scroll
 $(document).ready(function(){
 
     $("#navbar").removeClass("default");
@@ -55,7 +53,7 @@ $(document).ready(function(){
     });
 });
 
-
+//video
 var video = document.getElementById("video");
 
 $( ".pause-video" ).click(function() {
@@ -67,7 +65,6 @@ $( ".play-video" ).click(function() {
     $( this ).fadeOut(300);
     $(".pause-video").fadeIn(300).css("display", "block");
 });
-
 function playVid() {
     video.play();
 }

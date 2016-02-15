@@ -4,22 +4,21 @@
 @import "grids";
 @import "header";
 @import "reset";
-
 /*---------------------GLOBAL STYLE------------------------*/
 .clearfix:after {
   content: " ";
   display: block;
   clear: both;
 }
-
 .container {
   @include container;
 }
-
 a:hover, a:focus, input:hover {
   transition: 0.2s;
 }
-
+.About, .selection, .quote, footer {
+  background: #fff;
+}
 /*--------------------------MIXIN-------------------------*/
 @mixin line-down {
   width: 86px;
@@ -29,7 +28,6 @@ a:hover, a:focus, input:hover {
   background: #222;
   margin: 55px auto 45px;
 }
-
 @mixin main-btn {
   display: block;
   margin: 0 auto;
@@ -51,8 +49,6 @@ a:hover, a:focus, input:hover {
     transform: scale(0.9);
   }
 }
-
-/*--------------------------COLOR-------------------------*/
 /*--------------------------HEADER-SECTION-STYLE-------------------------*/
 .title {
   font: 400 30px/60px 'BIG JOHN';
@@ -63,14 +59,12 @@ a:hover, a:focus, input:hover {
     @include line-down;
   }
 }
-
 .main-text-block {
   max-width: 740px;
   margin: 110px auto;
   text-align: center;
   font: 300 22px/36px 'Amble Light';
 }
-
 /*--------------------------Introduction-------------------------*/
 .introduction {
   background: #fff;
@@ -84,7 +78,6 @@ a:hover, a:focus, input:hover {
     @include main-btn;
   }
 }
-
 /*--------------------------PORTFOLIO-------------------------*/
 .portfolio {
   padding-bottom: 80px;
@@ -102,19 +95,19 @@ a:hover, a:focus, input:hover {
       font: 400 18px/36px 'BIG JOHN';
       transition: 0.2s;
     }
-
   }
   img {
     max-width: 100%;
   }
+  .container2 {
+    text-align: center;
+  }
 }
-
 .container2 {
   .mix {
     display: none;
   }
 }
-
 .container2 {
   .mix {
     position: relative;
@@ -135,7 +128,6 @@ a:hover, a:focus, input:hover {
         opacity: 1;
       }
       p {
-
         margin: 160px auto 0;
 
         a {
@@ -158,7 +150,6 @@ a:hover, a:focus, input:hover {
             text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65)
           }
         }
-
       }
       &:after {
         margin: 30px auto 0;
@@ -171,7 +162,6 @@ a:hover, a:focus, input:hover {
     }
   }
 }
-
 .portfolio .portfolio-btn {
   @include main-btn;
   max-width: 370px;
@@ -181,19 +171,16 @@ a:hover, a:focus, input:hover {
   color: #222;
   border-color: #222;
 }
-
 /*--------------------------COTACT------------------------*/
 .contact {
   padding: 200px 0 0 0;
   height: 300px;
   background: url("../images/contact-bg.jpg") center/cover no-repeat;
 }
-
 .contact-btn {
   @include main-btn;
 }
-
-/*--------------------------clients------------------------*/
+/*--------------------------Clients------------------------*/
 .clients {
   padding-top: 120px;
   background: #f4f4f4;
@@ -209,24 +196,17 @@ a:hover, a:focus, input:hover {
     }
   }
 }
-
 /*--------------------------About us------------------------*/
-.About, .selection, .quote, footer {
-  background: #fff;
-}
-
 .About {
   padding: 100px 0 80px;
 }
-
 .team-group {
   max-width: 1170px;
   margin: 0 auto;
   text-align: center;
 }
-
 .grid-team {
-  display: inline-block;
+  margin: 0 auto 30px;
   position: relative;
   max-width: 270px;
   max-height: 360px;
@@ -255,12 +235,9 @@ a:hover, a:focus, input:hover {
     &:hover {
       transform: rotate(360deg);
       cursor: pointer;
-
     }
   }
-
 }
-
 .team-rollover {
   position: absolute;
   opacity: 0;
@@ -283,7 +260,6 @@ a:hover, a:focus, input:hover {
       height: 2px;
       background-color: #222;
     }
-
   }
   a {
     @include main-btn;
@@ -294,20 +270,24 @@ a:hover, a:focus, input:hover {
     color: #222;
     border-color: #222;
   }
-
   &:hover {
     opacity: 1;
   }
-
 }
-
+@media(min-width: 540px) {
+  .grid-team {
+    @include gallery(6 of 12);
+  }
+}
+@media(min-width: 960px) {
+  .grid-team {
+    @include gallery(3 of 12);
+  }
+}
 /*--------------------------VODIO-------------------------*/
-
 .presentation {
-
   height: 250px;
   padding: 250px 0 0 0;
-
   .bg-presentation {
     position: fixed;
     top: 50%;
@@ -321,7 +301,6 @@ a:hover, a:focus, input:hover {
     transform: translateX(-50%) translateY(-50%);
   }
 }
-
 .video-controls {
   position: relative;
   height: 100px;
@@ -339,16 +318,13 @@ a:hover, a:focus, input:hover {
     transition: all .5s ease;
     &:hover {
       opacity: 1;
-
     }
   }
 }
-
 /*--------------------------selection-------------------------*/
 .selection {
   padding: 120px 0 100px;
 }
-
 .selection-block {
   li {
     margin: 30px auto;
@@ -379,11 +355,9 @@ a:hover, a:focus, input:hover {
     }
   }
 }
-
 @media(min-width: 769px) {
   .selection-block {
     li {
-
       @include gallery(4 of 12);
     }
     .excellence-first {
@@ -391,24 +365,20 @@ a:hover, a:focus, input:hover {
     }
   }
 }
-
 /*--------------------------selection-------------------------*/
 .quote {
   padding: 200px 0 0 0;
   height: 300px;
   background: url("../images/quote-bg.jpg") center/cover no-repeat;
 }
-
 .contact-btn {
   @include main-btn;
 }
-
 /*--------------------------contact-us-------------------------*/
 .contact-us {
   background: #fff;
   padding-top: 120px;
 }
-
 .contact-info {
   text-align: center;
   padding: 0 5px 30px;
@@ -431,7 +401,6 @@ a:hover, a:focus, input:hover {
       &:hover {
         color: #3b5998;
         transform: scale(1.8) rotate(360deg);
-
       }
       &:active {
         transform: scale(1.3);
@@ -474,14 +443,11 @@ a:hover, a:focus, input:hover {
         transform: scale(1.3);
       }
     }
-
     .fa {
       transition: all .5s ease;
     }
-
   }
 }
-
 .contact-form {
   padding: 30px 5px;
   margin: 0 auto;
@@ -529,7 +495,6 @@ a:hover, a:focus, input:hover {
 
   }
 }
-
 @media(min-width: 769px) {
   .contact-info {
     position: relative;
@@ -561,7 +526,7 @@ a:hover, a:focus, input:hover {
   }
   .contact-form {
     position: relative;
-    min-height: 400px;
+    min-height: 407px;
     padding: 100px 20px 0 100px;
     &:after {
       position: absolute;
@@ -579,28 +544,31 @@ a:hover, a:focus, input:hover {
 
   }
 }
-
 /*--------------------------contact-us-------------------------*/
-
 footer {
-  padding: 100px 5px;
   background-color: #222;
-  .footer-logo-block {
-    max-width: 380px;
-    color: #fff;
-    margin: 0 auto 70px;
-    img {
-      max-width: 100%;
+  .container {
+    padding: 100px 5px;
+    .footer-logo-block {
+      max-width: 380px;
+      color: #fff;
+      margin: 0 auto 70px;
+      img {
+        max-width: 100%;
+      }
     }
-  }
-  p {
-    text-align: center;
-    display: block;
-    font: 16px/40px "Amble Regular";
-    color: #e4e4e4;
-    span {
-      color: #d87843;
-      font: 16px/40px "Amble Bold";
+    p {
+      text-align: center;
+      display: block;
+      font: 16px/40px "Amble Regular";
+      color: #e4e4e4;
+      a {
+        color: #d87843;
+        font: 16px/40px "Amble Bold";
+        &:hover {
+          text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65)
+        }
+      }
     }
   }
 }

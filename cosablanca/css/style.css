@@ -54,37 +54,37 @@
   background: #fff;
   margin: 55px auto 45px;
 }
-/* line 29, ../sass/_header.scss */
+/* line 28, ../sass/_header.scss */
 .hero .hero-body p {
   font: 400 22px/30px 'Amble Regular';
   color: #fffefe;
   margin: 20px 0 50px;
 }
-/* line 35, ../sass/_header.scss */
+/* line 34, ../sass/_header.scss */
 .hero .arrow-down {
   display: block;
   text-align: center;
   margin: 0 auto;
 }
-/* line 39, ../sass/_header.scss */
+/* line 38, ../sass/_header.scss */
 .hero .arrow-down:hover {
   transform: scale(1.3);
 }
 
 @media (min-width: 769px) {
-  /* line 46, ../sass/_header.scss */
+  /* line 45, ../sass/_header.scss */
   .hero {
     min-height: 900px;
   }
-  /* line 48, ../sass/_header.scss */
+  /* line 47, ../sass/_header.scss */
   .hero .hero-body {
     top: 70%;
   }
-  /* line 50, ../sass/_header.scss */
+  /* line 49, ../sass/_header.scss */
   .hero .hero-body .hero-title {
     font: 400 48px/60px "BIG JOHN", sans-serif;
   }
-  /* line 53, ../sass/_header.scss */
+  /* line 52, ../sass/_header.scss */
   .hero .hero-body p {
     font: 400 22px/30px 'Amble Regular';
     color: #fffefe;
@@ -92,16 +92,7 @@
   }
 }
 /*-------------------------NAV---------------------------------*/
-/* line 65, ../sass/_header.scss */
-#hero .logo {
-  float: left;
-}
-/* line 67, ../sass/_header.scss */
-#hero .logo img {
-  padding-left: 10px;
-}
-
-/* line 72, ../sass/_header.scss */
+/* line 63, ../sass/_header.scss */
 #navbar {
   position: absolute;
   left: 0;
@@ -110,96 +101,110 @@
   width: 100%;
 }
 
-/* line 81, ../sass/_header.scss */
+/* line 71, ../sass/_header.scss */
 #navbar.default {
   position: fixed;
   top: 0;
   transition-duration: 2s;
 }
-/* line 85, ../sass/_header.scss */
+/* line 75, ../sass/_header.scss */
 #navbar.default .iconMenu {
   color: #d87843;
 }
 
-/* line 91, ../sass/_header.scss */
+/* line 80, ../sass/_header.scss */
 .iconMenu {
   float: left;
   padding-top: 15px;
   margin-left: 50px;
 }
 
-/* line 98, ../sass/_header.scss */
+/* line 87, ../sass/_header.scss */
 .nav li {
   float: left;
   margin-right: 35px;
   text-align: center;
   padding: 5px 10px;
 }
-/* line 103, ../sass/_header.scss */
+/* line 93, ../sass/_header.scss */
 .nav li a {
   text-decoration: none;
-  font: 900 18px 'Source Sans Pro', sans-serif;
-  color: #f2f2f2;
+  font: 900 18px 'Amble Regular', sans-serif;
+  color: #d87843;
   text-transform: uppercase;
 }
-/* line 109, ../sass/_header.scss */
+/* line 99, ../sass/_header.scss */
 .nav li:hover {
-  transition: 0.5s;
-  border-bottom: 3px solid #f2f2f2;
+  text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65);
+  transform: scale(1.1);
 }
 
-/* line 116, ../sass/_header.scss */
+/* line 106, ../sass/_header.scss */
 .itemsMenu li {
   display: inline;
   padding-right: 35px;
   width: 100%;
   margin: 0 auto;
 }
-/* line 121, ../sass/_header.scss */
+/* line 111, ../sass/_header.scss */
 .itemsMenu li a {
   padding: 5px 10px;
 }
-/* line 123, ../sass/_header.scss */
+/* line 113, ../sass/_header.scss */
 .itemsMenu li a:hover {
   transition: 0.5s;
 }
 
-/* line 131, ../sass/_header.scss */
+/* line 119, ../sass/_header.scss */
 .iconMenu {
   color: #fff;
   cursor: pointer;
   display: none;
 }
 
-/* line 140, ../sass/_header.scss */
+/* line 125, ../sass/_header.scss */
 .showitems {
   display: block !important;
   transition: 1s;
 }
 
-/* line 145, ../sass/_header.scss */
+/* line 130, ../sass/_header.scss */
 .iconMenu {
   display: block;
 }
 
-/* line 149, ../sass/_header.scss */
+/* line 134, ../sass/_header.scss */
 .itemsMenu {
+  position: absolute;
+  z-index: -1;
   display: none;
 }
 
-/* line 153, ../sass/_header.scss */
+/* line 140, ../sass/_header.scss */
 .itemsMenu li {
   display: block;
   padding: 5px;
 }
 
 @media (min-width: 1024px) {
-  /* line 165, ../sass/_header.scss */
+  /* line 146, ../sass/_header.scss */
+  .itemsMenu {
+    position: relative;
+    z-index: 1;
+  }
+  /* line 149, ../sass/_header.scss */
   .itemsMenu li {
     padding: 5px 10px;
     width: auto;
     float: right;
     margin-top: 15px;
+  }
+  /* line 154, ../sass/_header.scss */
+  .itemsMenu li a {
+    text-decoration: none;
+    font: 900 18px 'Amble Regular', sans-serif;
+    color: #d87843;
+    text-transform: uppercase;
   }
 }
 /*----------------------------------------------------------------------------------*/
@@ -369,14 +374,14 @@ a:hover {
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 /*---------------------GLOBAL STYLE------------------------*/
-/* line 9, ../sass/style.scss */
+/* line 8, ../sass/style.scss */
 .clearfix:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 13, ../sass/style.scss */
 .container {
   max-width: 1170px;
   margin-left: auto;
@@ -389,22 +394,26 @@ a:hover {
   clear: both;
 }
 
-/* line 19, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
 a:hover, a:focus, input:hover {
   transition: 0.2s;
 }
 
+/* line 19, ../sass/style.scss */
+.About, .selection, .quote, footer {
+  background: #fff;
+}
+
 /*--------------------------MIXIN-------------------------*/
-/*--------------------------COLOR-------------------------*/
 /*--------------------------HEADER-SECTION-STYLE-------------------------*/
-/* line 57, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .title {
   font: 400 30px/60px 'BIG JOHN';
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto 75px;
 }
-/* line 62, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .title:after {
   width: 86px;
   height: 2px;
@@ -414,7 +423,7 @@ a:hover, a:focus, input:hover {
   margin: 55px auto 45px;
 }
 
-/* line 67, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .main-text-block {
   max-width: 740px;
   margin: 110px auto;
@@ -423,18 +432,18 @@ a:hover, a:focus, input:hover {
 }
 
 /*--------------------------Introduction-------------------------*/
-/* line 75, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .introduction {
   background: #fff;
   padding: 120px 0 120px;
 }
-/* line 78, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 .introduction .intro-srcond-block {
   padding: 200px 0 0 0;
   height: 300px;
   background: url("../images/introdaction-bg.jpg") fixed center/cover no-repeat;
 }
-/* line 83, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .introduction .intro-btn {
   display: block;
   margin: 0 auto;
@@ -446,7 +455,7 @@ a:hover, a:focus, input:hover {
   text-align: center;
   border: 3px solid white;
 }
-/* line 43, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .introduction .intro-btn:hover {
   transition: 0.5s ease-in-out;
   background: #e29158;
@@ -454,51 +463,55 @@ a:hover, a:focus, input:hover {
   border: 3px solid #e29158;
   box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
 }
-/* line 50, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .introduction .intro-btn:active {
   transform: scale(0.9);
 }
 
 /*--------------------------PORTFOLIO-------------------------*/
-/* line 89, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .portfolio {
   padding-bottom: 80px;
   background: #fff;
 }
-/* line 92, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 .portfolio .controls {
   margin: 80px auto 85px;
   text-align: center;
 }
-/* line 95, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .portfolio .controls .filter {
   background: none;
   border: none;
   font: 400 18px/36px 'Slim Joe';
   cursor: pointer;
 }
-/* line 101, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .portfolio .controls .on {
   font: 400 18px/36px 'BIG JOHN';
   transition: 0.2s;
 }
-/* line 107, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .portfolio img {
   max-width: 100%;
 }
+/* line 102, ../sass/style.scss */
+.portfolio .container2 {
+  text-align: center;
+}
 
-/* line 113, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .container2 .mix {
   display: none;
 }
 
-/* line 119, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 .container2 .mix {
   position: relative;
   max-width: 370px;
   max-height: 420px;
 }
-/* line 123, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .container2 .mix .rolover {
   position: absolute;
   opacity: 0;
@@ -511,39 +524,39 @@ a:hover, a:focus, input:hover {
   outline: 8px solid #000;
   outline-offset: -8px;
 }
-/* line 134, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .container2 .mix .rolover:hover {
   opacity: 1;
 }
-/* line 137, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .container2 .mix .rolover p {
   margin: 160px auto 0;
 }
-/* line 141, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .container2 .mix .rolover p a {
   font: 18px/60px 'BIG JOHN';
   color: #fff;
 }
-/* line 144, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .container2 .mix .rolover p a:hover {
   color: #d87843;
   text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65);
 }
-/* line 150, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .container2 .mix .rolover span {
   display: block;
 }
-/* line 153, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 .container2 .mix .rolover span a {
   font: 18px/60px 'Amble Regular';
   color: #fff;
 }
-/* line 156, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .container2 .mix .rolover span a:hover {
   color: #d87843;
   text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65);
 }
-/* line 163, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .container2 .mix .rolover:after {
   margin: 30px auto 0;
   content: " ";
@@ -553,7 +566,7 @@ a:hover, a:focus, input:hover {
   background-color: #d87843;
 }
 
-/* line 175, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .portfolio .portfolio-btn {
   display: block;
   margin: 0 auto;
@@ -571,7 +584,7 @@ a:hover, a:focus, input:hover {
   color: #222;
   border-color: #222;
 }
-/* line 43, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .portfolio .portfolio-btn:hover {
   transition: 0.5s ease-in-out;
   background: #e29158;
@@ -579,20 +592,20 @@ a:hover, a:focus, input:hover {
   border: 3px solid #e29158;
   box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
 }
-/* line 50, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .portfolio .portfolio-btn:active {
   transform: scale(0.9);
 }
 
 /*--------------------------COTACT------------------------*/
-/* line 186, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .contact {
   padding: 200px 0 0 0;
   height: 300px;
   background: url("../images/contact-bg.jpg") center/cover no-repeat;
 }
 
-/* line 192, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 .contact-btn {
   display: block;
   margin: 0 auto;
@@ -604,7 +617,7 @@ a:hover, a:focus, input:hover {
   text-align: center;
   border: 3px solid white;
 }
-/* line 43, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .contact-btn:hover {
   transition: 0.5s ease-in-out;
   background: #e29158;
@@ -612,92 +625,87 @@ a:hover, a:focus, input:hover {
   border: 3px solid #e29158;
   box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
 }
-/* line 50, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .contact-btn:active {
   transform: scale(0.9);
 }
 
-/*--------------------------clients------------------------*/
-/* line 197, ../sass/style.scss */
+/*--------------------------Clients------------------------*/
+/* line 184, ../sass/style.scss */
 .clients {
   padding-top: 120px;
   background: #f4f4f4;
   height: 380px;
 }
-/* line 201, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .clients .title {
   margin-top: 0;
 }
-/* line 204, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 .clients .slide {
   transition: all .5s ease;
 }
-/* line 206, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .clients .slide:hover {
   transform: scale(0.8) rotate(10deg);
   cursor: pointer;
 }
 
 /*--------------------------About us------------------------*/
-/* line 214, ../sass/style.scss */
-.About, .selection, .quote, footer {
-  background: #fff;
-}
-
-/* line 218, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .About {
   padding: 100px 0 80px;
 }
 
-/* line 222, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .team-group {
   max-width: 1170px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 228, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .grid-team {
-  display: inline-block;
+  margin: 0 auto 30px;
   position: relative;
   max-width: 270px;
   max-height: 360px;
 }
-/* line 233, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .grid-team .team-layer {
   position: absolute;
   left: 31%;
   bottom: 0;
   text-align: center;
 }
-/* line 238, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .grid-team .team-layer span {
   display: block;
 }
-/* line 241, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 .grid-team .team-layer .name {
   font: 24px/36px 'BIG JOHN';
   color: #fff;
 }
-/* line 245, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 .grid-team .team-layer .position {
   font: 18px/36px 'Amble Bold';
   color: #fff;
 }
-/* line 250, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .grid-team .link {
   position: absolute;
   top: 15px;
   right: 15px;
   transition: all .5s ease;
 }
-/* line 255, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .grid-team .link:hover {
   transform: rotate(360deg);
   cursor: pointer;
 }
 
-/* line 264, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 .team-rollover {
   position: absolute;
   opacity: 0;
@@ -709,13 +717,13 @@ a:hover, a:focus, input:hover {
   text-align: center;
   border: 1px solid #222;
 }
-/* line 274, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 .team-rollover span {
   display: block;
   font: 24px/36px 'BIG JOHN';
   margin: 100px auto 35px;
 }
-/* line 278, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .team-rollover span:after {
   margin: 30px auto 0;
   content: " ";
@@ -724,7 +732,7 @@ a:hover, a:focus, input:hover {
   height: 2px;
   background-color: #222;
 }
-/* line 288, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 .team-rollover a {
   display: block;
   margin: 0 auto;
@@ -742,7 +750,7 @@ a:hover, a:focus, input:hover {
   color: #222;
   border-color: #222;
 }
-/* line 43, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .team-rollover a:hover {
   transition: 0.5s ease-in-out;
   background: #e29158;
@@ -750,22 +758,74 @@ a:hover, a:focus, input:hover {
   border: 3px solid #e29158;
   box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
 }
-/* line 50, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .team-rollover a:active {
   transform: scale(0.9);
 }
-/* line 298, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .team-rollover:hover {
   opacity: 1;
 }
 
+@media (min-width: 540px) {
+  /* line 278, ../sass/style.scss */
+  .grid-team {
+    width: 49.15254%;
+    float: left;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .grid-team:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .grid-team:nth-child(2n + 2) {
+    margin-left: 50.84746%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+@media (min-width: 960px) {
+  /* line 283, ../sass/style.scss */
+  .grid-team {
+    width: 23.72881%;
+    float: left;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .grid-team:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .grid-team:nth-child(4n + 2) {
+    margin-left: 25.42373%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .grid-team:nth-child(4n + 3) {
+    margin-left: 50.84746%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, ../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_gallery.scss */
+  .grid-team:nth-child(4n + 4) {
+    margin-left: 76.27119%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
 /*--------------------------VODIO-------------------------*/
-/* line 306, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 .presentation {
   height: 250px;
   padding: 250px 0 0 0;
 }
-/* line 311, ../sass/style.scss */
+/* line 291, ../sass/style.scss */
 .presentation .bg-presentation {
   position: fixed;
   top: 50%;
@@ -779,16 +839,16 @@ a:hover, a:focus, input:hover {
   transform: translateX(-50%) translateY(-50%);
 }
 
-/* line 325, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 .video-controls {
   position: relative;
   height: 100px;
 }
-/* line 328, ../sass/style.scss */
+/* line 307, ../sass/style.scss */
 .video-controls .play-video {
   display: none;
 }
-/* line 331, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 .video-controls .fa {
   color: #fff;
   position: absolute;
@@ -799,54 +859,54 @@ a:hover, a:focus, input:hover {
   opacity: .5;
   transition: all .5s ease;
 }
-/* line 340, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .video-controls .fa:hover {
   opacity: 1;
 }
 
 /*--------------------------selection-------------------------*/
-/* line 348, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 .selection {
   padding: 120px 0 100px;
 }
 
-/* line 353, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 .selection-block li {
   margin: 30px auto;
   text-align: center;
   max-width: 337px;
 }
-/* line 357, ../sass/style.scss */
+/* line 333, ../sass/style.scss */
 .selection-block li span {
   display: block;
   font: 24px/24px 'Amble Regular';
   margin: 40px auto 60px;
 }
-/* line 361, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .selection-block li span a {
   font: 24px/24px 'Amble Regular';
 }
-/* line 363, ../sass/style.scss */
+/* line 339, ../sass/style.scss */
 .selection-block li span a:hover {
   color: #d87843;
   text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65);
 }
-/* line 369, ../sass/style.scss */
+/* line 345, ../sass/style.scss */
 .selection-block li p {
   font: 16px/30px 'Amble Regular';
 }
-/* line 372, ../sass/style.scss */
+/* line 348, ../sass/style.scss */
 .selection-block li img {
   transition: all .5s ease;
 }
-/* line 374, ../sass/style.scss */
+/* line 350, ../sass/style.scss */
 .selection-block li img:hover {
   transform: scale(0.8) rotate(360deg);
   cursor: pointer;
 }
 
 @media (min-width: 769px) {
-  /* line 385, ../sass/style.scss */
+  /* line 360, ../sass/style.scss */
   .selection-block li {
     width: 32.20339%;
     float: left;
@@ -870,20 +930,20 @@ a:hover, a:focus, input:hover {
     margin-right: -100%;
     clear: none;
   }
-  /* line 389, ../sass/style.scss */
+  /* line 363, ../sass/style.scss */
   .selection-block .excellence-first {
     margin-top: -2px;
   }
 }
 /*--------------------------selection-------------------------*/
-/* line 396, ../sass/style.scss */
+/* line 369, ../sass/style.scss */
 .quote {
   padding: 200px 0 0 0;
   height: 300px;
   background: url("../images/quote-bg.jpg") center/cover no-repeat;
 }
 
-/* line 402, ../sass/style.scss */
+/* line 374, ../sass/style.scss */
 .contact-btn {
   display: block;
   margin: 0 auto;
@@ -895,7 +955,7 @@ a:hover, a:focus, input:hover {
   text-align: center;
   border: 3px solid white;
 }
-/* line 43, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .contact-btn:hover {
   transition: 0.5s ease-in-out;
   background: #e29158;
@@ -903,100 +963,100 @@ a:hover, a:focus, input:hover {
   border: 3px solid #e29158;
   box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
 }
-/* line 50, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .contact-btn:active {
   transform: scale(0.9);
 }
 
 /*--------------------------contact-us-------------------------*/
-/* line 407, ../sass/style.scss */
+/* line 378, ../sass/style.scss */
 .contact-us {
   background: #fff;
   padding-top: 120px;
 }
 
-/* line 412, ../sass/style.scss */
+/* line 382, ../sass/style.scss */
 .contact-info {
   text-align: center;
   padding: 0 5px 30px;
   background: #f2f2f2;
 }
-/* line 416, ../sass/style.scss */
+/* line 386, ../sass/style.scss */
 .contact-info h4 {
   font: 24px/60px 'BIG JOHN';
   margin: 0 auto 40px;
 }
-/* line 420, ../sass/style.scss */
+/* line 390, ../sass/style.scss */
 .contact-info p {
   font: italic 22px/40px 'Amble Light';
   margin-bottom: 30px;
 }
-/* line 424, ../sass/style.scss */
+/* line 394, ../sass/style.scss */
 .contact-info .social-block {
   display: block;
 }
-/* line 426, ../sass/style.scss */
+/* line 396, ../sass/style.scss */
 .contact-info .social-block a {
   display: inline-block;
   margin-right: 25px;
 }
-/* line 431, ../sass/style.scss */
+/* line 401, ../sass/style.scss */
 .contact-info .social-block .fa-facebook:hover {
   color: #3b5998;
   transform: scale(1.8) rotate(360deg);
 }
-/* line 436, ../sass/style.scss */
+/* line 405, ../sass/style.scss */
 .contact-info .social-block .fa-facebook:active {
   transform: scale(1.3);
 }
-/* line 441, ../sass/style.scss */
+/* line 410, ../sass/style.scss */
 .contact-info .social-block .fa-twitter:hover {
   color: #00aced;
   transform: scale(1.8) rotate(360deg);
 }
-/* line 445, ../sass/style.scss */
+/* line 414, ../sass/style.scss */
 .contact-info .social-block .fa-twitter:active {
   transform: scale(1.3);
 }
-/* line 450, ../sass/style.scss */
+/* line 419, ../sass/style.scss */
 .contact-info .social-block .fa-linkedin:hover {
   color: #007bb6;
   transform: scale(1.8) rotate(360deg);
 }
-/* line 454, ../sass/style.scss */
+/* line 423, ../sass/style.scss */
 .contact-info .social-block .fa-linkedin:active {
   transform: scale(1.3);
 }
-/* line 459, ../sass/style.scss */
+/* line 428, ../sass/style.scss */
 .contact-info .social-block .fa-vimeo:hover {
   color: #aad450;
   transform: scale(1.8) rotate(360deg);
 }
-/* line 463, ../sass/style.scss */
+/* line 432, ../sass/style.scss */
 .contact-info .social-block .fa-vimeo:active {
   transform: scale(1.3);
 }
-/* line 469, ../sass/style.scss */
+/* line 438, ../sass/style.scss */
 .contact-info .social-block .fa-behance:hover {
   color: #3b5998;
   transform: scale(1.8) rotate(360deg);
 }
-/* line 473, ../sass/style.scss */
+/* line 442, ../sass/style.scss */
 .contact-info .social-block .fa-behance:active {
   transform: scale(1.3);
 }
-/* line 478, ../sass/style.scss */
+/* line 446, ../sass/style.scss */
 .contact-info .social-block .fa {
   transition: all .5s ease;
 }
 
-/* line 485, ../sass/style.scss */
+/* line 451, ../sass/style.scss */
 .contact-form {
   padding: 30px 5px;
   margin: 0 auto;
   background: #e4e4e4;
 }
-/* line 489, ../sass/style.scss */
+/* line 455, ../sass/style.scss */
 .contact-form input {
   display: block;
   width: 300px;
@@ -1007,15 +1067,15 @@ a:hover, a:focus, input:hover {
   margin: 0px auto 30px;
   transition: all .5s ease;
 }
-/* line 498, ../sass/style.scss */
+/* line 464, ../sass/style.scss */
 .contact-form input:focus {
   border-bottom: 2px solid #d87843;
 }
-/* line 501, ../sass/style.scss */
+/* line 467, ../sass/style.scss */
 .contact-form input:hover {
   transform: rotate(1deg);
 }
-/* line 505, ../sass/style.scss */
+/* line 471, ../sass/style.scss */
 .contact-form textarea {
   width: 100%;
   height: 55px;
@@ -1025,15 +1085,15 @@ a:hover, a:focus, input:hover {
   border-bottom: 2px solid #afafaf;
   transition: all .5s ease;
 }
-/* line 513, ../sass/style.scss */
+/* line 479, ../sass/style.scss */
 .contact-form textarea:focus {
   border-bottom: 2px solid #d87843;
 }
-/* line 516, ../sass/style.scss */
+/* line 482, ../sass/style.scss */
 .contact-form textarea:hover {
   transform: rotate(1deg);
 }
-/* line 520, ../sass/style.scss */
+/* line 486, ../sass/style.scss */
 .contact-form input[type=button] {
   display: block;
   margin: 0 auto;
@@ -1052,7 +1112,7 @@ a:hover, a:focus, input:hover {
   font-size: 24px;
   margin-top: 40px;
 }
-/* line 43, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .contact-form input[type=button]:hover {
   transition: 0.5s ease-in-out;
   background: #e29158;
@@ -1060,13 +1120,13 @@ a:hover, a:focus, input:hover {
   border: 3px solid #e29158;
   box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
 }
-/* line 50, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .contact-form input[type=button]:active {
   transform: scale(0.9);
 }
 
 @media (min-width: 769px) {
-  /* line 534, ../sass/style.scss */
+  /* line 499, ../sass/style.scss */
   .contact-info {
     position: relative;
     min-height: 380px;
@@ -1080,7 +1140,7 @@ a:hover, a:focus, input:hover {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 540, ../sass/style.scss */
+  /* line 505, ../sass/style.scss */
   .contact-info:before {
     position: absolute;
     content: " ";
@@ -1092,7 +1152,7 @@ a:hover, a:focus, input:hover {
     background: #f2f2f2;
   }
 
-  /* line 551, ../sass/style.scss */
+  /* line 516, ../sass/style.scss */
   .contact-grid-right {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1103,24 +1163,24 @@ a:hover, a:focus, input:hover {
     padding-right: 0.83333%;
   }
 
-  /* line 555, ../sass/style.scss */
+  /* line 520, ../sass/style.scss */
   input[type=text] {
     float: left;
     max-width: 45%;
   }
 
-  /* line 559, ../sass/style.scss */
+  /* line 524, ../sass/style.scss */
   input[type=email] {
     max-width: 45%;
   }
 
-  /* line 562, ../sass/style.scss */
+  /* line 527, ../sass/style.scss */
   .contact-form {
     position: relative;
-    min-height: 400px;
+    min-height: 407px;
     padding: 100px 20px 0 100px;
   }
-  /* line 566, ../sass/style.scss */
+  /* line 531, ../sass/style.scss */
   .contact-form:after {
     position: absolute;
     content: " ";
@@ -1132,36 +1192,43 @@ a:hover, a:focus, input:hover {
     background: #e4e4e4;
   }
 
-  /* line 577, ../sass/style.scss */
+  /* line 542, ../sass/style.scss */
   input[type=button] {
     float: right;
   }
 }
 /*--------------------------contact-us-------------------------*/
-/* line 585, ../sass/style.scss */
+/* line 548, ../sass/style.scss */
 footer {
-  padding: 100px 5px;
   background-color: #222;
 }
-/* line 588, ../sass/style.scss */
-footer .footer-logo-block {
+/* line 550, ../sass/style.scss */
+footer .container {
+  padding: 100px 5px;
+}
+/* line 552, ../sass/style.scss */
+footer .container .footer-logo-block {
   max-width: 380px;
   color: #fff;
   margin: 0 auto 70px;
 }
-/* line 592, ../sass/style.scss */
-footer .footer-logo-block img {
+/* line 556, ../sass/style.scss */
+footer .container .footer-logo-block img {
   max-width: 100%;
 }
-/* line 596, ../sass/style.scss */
-footer p {
+/* line 560, ../sass/style.scss */
+footer .container p {
   text-align: center;
   display: block;
   font: 16px/40px "Amble Regular";
   color: #e4e4e4;
 }
-/* line 601, ../sass/style.scss */
-footer p span {
+/* line 565, ../sass/style.scss */
+footer .container p a {
   color: #d87843;
   font: 16px/40px "Amble Bold";
+}
+/* line 568, ../sass/style.scss */
+footer .container p a:hover {
+  text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65);
 }
