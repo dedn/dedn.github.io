@@ -136,3 +136,17 @@ select{
 border-radius:5px;
 }
 
+.answer{
+width: 800px; 
+margin: 30px auto;
+padding:10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius:10px;
+background:white;
+}
+.answer div{
+border:1px solid #ccc;
+padding:10px;
+border-radius:10px;
+}
