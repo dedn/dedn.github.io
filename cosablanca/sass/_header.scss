@@ -66,6 +66,13 @@
   right: 0;
   z-index: 9999;
   width: 100%;
+  .itemsMenu {
+    li {
+      a {
+        color: #fff;
+      }
+    }
+  }
 }
 
 #navbar.default {
@@ -74,6 +81,13 @@
   transition-duration: 2s;
   .iconMenu {
     color: #d87843;
+  }
+  .itemsMenu {
+    li {
+      a {
+        color: #d87843;
+      }
+    }
   }
 }
 
