@@ -1,0 +1,214 @@
+@import "../bourbon/bourbon";
+
+$color: #FF6347; //Theme skin
+$text_color: #888;
+$main_color: #222;
+$bg_light: #FAFAFA;
+
+@mixin kerning($kerning) {
+  letter-spacing: $kerning + px;
+}
+
+body {
+  color: $main_color;
+  @include kerning(1);
+}
+
+a {
+  color: $color;
+}
+
+p {
+  color: $text_color;
+}
+
+.color_element {
+  color: $color;
+}
+
+.color_bg {
+  background-color: $color;
+}
+
+/*My styles*/
+.color_border {
+  border-color: $color;
+}
+
+svg {
+  height: 60px;
+  width: 60px;
+  z-index: 100;
+  position: relative;
+  path {
+    fill: $text_color;
+
+  }
+}
+
+//Menu
+.toggle-mnu {
+  background-color: $main_color;
+}
+
+.top-mnu {
+  a {
+    @include kerning(5);
+    &:hover {
+      color: $color;
+      background-color: rgba(255, 255, 255, .1);
+      text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65);
+    }
+  }
+}
+
+.home-text {
+  p {
+    color: $bg_light;
+    @include kerning(5);
+  }
+}
+
+.bg-light {
+  background-color: $bg_light;
+}
+
+.bg-dark {
+  background-color: $main_color;
+  color: #fff;
+  .description {
+    &:after {
+      background-color: #fff;
+
+    }
+  }
+}
+
+.description {
+  @include kerning(5);
+  &:after {
+    background-color: $main_color;
+  }
+}
+
+body .main-footer,
+.s-about li {
+  color: $text_color;
+
+}
+
+section {
+  h3 {
+    @include kerning(3);
+    color: $text_color;
+  }
+}
+
+.s-about {
+  p:nth-child(even) {
+    color: $color;
+  }
+}
+
+.personal-name {
+  @include kerning(2);
+}
+
+.resume_container {
+  h3 {
+    color: $main_color;
+    @include kerning(1);
+    font-size: 16px;
+    font-weight: 400;
+
+  }
+}
+
+.resume-item {
+  .year {
+    background: $color;
+    color: #fff;
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+
+.resume-description {
+  @include kerning(2);
+}
+
+.filter-block-control {
+  li {
+    @include kerning(2);
+    color: $text_color;
+  }
+  .active {
+    color: #fff;
+    border-bottom: 1px solid $color;
+  }
+
+}
+
+#portfolio-grid .portfolio-item .port-item-cont {
+  a {
+    border-color: $color;
+    color: $color;
+  }
+}
+
+.port-item-cont {
+  p {
+    @include kerning(2);
+  }
+}
+
+.contact-icons {
+  color: $color;
+}
+
+form {
+  input,
+  textarea {
+    border: 1px solid $color;
+  }
+}
+
+form {
+  input:focus,
+  textarea:focus {
+    border: 1px solid $color;
+    @include kerning(2);
+  }
+}
+form {
+  input,
+  textarea{
+      @include kerning(2);
+  }
+}
+
+
+.main-form button  {
+      background-color: $color;
+    @include kerning(2);
+
+}
+
+.social-wrap{
+  a{
+    color: $color;
+  }
+}
+//socil icon color
+.main-footer {
+
+  .social-wrap {
+   a{
+     color: $color;
+   }
+  }
+}
+.form-group{
+  @include kerning(2);
+  color: $text_color;
+}
