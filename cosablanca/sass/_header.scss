@@ -67,6 +67,7 @@
   z-index: 9999;
   width: 100%;
   .itemsMenu {
+    display: block;
     li {
       a {
         color: #fff;
@@ -80,6 +81,7 @@
   top: 0;
   transition-duration: 2s;
   .iconMenu {
+    display: block;
     color: #d87843;
   }
   .itemsMenu {
