@@ -12,12 +12,15 @@
   display: block;
   clear: both;
 }
+
 .container {
   @include container;
 }
+
 a:hover, a:focus, input:hover {
   transition: 0.2s;
 }
+
 $bg-color: #ececec;
 $h2-color: #black;
 
@@ -68,6 +71,7 @@ h4 {
   font: 700 20px/28px "Relevey";
   text-transform: uppercase;
 }
+
 /*-----------------------------------------------ABOUT--------------------*/
 .about {
   padding: 35px 0 30px;
@@ -92,7 +96,7 @@ h4 {
       }
       img {
         margin-bottom: 40px;
-        &:hover{
+        &:hover {
           transform: scale(1.1);
           cursor: pointer;
           transition: 0.5s;
@@ -177,6 +181,7 @@ h4 {
     }
   }
 }
+
 @media(min-width: 769px) {
   .main-info {
     padding: gutter();
@@ -221,7 +226,7 @@ h4 {
       margin: 20px auto;
       img {
         text-align: center;
-        &:hover{
+        &:hover {
           transform: scale(1.1);
           cursor: pointer;
           transition: 0.5s;
@@ -266,6 +271,7 @@ h4 {
     }
   }
 }
+
 /*----------------------------------BLOG----------------------------*/
 .blog {
   padding: 30px 0;
@@ -330,6 +336,7 @@ h4 {
     max-height: 480px;
   }
 }
+
 @media(min-width: 769px) {
   .blog {
     .flex-container {
@@ -344,6 +351,7 @@ h4 {
     }
   }
 }
+
 /*------------------------------PRICE----------------------------------------*/
 .pricing {
   position: relative;
@@ -421,6 +429,7 @@ h4 {
     @include triangle;
   }
 }
+
 @media(min-width: 960px) {
   .price-container {
     width: 920px;
