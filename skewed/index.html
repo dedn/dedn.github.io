@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skewed</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css"/>
+<body>
+<div class="loader">
+    <div class="loader_inner"></div>
+</div>
+<div class="wrapper">
+    <header>
+        <div class="container">
+            <h1><a href="#home" class="logo"><img src="images/logo.png" alt="Main logo"></a></h1>
+            <div class="button-container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#about-id">About us</a></li>
+                    <li><a href="#video-id">Video</a></li>
+                    <li><a href="#team-id">Team</a></li>
+                    <li><a href="#paralax-id">Parallax</a></li>
+                    <li><a href="#principles-id">Principals</a></li>
+                    <li><a href="#porfolio-id">Portfolio</a></li>
+                    <li><a href="#achievements-id">Achievements</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero"  id="home">
+        <div class="container">
+            <ul class="hero-slider">
+                <li class="slide slide-1">
+                    <h1 class="hero-title fadeIn wow">
+                        Skewed 1 is a <span class="mark">slightly wonky</span> landing page template
+                    </h1>
+                </li>
+                <li class="slide slide-2 fadeIn wow">
+                    <h1 class="hero-title">
+                        Skewed 2 is a <span class="mark">slightly wonky</span> landing page template
+                    </h1>
+                </li>
+                <li class="slide slide-3 fadeIn wow">
+                    <h1 class="hero-title">
+                        Skewed 3 is a <span class="mark">slightly wonky</span> landing page template
+                    </h1>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="about" id="about-id">
+        <div class="container">
+            <div class="section-info">
+                <h2 class="section-title">About Us</h2>
+                <span class="section-description">Dolor sit amet, consectetur adipiscing elit.</span>
+                <p class="fadeInLeft wow" data-wow-delay="1s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum enim diam, at condimentum purus facilisis in. Aenean convallis tempor nulla, in elementum odio ornare vitae. In faucibus tempus ante vitae pretium. Ut facilisis elit sapien, sed suscipit ex auctor vitae. </p>
+                <a href="#" class="find-more-btn">Find out more</a>
+            </div>
+            <img class="fadeInRight wow" data-wow-delay="1.2s" src="images/about-us-photo.jpg" alt="About image">
+        </div>
+    </section>
+    <section class="presentation" id="video-id">
+        <div class="container">
+            <h2 class="section-title">Video Presentation</h2>
+            <span class="section-description">The button below can stop video. Just try :)</span>
+            <div class="video-controls tada wow " data-wow-iteration="3" data-wow-delay="2s">
+                <img src="images/play-btn.png" onclick="playVid()" class="play-video" alt="play-video">
+                <img src="images/pause-btn.png" onclick="pauseVid()" class="pause-video" alt="pause-video">
+            </div>
+            <video autoplay loop id="video" class="bg-presentation">
+                <source src="videos/main-video.webm" type="video/webm">
+                <source src="videos/main-video.ogv" type="video/ogg">
+                <source src="videos/main-video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <section class="team" id="team-id">
+        <div class="container">
+            <h2 class="section-title">Meet The Team</h2>
+            <span class="section-description">Dolor sit amet, consectetur adipiscing elit.</span>
+            <ul class="team-list">
+                <li class="flipInX wow" data-wow-duration="1.5s">
+                    <a href="images/team-1.jpg" class="popup"><img src="images/team-1.jpg" alt="Teammate-photo-1" class="teammate-photo"></a>
+                    <h3>Jonathan Smith</h3>
+                    <span>Designer</span>
+                </li>
+                <li class="flipInX wow" data-wow-duration="1.5s" data-wow-delay=".3s">
+                    <a href="images/team-2.jpg" class="popup"> <img src="images/team-2.jpg" alt="Teammate-photo-1" class="teammate-photo"></a>
+                    <h3>Jonathan Smith</h3>
+                    <span>Designer</span>
+                </li>
+                <li class="flipInX wow" data-wow-duration="1.5s" data-wow-delay=".6s">
+                    <a href="images/team-3.jpg" class="popup"> <img src="images/team-3.jpg" alt="Teammate-photo-1" class="teammate-photo"></a>
+                    <h3>Jonathan Smith</h3>
+                    <span>Designer</span>
+                </li>
+                <li class="flipInX wow" data-wow-duration="1.5s" data-wow-delay=".9s">
+                    <a href="images/team-4.jpg" class="popup"><img src="images/team-4.jpg" alt="Teammate-photo-1" class="teammate-photo"></a>
+                    <h3>Jonathan Smith</h3>
+                    <span>Designer</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="parallax" id="paralax-id">
+        <div class="container">
+            <h2 class="section-title">Here’s Some Parallax</h2>
+            <span class="section-description">(If you’re into that kind of thing)</span>
+            <p class="fadeInLeft wow" data-wow-delay=".5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum enim diam, at condimentum purus facilisis in. Aenean convallis tempor nulla, in elementum odio ornare vitae. In faucibus tempus ante vitae pretium. Ut facilisis elit sapien, sed suscipit ex auctor vitae. </p>
+            <a href="#" class="find-more-btn">Find out more</a>
+        </div>
+        <img class="parallax-bg" src="images/parallax.jpg" alt="Parallax img">
+    </section>
+    <section class="principles" id="principles-id">
+        <div class="container">
+            <div class="section-info">
+                <h2 class="section-title">Our Principles</h2>
+                <span class="section-description">Dolor sit amet, consectetur adipiscing elit.</span>
+                <p class="fadeInLeft wow" data-wow-delay="1s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum enim diam, at condimentum purus facilisis in. Aenean convallis tempor nulla, in elementum odio ornare vitae. In faucibus tempus ante vitae pretium. Ut facilisis elit sapien, sed suscipit ex auctor vitae. </p>
+                <a href="#" class="find-more-btn">Find out more</a>
+            </div>
+            <img class="fadeInLeft wow" data-wow-delay="1.2s" src="images/principles-photo.jpg" alt="About image">
+        </div>
+    </section>
+    <section class="portfolio" id="porfolio-id">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <span class="section-description">Some of our latest work</span>
+            <ul class="portfolio-list">
+                <li class="portfolio-item" >
+                    <img src="images/project-1.jpg" alt="Alt">
+                    <div class="rollover">
+                        <a href="#" class="popup-content"><span class="fa fa-search"></span></a>
+                    </div>
+                    <div class="hidden">
+                        <div class="port-descr">
+                            <div class="modal-box-content ">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate,
+                                    dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores
+                                    sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                                <img src="images/project-1.jpg" alt="Alt"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li data-wow-delay=".2s" class="portfolio-item">
+                    <img src="images/project-2.jpg" alt="Alt">
+                    <div class="rollover">
+                        <a href="#" class="popup-content"><span class="fa fa-search"></span></a>
+                    </div>
+                    <div class="hidden">
+                        <div class="port-descr">
+                            <div class="modal-box-content ">
+                                <h3>Заголовок работы</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate,
+                                    dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores
+                                    sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                                <img src="images/project-2.jpg" alt="Alt"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li data-wow-delay=".4s" class="portfolio-item">
+                    <img src="images/project-3.jpg" alt="Alt">
+                    <div class="rollover">
+                        <a href="#" class="popup-content"><span class="fa fa-search"></span></a>
+                    </div>
+                    <div class="hidden">
+                        <div class="port-descr">
+                            <div class="modal-box-content ">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate,
+                                    dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores
+                                    sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                                <img src="images/project-3.jpg" alt="Alt"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <img src="images/project-4.jpg" alt="Alt">
+                    <div class="rollover">
+                        <a href="#" class="popup-content"><span class="fa fa-search"></span></a>
+                    </div>
+                    <div class="hidden">
+                        <div class="port-descr">
+                            <div class="modal-box-content ">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate,
+                                    dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores
+                                    sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                                <img src="images/project-4.jpg" alt="Alt"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li data-wow-delay=".2s" class="portfolio-item">
+                    <img src="images/project-5.jpg" alt="Alt">
+                    <div class="rollover">
+                        <a href="#" class="popup-content"><span class="fa fa-search"></span></a>
+                    </div>
+                    <div class="hidden">
+                        <div class="port-descr">
+                            <div class="modal-box-content ">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate,
+                                    dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores
+                                    sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                                <img src="images/project-5.jpg" alt="Alt"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li data-wow-delay=".4s" class="portfolio-item">
+                    <img src="images/project-6.jpg" alt="Alt">
+                    <div class="rollover">
+                        <a href="#" class="popup-content"><span class="fa fa-search"></span></a>
+                    </div>
+                    <div class="hidden">
+                        <div class="port-descr">
+                            <div class="modal-box-content ">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate,
+                                    dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores
+                                    sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                                <img src="images/project-6.jpg" alt="Alt"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <img src="images/project-7.jpg" alt="Alt">
+                    <div class="rollover">
+                        <a href="#" class="popup-content"><span class="fa fa-search"></span></a>
+                    </div>
+                    <div class="hidden">
+                        <div class="port-descr">
+                            <div class="modal-box-content ">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate,
+                                    dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores
+                                    sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                                <img src="images/project-7.jpg" alt="Alt"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li data-wow-delay=".2s" class="portfolio-item">
+                    <img src="images/project-8.jpg" alt="Alt">
+                    <div class="rollover">
+                        <a href="#" class="popup-content"><span class="fa fa-search"></span></a>
+                    </div>
+                    <div class="hidden">
+                        <div class="port-descr">
+                            <div class="modal-box-content ">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate,
+                                    dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores
+                                    sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                                <img src="images/project-8.jpg" alt="Alt"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li data-wow-delay=".4s" class="portfolio-item">
+                    <img src="images/project-9.jpg" alt="Alt">
+                    <div class="rollover">
+                        <a href="#" class="popup-content"><span class="fa fa-search"></span></a>
+                    </div>
+                    <div class="hidden">
+                        <div class="port-descr">
+                            <div class="modal-box-content ">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate,
+                                    dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores
+                                    sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                                <img src="images/project-9.jpg" alt="Alt"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="portfolio-item" >
+                    <img src="images/project-10.jpg" alt="Porftolio img 1">
+                    <div class="rollover">
+                        <a href="#" class="popup-content"><span class="fa fa-search"></span></a>
+                    </div>
+                    <div class="hidden">
+                        <div class="port-descr">
+                            <div class="modal-box-content ">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate,
+                                    dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores
+                                    sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                                <img src="images/project-10.jpg" alt="Alt"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li data-wow-delay=".2s" class="portfolio-item">
+                    <img src="images/project-11.jpg" alt="Porftolio img 1">
+                    <div class="rollover">
+                        <a href="#" class="popup-content"><span class="fa fa-search"></span></a>
+                    </div>
+                    <div class="hidden">
+                        <div class="port-descr">
+                            <div class="modal-box-content ">
+                                <h3>Tittle</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate,
+                                    dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores
+                                    sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                                <img src="images/project-11.jpg" alt="Alt"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li data-wow-delay=".4s" class="portfolio-item">
+                    <img src="images/project-12.jpg" alt="Porftolio img 1">
+                    <div class="rollover">
+                        <a href="#" class="popup-content"><span class="fa fa-search"></span></a>
+                    </div>
+                    <div class="hidden">
+                        <div class="port-descr">
+                            <div class="modal-box-content ">
+                                <h3>Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate,
+                                    dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores
+                                    sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                                <img src="images/project-12.jpg" alt="Alt"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="achievements" id="achievements-id">
+        <div class="container">
+            <h2 class="section-title">Our Achievements</h2>
+            <span class="section-description">We keep track of this stuff!</span>
+            <ul class="achievements-list">
+                <li>
+                    <span class="fa fa-flag-o"></span>
+                    <span class="counter-1"></span>
+                    <span class="caption">Projects Completed</span>
+                </li>
+                <li data-wow-delay=".2s">
+                    <span class="fa fa-smile-o"></span>
+                    <span class="counter-2"></span>
+                    <span class="caption">Happy Clients</span>
+                </li>
+                <li data-wow-delay=".4s">
+                    <span class="fa fa-lightbulb-o"></span>
+                    <span class="counter-3"></span>
+                    <span class="caption">Problems Solved</span>
+                </li>
+                <li data-wow-delay=".6s">
+                    <span class="fa fa-moon-o"></span>
+                    <span class="counter-4"></span>
+                    <span class="caption">All-nighters Pulled</span>
+                </li>
+            </ul>
+            <div class="quotations">
+                <ul class="quotations-slider">
+                    <li class="slide slide-1">
+                        <q>1 Lorem ipsum dolor sit amet, consectetur <span class="mark">adipiscing elit</span>. Fusce tristique finibus felis, eget molestie eros placerat vitae. Ut ut ipsum augue.</q>
+                        <span class="author">- Alfred Johnson, CEO Youtech</span>
+                    </li>
+                    <li class="slide slide-2">
+                        <q>2 Lorem ipsum dolor sit amet, consectetur <span class="mark">adipiscing elit</span>. Fusce tristique finibus felis, eget molestie eros placerat vitae. Ut ut ipsum augue.</q>
+                        <span class="author">- Alfred Johnson, CEO Youtech</span>
+                    </li>
+                    <li class="slide slide-3">
+                        <q>3 Lorem ipsum dolor sit amet, consectetur <span class="mark">adipiscing elit</span>. Fusce tristique finibus felis, eget molestie eros placerat vitae. Ut ut ipsum augue.</q>
+                        <span class="author">- Alfred Johnson, CEO Youtech</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter" id="newsletter-id">
+        <div class="container">
+            <h2 class="section-title">Keep Up To Date</h2>
+            <span class="section-description">Subscribe to our mailing list</span>
+            <form action="#" class="newsletter-form">
+                <input class="name-input" type="text" data-wow-delay=".5s" name="name" placeholder="Your name">
+                <input class="email-input" data-wow-delay=".7s" type="email" name="email" placeholder="Your email">
+                <input class="submit" data-wow-delay=".9s" type="submit" name="submit" value="Subscribe">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+            <span class="copyright">Copyright 2015 <a href="#" class="mark">Skewed</a>. All Rights Reserved </span>
+        </div>
+    </footer>
+</div>
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/jquery.simpleslider.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+<script src="js/script.js"></script>
+</body>
