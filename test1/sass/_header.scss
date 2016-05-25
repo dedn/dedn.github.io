@@ -1,5 +1,5 @@
 $yellow: #f7cc4b;
-
+//-------------------------------------HEADER------------------------------------//
 header {
   position: fixed;
   width: 100%;
@@ -38,7 +38,7 @@ header {
 }
 
 @media (max-width: 810px) {
-  .button_container {
+  .button-container {
     position: fixed;
     top: 37px;
     right: 30px;
@@ -47,11 +47,9 @@ header {
     cursor: pointer;
     z-index: 100;
     transition: opacity .25s ease;
-
     &:hover {
       opacity: .7;
     }
-
     &.active {
       opacity: .5;
       .top {

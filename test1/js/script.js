@@ -1,9 +1,12 @@
-$('#toggle').click(function() {
+$('#toggle').click(function () {
     $(this).toggleClass('active');
     $('nav').toggleClass('open');
 });
 
-$(document).ready(function(){
+$(".main-nav a, h1 a").mPageScroll2id();
+
+
+$(document).ready(function () {
     var options = {
         //slides: '.slide', // The name of a slide in the slidesContainer
         swipe: false,    // Add possibility to Swipe
@@ -28,6 +31,43 @@ $(document).ready(function(){
 
     $(".hero-slider").simpleSlider(options);
     $(".quotations-slider").simpleSlider(options1);
+
+    $(".popup-content").magnificPopup({
+        type: "inline",
+        midClick: true,
+        closeOnContentClick: true,
+        closeBtnInside: false,
+        mainClass: 'mfp-no-margins mfp-with-zoom', image: {
+            verticalFit: true
+        },
+        zoom: {
+            enabled: true,
+            duration: 600
+        }
+    });
+
+    $(".popup").magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        closeBtnInside: false,
+        mainClass: 'mfp-no-margins mfp-with-zoom', image: {
+            verticalFit: true
+        },
+        zoom: {
+            enabled: true,
+            duration: 600
+        }
+
+    });
+
+
+
+//Id для работы popup
+    $(".portfolio-item").each(function (i) {
+        $(this).find("a").attr("href", "#work_" + i);
+        $(this).find(".port-descr").attr("id", "work_" + i);
+    });
+
 });
 
 
@@ -36,10 +76,10 @@ var block = $('.parallax');
 var positionBlock = block.position().top;
 var parallaxImg = $(".parallax-bg");
 
-$(window).scroll(function() {
+$(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
-    if (scroll >= positionBlock - 600) {
+    if (scroll >= positionBlock - 800) {
         parallaxImg.css("display", "block");
     } else {
         parallaxImg.css("display", "none");
@@ -47,17 +87,16 @@ $(window).scroll(function() {
 });
 
 
-
 //play/pause to video
 var video = document.getElementById("video");
 
-$( ".pause-video" ).click(function() {
+$(".pause-video").click(function () {
     $(this).fadeOut(300);
     $(".play-video").fadeIn(300).css("display", "block");
 });
 
-$( ".play-video" ).click(function() {
-    $( this ).fadeOut(300);
+$(".play-video").click(function () {
+    $(this).fadeOut(300);
     $(".pause-video").fadeIn(300).css("display", "block");
 });
 
@@ -69,21 +108,20 @@ function pauseVid() {
 }
 
 
-
 //animation for counters
-function animationCounters(value, counter){
+function animationCounters(value, counter) {
     $({someValue: 0}).animate({someValue: value}, {
         duration: 7000,
-        easing:'swing', // can be anything
-        step: function() { // called on every step
+        easing: 'swing', // can be anything
+        step: function () { // called on every step
             // Update the element's text with rounded-up value:
             $(counter).text(commaSeparateNumber(Math.round(this.someValue)));
         }
     });
 }
 
-function commaSeparateNumber(val){
-    while (/(\d+)(\d{3})/.test(val.toString())){
+function commaSeparateNumber(val) {
+    while (/(\d+)(\d{3})/.test(val.toString())) {
         val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
     }
     return val;
@@ -93,7 +131,7 @@ function commaSeparateNumber(val){
 //animation counter
 var parentPos = Math.round($('.achievements').offset().top);
 //alert(parentPos);
-$(window).scroll(function() {
+$(window).scroll(function () {
     var scroll = $(window).scrollTop();
     console.log(scroll + " parent: " + parentPos);
     if (scroll >= parentPos - 120) {
@@ -112,14 +150,28 @@ new WOW().init();
 
 $(addAnimClasses)
 
-function addAnimClasses(){
+function addAnimClasses() {
     $('.section-title').addClass('slideInDown wow');
-    $('.section-description').addClass('zoomIn wow').attr('data-wow-delay','.5s');
-    $('.find-more-btn').addClass('fadeInDown wow').attr('data-wow-delay','1s');
-    $('.portfolio-list li').addClass('fadeInDown wow').attr('data-wow-offset','250');
-    $('.achievements-list li').addClass('fadeInLeft wow').attr('data-wow-offset','250').attr('data-wow-delay','.5s');
-    $('.quotations-slider').addClass('bounceInUp wow').attr('data-wow-duration','1.2s').attr('data-wow-delay','1s');
-    $('#quotations-controls').addClass('fadeIn wow').attr('data-wow-delay','1s');
+    $('.section-description').addClass('zoomIn wow').attr('data-wow-delay', '.5s');
+    $('.find-more-btn').addClass('fadeInDown wow').attr('data-wow-delay', '1s');
+    $('.portfolio-list li').addClass('fadeInDown wow').attr('data-wow-offset', '250');
+    $('.achievements-list li').addClass('fadeInLeft wow').attr('data-wow-offset', '250').attr('data-wow-delay', '.5s');
+    $('.quotations-slider').addClass('bounceInUp wow').attr('data-wow-duration', '1.2s').attr('data-wow-delay', '1s');
+    $('#quotations-controls').addClass('fadeIn wow').attr('data-wow-delay', '1s');
     $('.newsletter-form input').addClass('fadeIn wow');
 
 }
+
+
+
+
+//Preloader
+$(window).load(function () {
+    $(".loader_inner").fadeOut();
+    $(".loader").delay(400).fadeOut("slow");
+
+
+});
+
+
+
