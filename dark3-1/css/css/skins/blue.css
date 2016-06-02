@@ -1,0 +1,130 @@
+body {
+  color: #222;
+  letter-spacing: 1px; }
+
+a {
+  color: 2EA2CC; }
+
+p {
+  color: #888; }
+
+.color_element {
+  color: 2EA2CC; }
+
+.color_bg {
+  background-color: 2EA2CC; }
+
+/*My styles*/
+.color_border {
+  border-color: 2EA2CC; }
+
+svg {
+  height: 60px;
+  width: 60px;
+  z-index: 100;
+  position: relative; }
+  svg path {
+    fill: #888; }
+
+.toggle-mnu {
+  background-color: #222; }
+
+.top-mnu a {
+  letter-spacing: 5px; }
+  .top-mnu a:hover {
+    color: 2EA2CC;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65); }
+
+.home-text p {
+  color: #FAFAFA;
+  letter-spacing: 5px; }
+
+.bg-light {
+  background-color: #FAFAFA; }
+
+.bg-dark {
+  background-color: #222;
+  color: #fff; }
+  .bg-dark .description:after {
+    background-color: #fff; }
+
+.description {
+  letter-spacing: 5px; }
+  .description:after {
+    background-color: #222; }
+
+body .main-footer,
+.s-about li {
+  color: #888; }
+
+section h3 {
+  letter-spacing: 3px;
+  color: #888; }
+
+.s-about p:nth-child(even) {
+  color: 2EA2CC; }
+
+.personal-name {
+  letter-spacing: 2px; }
+
+.resume_container h3 {
+  color: #222;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400; }
+
+.resume-item .year {
+  background: 2EA2CC;
+  color: #fff;
+  font-style: italic;
+  font-weight: 400; }
+
+.resume-description {
+  letter-spacing: 2px; }
+
+.filter-block-control li {
+  letter-spacing: 2px;
+  color: #888; }
+.filter-block-control .active {
+  color: #fff;
+  border-bottom: 1px solid 2EA2CC; }
+
+#portfolio-grid .portfolio-item .port-item-cont a {
+  border-color: 2EA2CC;
+  color: 2EA2CC; }
+
+.port-item-cont p {
+  letter-spacing: 2px; }
+
+.contact-icons {
+  color: 2EA2CC; }
+
+form input,
+form textarea {
+  border: 1px solid 2EA2CC; }
+
+form input:focus,
+form textarea:focus {
+  border: 1px solid 2EA2CC;
+  letter-spacing: 2px; }
+
+form input,
+form textarea {
+  letter-spacing: 2px; }
+
+.main-form button {
+  background-color: 2EA2CC;
+  letter-spacing: 2px; }
+
+.social-wrap a {
+  color: 2EA2CC; }
+
+.main-footer .social-wrap a {
+  color: 2EA2CC; }
+
+.form-group {
+  letter-spacing: 2px;
+  color: #888; }
+
+/*# sourceMappingURL=blue.css.map */

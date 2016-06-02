@@ -1,0 +1,63 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 335px;
+  position: relative;
+  line-height: 1.42857;
+  -webkit-font-smoothing: antialised; }
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red; }
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green; }
+
+.hidden {
+  display: none; }
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+/*------------------------------------MIXIN------------------------------*/
+/*------------------------------------COLOR------------------------------*/
+a:hover, a:focus, input:hover, li:active {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+/*------------------------------------HEADER------------------------------*/
+/*------------------------------------Preloader----------------------------*/
+.loader {
+  background: none repeat scroll 0 0 white;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+  .loader .loader_inner {
+    background-image: url("../images/preloader.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    left: 50%;
+    top: 50%;
+    position: absolute; }
+
+/*------------------------------------NAV----------------------------*/
+a svg:hover
+a svg:hover {
+  fill: #111; }
+
+/*# sourceMappingURL=main.css.map */

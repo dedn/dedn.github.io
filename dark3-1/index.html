@@ -1,486 +1,1840 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>DARK</title>
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" type="text/css"
-          href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic'
-          rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="bower_components/Slidebars/dist/slidebars.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <meta charset="utf-8"/>
+    <title>NatGeo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/animate/animate.min.css">
 </head>
-<div id="top">
-    <!-- Navbar-Mobile -->
-    <nav class="navbar navbar-default navbar-fixed-top sb-slide" role="navigation">
-        <!-- Left Control -->
-        <div class="sb-toggle-left navbar-left">
-            <div class="iconMenu"><i class="fa fa-bars fa-3x"></i></div>
-        </div><!-- /.sb-control-left -->
-        <div class="container">
-            <!-- Logo -->
-            <div id="logo" class="navbar-left">
-                <div class="logo">
-                    <a href="#"><img src="images/logo-1.png" alt="Slidebars Logo"></a>
-                    <span class="line"></span>
-                </div>
-            </div><!-- /#logo -->
-
-        </div>
-    </nav>
-    </div>
-    <!-- HEADER-DESCTOP-->
-    <section id="hero-desctop" class="hero-desctop">
-        <header id="navbar-desctop" class="navbar-desctop clearfix">
-            <div class="container clearfix">
-                <div id="logo-desktop" class="logo-desktop">
-                    <div>
-                        <a href="#"><img src="images/logo-1.png" alt="Slidebars Logo"></a>
-                        <span class="line"></span>
+<body>
+<div class="loader">
+    <div class="loader_inner"></div>
+</div>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-2 col-xs-6">
+                <h1><a href="#" class="logo"><img src="images/national-geographic.png" alt="Main logo"></a></h1>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <form>
+                    <div class="search-container">
+                        <input type="search" name="Search" placeholder="Search" class="search-field">
+                        <a class="categories" href="#">All Categories <i class="fa fa-caret-down"
+                                                                         aria-hidden="true"></i></a>
+                        <input type="submit" value="">
                     </div>
+                </form>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-6">
+                <div class="sign-form-container">
+                    <ul>
+                        <li class="sing-up">
+                            <a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>
+                                <span class="sign-form-text">Sing Up</span>
+                            </a>
+                        </li>
+                        <li class="login">
+                            <a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>
+                                <span class="sign-form-text">Login</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="nav">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Лучшее</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Cтатьи</a></li>
-                    <li><a href="#">Форум</a></li>
-                    <li><a href="#">Сервера</a></li>
-                    <li><a href="#">Файлы</a></li>
-                    <li><a href="#">Читы</a></li>
-                    <li><a href="#">Клубы</a></li>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#">
+                            <svg
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                    xmlns:svg="http://www.w3.org/2000/svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                    id="svg4136"
+                                    version="1.1"
+                                    inkscape:version="0.91 r13725"
+                                    width="33.75"
+                                    height="30"
+                                    viewBox="0 0 33.75 30"
+                                    sodipodi:docname="home.svg">
+                                <metadata
+                                        id="metadata4142">
+                                    <rdf:RDF>
+                                        <cc:Work
+                                                rdf:about="">
+                                            <dc:format>image/svg+xml</dc:format>
+                                            <dc:type
+                                                    rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                            <dc:title></dc:title>
+                                        </cc:Work>
+                                    </rdf:RDF>
+                                </metadata>
+                                <defs
+                                        id="defs4140"/>
+                                <sodipodi:namedview
+                                        pagecolor="#ffffff"
+                                        bordercolor="#666666"
+                                        borderopacity="1"
+                                        objecttolerance="10"
+                                        gridtolerance="10"
+                                        guidetolerance="10"
+                                        inkscape:pageopacity="0"
+                                        inkscape:pageshadow="2"
+                                        inkscape:window-width="1858"
+                                        inkscape:window-height="1058"
+                                        id="namedview4138"
+                                        showgrid="false"
+                                        fit-margin-top="0"
+                                        fit-margin-left="0"
+                                        fit-margin-right="0"
+                                        fit-margin-bottom="0"
+                                        inkscape:zoom="3.6791667"
+                                        inkscape:cx="17.687749"
+                                        inkscape:cy="-33.750104"
+                                        inkscape:window-x="54"
+                                        inkscape:window-y="-8"
+                                        inkscape:window-maximized="1"
+                                        inkscape:current-layer="svg4136"/>
+                                <g
+                                        id="g4308"
+                                        transform="translate(0.625,0)">
+                                    <path
+                                            style="fill:#fbfbfb"
+                                            d="m 0,22.77027 0,-7.22973 12.1875,0.229635 c 6.703125,0.126299 12.890625,0.285927 13.75,0.35473 L 27.5,16.25 l 0,4.375 0,4.375 -3.75,0 L 20,25 20,21.352574 20,17.705148 11.247184,17.290074 2.494368,16.875 2.497184,23.4375 2.5,30 1.25,30 0,30 0,22.77027 Z M 30,22.5 30,15 l 1.25,0 1.25,0 0,7.5 0,7.5 -1.25,0 -1.25,0 0,-7.5 z m -21.25,-1.25 0,-2.5 2.5,0 2.5,0 0,2.5 0,2.5 -2.5,0 -2.5,0 0,-2.5 z M 0,6.3937624 0,0 16.25,0 32.5,0 l 0,6.3937624 0,6.3937626 -3.4375,-2.245156 C 27.171875,9.307533 24.034856,6.7115899 22.091346,4.7736064 L 18.557693,1.25 16.25,1.25 l -2.307692,0 -3.533654,3.5236064 C 8.4651443,6.7115899 5.328125,9.307533 3.4375,10.542369 L 0,12.787525 0,6.3937624 Z"
+                                            id="path4312"
+                                            inkscape:connector-curvature="0"/>
+                                    <path
+
+                                            d="M 2.497184,23.4375 2.494368,16.875 11.247184,17.290074 20,17.705147 20,21.352574 20,25 l 3.75,0 3.75,0 0,-4.375 0,-4.375 -1.5625,-0.136559 c -0.859375,-0.07511 -6.71877,-0.215731 -13.020879,-0.3125 L 1.4582425,15.625 0.41662128,14.55086 -0.625,13.47672 2.4293245,11.42586 C 4.109203,10.297887 7.42226,7.546875 9.7916734,5.3125 L 14.099698,1.25 l 2.150302,0 2.150303,0 4.308023,4.0625 c 2.369414,2.234375 5.682472,5.068452 7.362349,6.297949 L 33.125,13.845898 31.5625,14.527115 30,15.208334 30,22.604166 30,30 16.25,30 2.5,30 2.497184,23.4375 Z M 13.75,21.25 l 0,-2.5 -2.5,0 -2.5,0 0,2.5 0,2.5 2.5,0 2.5,0 0,-2.5 z"
+                                            id="svg-color"
+                                            inkscape:connector-curvature="0"/>
+                                </g>
+                            </svg>
+                            <span class="nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                    xmlns:svg="http://www.w3.org/2000/svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                    id="svg4136"
+                                    version="1.1"
+                                    inkscape:version="0.91 r13725"
+                                    width="31.875"
+                                    height="22.260782"
+                                    viewBox="0 0 31.875 22.260782"
+                                    sodipodi:docname="photografi.svg">
+                                <metadata
+                                        id="metadata4142">
+                                    <rdf:RDF>
+                                        <cc:Work
+                                                rdf:about="">
+                                            <dc:format>image/svg+xml</dc:format>
+                                            <dc:type
+                                                    rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                            <dc:title></dc:title>
+                                        </cc:Work>
+                                    </rdf:RDF>
+                                </metadata>
+                                <defs
+                                        id="defs4140"/>
+                                <sodipodi:namedview
+                                        pagecolor="#ffffff"
+                                        bordercolor="#666666"
+                                        borderopacity="1"
+                                        objecttolerance="10"
+                                        gridtolerance="10"
+                                        guidetolerance="10"
+                                        inkscape:pageopacity="0"
+                                        inkscape:pageshadow="2"
+                                        inkscape:window-width="1858"
+                                        inkscape:window-height="1058"
+                                        id="namedview4138"
+                                        showgrid="false"
+                                        fit-margin-top="0"
+                                        fit-margin-left="0"
+                                        fit-margin-right="0"
+                                        fit-margin-bottom="0"
+                                        inkscape:zoom="3.4687516"
+                                        inkscape:cx="9.3486684"
+                                        inkscape:cy="-37.366231"
+                                        inkscape:window-x="54"
+                                        inkscape:window-y="-8"
+                                        inkscape:window-maximized="1"
+                                        inkscape:current-layer="svg4136"/>
+                                <path
+
+                                        d="M 0.869842,21.672882 C 0.391429,21.19447 0,17.084301 0,12.539175 0,5.8065109 0.465869,3.8764199 2.514288,2.1225079 5.248625,-0.21870308 8.75,-0.75196808 8.75,1.1727999 c 0,0.661701 5.203125,1.364826 11.5625,1.5625 l 11.5625,0.359407 0,9.3750001 0,9.375 -15.067659,0.349009 C 8.52013,22.38567 1.348255,22.151296 0.869842,21.672882 Z M 26.25,17.469707 c 1.375,-1.375 2.5,-3.625 2.5,-5 0,-3.2194541 -4.280545,-7.5000001 -7.5,-7.5000001 -1.375,0 -3.625,1.125 -5,2.5 -1.375,1.375 -2.5,3.6250001 -2.5,5.0000001 0,1.375 1.125,3.625 2.5,5 1.375,1.375 3.625,2.5 5,2.5 1.375,0 3.625,-1.125 5,-2.5 z m -8.700164,-1.814951 c -3.32057,-4.001043 1.556543,-10.1472151 5.887664,-7.4196761 4.327913,2.7255171 2.786034,9.2346271 -2.1875,9.2346271 -1.206639,0 -2.871712,-0.816727 -3.700164,-1.814951 z M 8.75,6.2197069 c 0,-0.6875 -1.125,-1.25 -2.5,-1.25 -1.375,0 -2.5,0.5625 -2.5,1.25 0,0.6875 1.125,1.25 2.5,1.25 1.375,0 2.5,-0.5625 2.5,-1.25 z"
+                                        id="svg-color"
+                                        inkscape:connector-curvature="0"/>
+                                <path
+                                        style="fill:#000000"
+                                        d=""
+                                        id="path4146"
+                                        inkscape:connector-curvature="0"/>
+                            </svg>
+                            <span class="nav-text fix-center">Photography</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                    xmlns:svg="http://www.w3.org/2000/svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                    id="svg4136"
+                                    version="1.1"
+                                    inkscape:version="0.91 r13725"
+                                    width="32.5"
+                                    height="17.631294"
+                                    viewBox="0 0 32.5 17.631294"
+                                    sodipodi:docname="video.svg">
+                                <metadata
+                                        id="metadata4142">
+                                    <rdf:RDF>
+                                        <cc:Work
+                                                rdf:about="">
+                                            <dc:format>image/svg+xml</dc:format>
+                                            <dc:type
+                                                    rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                            <dc:title></dc:title>
+                                        </cc:Work>
+                                    </rdf:RDF>
+                                </metadata>
+                                <defs
+                                        id="defs4140"/>
+                                <sodipodi:namedview
+                                        pagecolor="#ffffff"
+                                        bordercolor="#666666"
+                                        borderopacity="1"
+                                        objecttolerance="10"
+                                        gridtolerance="10"
+                                        guidetolerance="10"
+                                        inkscape:pageopacity="0"
+                                        inkscape:pageshadow="2"
+                                        inkscape:window-width="1858"
+                                        inkscape:window-height="1058"
+                                        id="namedview4138"
+                                        showgrid="false"
+                                        fit-margin-top="0"
+                                        fit-margin-left="0"
+                                        fit-margin-right="0"
+                                        fit-margin-bottom="0"
+                                        inkscape:zoom="3.4687516"
+                                        inkscape:cx="8.1736467"
+                                        inkscape:cy="-39.912"
+                                        inkscape:window-x="54"
+                                        inkscape:window-y="-8"
+                                        inkscape:window-maximized="1"
+                                        inkscape:current-layer="svg4136"/>
+                                <path
+                                        style="fill:#000000"
+                                        d=""
+                                        id="path4146"
+                                        inkscape:connector-curvature="0"/>
+                                <path
+
+                                        d="M 2.1874999,16.798304 C 0.4207624,16.336608 0,14.829709 0,8.9640961 0,0.834035 0.7752942,0.194099 10.625,0.194099 c 9.836759,0 10.625,0.646607 10.625,8.7158631 0,6.4187419 -0.308109,7.2909909 -2.8125,7.9621419 -3.153097,0.844998 -12.9035651,0.800715 -16.2500001,-0.0738 z M 27.1875,14.885553 C 20.563875,11.046349 20.677793,6.6444521 27.5,2.8101571 L 32.5,0 l 0,8.8299811 c 0,4.8564899 -0.140625,8.8170599 -0.3125,8.8012669 -0.171875,-0.01579 -2.421875,-1.251355 -5,-2.745695 z"
+                                        id="svg-color"
+                                        inkscape:connector-curvature="0"/>
+                            </svg>
+                            <span class="nav-text">Video</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                    xmlns:svg="http://www.w3.org/2000/svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                    id="svg4136"
+                                    version="1.1"
+                                    inkscape:version="0.91 r13725"
+                                    width="32.259846"
+                                    height="28.540283"
+                                    viewBox="0 0 32.259846 28.540283"
+                                    sodipodi:docname="environment.svg">
+                                <metadata
+                                        id="metadata4142">
+                                    <rdf:RDF>
+                                        <cc:Work
+                                                rdf:about="">
+                                            <dc:format>image/svg+xml</dc:format>
+                                            <dc:type
+                                                    rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                            <dc:title></dc:title>
+                                        </cc:Work>
+                                    </rdf:RDF>
+                                </metadata>
+                                <defs
+                                        id="defs4140"/>
+                                <sodipodi:namedview
+                                        pagecolor="#ffffff"
+                                        bordercolor="#666666"
+                                        borderopacity="1"
+                                        objecttolerance="10"
+                                        gridtolerance="10"
+                                        guidetolerance="10"
+                                        inkscape:pageopacity="0"
+                                        inkscape:pageshadow="2"
+                                        inkscape:window-width="1858"
+                                        inkscape:window-height="1058"
+                                        id="namedview4138"
+                                        showgrid="false"
+                                        fit-margin-top="0"
+                                        fit-margin-left="0"
+                                        fit-margin-right="0"
+                                        fit-margin-bottom="0"
+                                        inkscape:zoom="3.4687516"
+                                        inkscape:cx="8.5896693"
+                                        inkscape:cy="-32.811306"
+                                        inkscape:window-x="54"
+                                        inkscape:window-y="-8"
+                                        inkscape:window-maximized="1"
+                                        inkscape:current-layer="svg4136"/>
+                                <path
+                                        style="fill:#000000"
+                                        d=""
+                                        id="path4146"
+                                        inkscape:connector-curvature="0"/>
+                                <path
+
+                                        d="m 18.08429,26.173932 -1.266434,-2.366352 1.45048,-2.322588 1.45048,-2.322589 3.072335,0.587315 3.072335,0.587314 -1.962691,-3.795428 -1.962691,-3.795427 2.979657,-1.952346 2.979658,-1.952346 2.181212,3.328951 2.181213,3.328951 -3.004921,5.624031 -3.004923,5.62403 -3.449639,0.896418 -3.449638,0.896417 -1.266433,-2.366351 z M 3.72301,21.941711 0.46563601,16.383421 1.785331,13.917548 3.105026,11.451675 1.552513,10.824522 0,10.197368 l 4.018521,-0.09868 4.01852,-0.09868 1.3936099,2.603984 1.3936101,2.603984 -2.168365,2.396016 -2.168365,2.396016 4.568735,0 4.568734,0 0,3.75 0,3.75 -4.322308,0 -4.322307,0 L 3.72301,21.94172 Z M 7.658665,8.395591 5.464505,6.791183 8.135478,3.395591 10.806451,0 16.687924,0 22.569398,0 24.793899,2.598028 27.0184,5.196056 25.543644,6.973028 24.068889,8.75 l -2.826155,0 -2.826155,0 L 17.613085,5.9375 16.809593,3.125 14.927375,6.5625 13.045157,10 11.448991,10 C 10.571099,10 8.865453,9.278016 7.658665,8.395591 Z"
+                                        id="svg-color"
+                                        inkscape:connector-curvature="0"/>
+                            </svg>
+                            <span class="nav-text fix-center">Environment</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                    xmlns:svg="http://www.w3.org/2000/svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                    id="svg4136"
+                                    version="1.1"
+                                    inkscape:version="0.91 r13725"
+                                    width="32.500004"
+                                    height="21.106577"
+                                    viewBox="0 0 32.500004 21.106577"
+                                    sodipodi:docname="ship.svg">
+                                <metadata
+                                        id="metadata4142">
+                                    <rdf:RDF>
+                                        <cc:Work
+                                                rdf:about="">
+                                            <dc:format>image/svg+xml</dc:format>
+                                            <dc:type
+                                                    rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                            <dc:title></dc:title>
+                                        </cc:Work>
+                                    </rdf:RDF>
+                                </metadata>
+                                <defs
+                                        id="defs4140"/>
+                                <sodipodi:namedview
+                                        pagecolor="#ffffff"
+                                        bordercolor="#666666"
+                                        borderopacity="1"
+                                        objecttolerance="10"
+                                        gridtolerance="10"
+                                        guidetolerance="10"
+                                        inkscape:pageopacity="0"
+                                        inkscape:pageshadow="2"
+                                        inkscape:window-width="1858"
+                                        inkscape:window-height="1058"
+                                        id="namedview4138"
+                                        showgrid="false"
+                                        fit-margin-top="0"
+                                        fit-margin-left="0"
+                                        fit-margin-right="0"
+                                        fit-margin-bottom="0"
+                                        inkscape:zoom="3.4687516"
+                                        inkscape:cx="8.4072457"
+                                        inkscape:cy="-34.722978"
+                                        inkscape:window-x="54"
+                                        inkscape:window-y="-8"
+                                        inkscape:window-maximized="1"
+                                        inkscape:current-layer="svg4136"/>
+                                <path
+                                        style="fill:#000000"
+                                        d=""
+                                        id="path4146"
+                                        inkscape:connector-curvature="0"/>
+                                <path
+
+                                        d="m 16.25,21.106576 -16.25,0 0,-1.035715 0,-1.035714 16.25,0 16.25,0 0,1.035714 0,1.035715 -16.25,0 z m 0,-3.75 -16.25,0 0.0278,-0.723215 C 0.04309,16.235594 1.086488,14.569477 2.346469,12.93088 L 4.637344,9.9516131 18.189304,6.4056761 C 25.642881,4.45541 31.905624,3.0241 32.106511,3.224987 32.307398,3.425873 30.803003,6.2215901 28.763413,9.4376911 l -3.708348,5.8474559 3.72247,0 3.72247,0 0,1.035714 0,1.035715 -16.25,0 z M 10.106763,13.344165 11.29078,12.612402 10.559017,11.428385 9.8272544,10.244368 8.643237,10.97613 7.45922,11.707893 l 0.731763,1.184017 0.731763,1.184017 1.184017,-0.731762 z m 4.342008,-0.559018 c 0.303177,0 0.551229,-0.5625 0.551229,-1.25 l 0,-1.25 -1.323771,0 -1.323771,0 0.772542,1.25 c 0.424899,0.6875 1.020595,1.25 1.323771,1.25 z m 5,-1.25 c 0.303177,0 0.551229,-0.5625 0.551229,-1.25 l 0,-1.2499999 -1.323771,0 -1.323771,0 0.772542,1.2499999 c 0.424899,0.6875 1.020595,1.25 1.323771,1.25 z M 8.445365,7.2984081 6.26573,7.9486241 6.966833,6.1215791 7.667936,4.294535 4.771468,2.147267 1.875,0 5,0.921334 c 1.71875,0.506733 6.030536,0.992766 9.581746,1.080073 3.55121,0.08731 6.807133,0.508413 7.235383,0.93579 l 0.778636,0.777049 -5.985382,1.4669731 c -3.29196,0.806835 -6.966219,1.75957 -8.165018,2.117189 z"
+                                        id="svg-color"
+                                        inkscape:connector-curvature="0"
+                                        inkscape:transform-center-x="-40.64863"
+                                        inkscape:transform-center-y="-36.612596"/>
+                            </svg>
+                            <span class="nav-text">Travel </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                    xmlns:svg="http://www.w3.org/2000/svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                    id="svg4136"
+                                    version="1.1"
+                                    inkscape:version="0.91 r13725"
+                                    width="32.5"
+                                    height="31.25"
+                                    viewBox="0 0 32.5 31.25"
+                                    sodipodi:docname="adventure.svg">
+                                <metadata
+                                        id="metadata4142">
+                                    <rdf:RDF>
+                                        <cc:Work
+                                                rdf:about="">
+                                            <dc:format>image/svg+xml</dc:format>
+                                            <dc:type
+                                                    rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                            <dc:title></dc:title>
+                                        </cc:Work>
+                                    </rdf:RDF>
+                                </metadata>
+                                <defs
+                                        id="defs4140"/>
+                                <sodipodi:namedview
+                                        pagecolor="#ffffff"
+                                        bordercolor="#666666"
+                                        borderopacity="1"
+                                        objecttolerance="10"
+                                        gridtolerance="10"
+                                        guidetolerance="10"
+                                        inkscape:pageopacity="0"
+                                        inkscape:pageshadow="2"
+                                        inkscape:window-width="1858"
+                                        inkscape:window-height="1058"
+                                        id="namedview4138"
+                                        showgrid="false"
+                                        fit-margin-top="0"
+                                        fit-margin-left="0"
+                                        fit-margin-right="0"
+                                        fit-margin-bottom="0"
+                                        inkscape:zoom="3.6791667"
+                                        inkscape:cx="15.805674"
+                                        inkscape:cy="-35.606"
+                                        inkscape:window-x="54"
+                                        inkscape:window-y="-8"
+                                        inkscape:window-maximized="1"
+                                        inkscape:current-layer="svg4136"/>
+                                <g
+                                        id="g4932"
+                                        transform="translate(4.834374,4.9242678)">
+                                    <path
+                                            style="fill:#efefef"
+                                            d="m -4.834374,23.098783 0,-3.22695 4.6875,2.81902 c 2.578125,1.550462 4.921875,3.002588 5.2083334,3.226949 0.2864582,0.224361 -1.8229168,0.40793 -4.68750002,0.40793 -4.76610158,0 -5.20833338,-0.273995 -5.20833338,-3.226949 z M 13.89071,24.13629 c 4.276216,-2.148447 10.024916,-9.171347 10.024916,-12.246942 0,-0.861672 -2.029884,-2.764337 -4.510853,-4.2281445 -3.627798,-2.1404533 -4.365247,-3.2046099 -3.767068,-5.4359695 0.409081,-1.52597605 0.751465,-3.7588768 0.760852,-4.9620018 0.01371,-1.7567306 1.124762,-2.1875 5.642069,-2.1875 5.028697,0 5.625,0.3033748 5.625,2.8617759 0,2.30054972 -0.674133,2.85211235 -3.4375,2.81249997 -2.846474,-0.0408036 -3.4375,0.48802093 -3.4375,3.07572413 0,2.5877032 0.591026,3.1165278 3.4375,3.0757241 l 3.4375,-0.049276 0,9.7367757 0,9.736776 -9.0625,-0.002 -9.0625,-0.002 4.350084,-2.185557 z m -14.03121188,-3.868119 -4.68112802,-2.067439 -0.00637,-11.5624998 -0.00637,-11.5625 9.8265862,0 9.8265867,0 -1.288612,5.63124512 c -1.16537,5.09267448 -1.018992,5.91824258 1.53051,8.63206368 2.331829,2.482117 2.576943,3.453337 1.418046,5.618755 C 14.500172,18.65479 8.526771,18.359787 3.2072236,14.302371 0.84684487,12.502022 -1.084374,11.547928 -1.084374,12.182162 c 0,1.464686 7.5136708,8.615015 10,9.516426 1.0693075,0.387674 0.5321788,0.67059 -1.25,0.658398 -1.71875,-0.01175 -5.2315076,-0.951724 -7.80612787,-2.088815 z"
+                                            id="path4936"
+                                            inkscape:connector-curvature="0"/>
+                                    <path
+
+                                            d="M 0.21819212,23.015833 C -5.7945612,19.356008 -4.9410487,17.413568 1.2688122,20.624812 c 2.0749652,1.073006 5.0662227,1.906513 6.6472388,1.852236 1.8416263,-0.06322 2.200814,-0.342955 0.999575,-0.77846 -2.4863292,-0.901411 -10,-8.05174 -10,-9.516426 0,-0.634234 1.93121887,0.31986 4.2915976,2.120209 5.3195474,4.057416 11.2929484,4.352419 13.2715194,0.655425 1.155052,-2.158234 0.921094,-3.128855 -1.332357,-5.5275438 -2.274684,-2.4212895 -2.589084,-3.764013 -1.873331,-8.0005136 0.473056,-2.799998 1.459325,-5.4612453 2.191707,-5.9138828 0.908553,-0.5615159 1.066315,0.8360559 0.496577,4.39900753 -0.798208,4.99171337 -0.64124,5.33632317 3.559628,7.81489637 5.067609,2.9899623 5.27731,4.0080563 1.949663,9.4655553 C 16.180464,25.871436 8.4072523,28.000327 0.21819213,23.015833 Z M 20.651301,5.7884032 c -1.244585,-3.2433385 0.499854,-5.923981 3.571236,-5.487842 2.065916,0.29336175 2.818089,1.2342615 2.818089,3.525171 0,2.2909095 -0.752173,3.2318092 -2.818089,3.525171 -1.690348,0.2400315 -3.119482,-0.3852484 -3.571236,-1.5625 z"
+                                            id="svg-color"
+                                            inkscape:connector-curvature="0"/>
+                                </g>
+                            </svg>
+                            <span class="nav-text fix-center2"> Adventure</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                    xmlns:svg="http://www.w3.org/2000/svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                    id="svg4136"
+                                    version="1.1"
+                                    inkscape:version="0.91 r13725"
+                                    width="31.717964"
+                                    height="31.9146"
+                                    viewBox="0 0 31.717964 31.9146"
+                                    sodipodi:docname="tv.svg">
+                                <metadata
+                                        id="metadata4142">
+                                    <rdf:RDF>
+                                        <cc:Work
+                                                rdf:about="">
+                                            <dc:format>image/svg+xml</dc:format>
+                                            <dc:type
+                                                    rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                            <dc:title></dc:title>
+                                        </cc:Work>
+                                    </rdf:RDF>
+                                </metadata>
+                                <defs
+                                        id="defs4140"/>
+                                <sodipodi:namedview
+                                        pagecolor="#ffffff"
+                                        bordercolor="#666666"
+                                        borderopacity="1"
+                                        objecttolerance="10"
+                                        gridtolerance="10"
+                                        guidetolerance="10"
+                                        inkscape:pageopacity="0"
+                                        inkscape:pageshadow="2"
+                                        inkscape:window-width="1858"
+                                        inkscape:window-height="1058"
+                                        id="namedview4138"
+                                        showgrid="false"
+                                        fit-margin-top="0"
+                                        fit-margin-left="0"
+                                        fit-margin-right="0"
+                                        fit-margin-bottom="0"
+                                        inkscape:zoom="3.4687516"
+                                        inkscape:cx="7.7794982"
+                                        inkscape:cy="-33.065774"
+                                        inkscape:window-x="54"
+                                        inkscape:window-y="-8"
+                                        inkscape:window-maximized="1"
+                                        inkscape:current-layer="svg4136"/>
+                                <path
+                                        style="fill:#000000"
+                                        d=""
+                                        id="path4146"
+                                        inkscape:connector-curvature="0"/>
+                                <path
+
+                                        d="M 0.38486408,30.452182 C 0.02224007,29.507199 -0.10740793,24.567923 0.09675707,19.476012 L 0.46796508,10.217993 7.1609851,9.8356419 C 13.710002,9.4615169 13.806538,9.4008399 11.647816,7.015478 8.7269831,3.787996 10.369305,2.30062 13.612767,5.235912 c 2.479849,2.244235 2.629513,2.202776 6.863937,-1.901389 5.61914,-5.4462862 7.359699,-3.78432004 1.917342,1.830768 l -4.153037,4.2848469 6.738477,0.383927 6.738478,0.3839281 0,10.625 0,10.625 -15.336891,0.351169 C 4.2799871,32.096242 0.90507708,31.807832 0.38486408,30.452182 Z M 21.628679,27.628707 c 2.552528,-2.552528 2.552528,-11.0189 0,-13.571428 -2.681698,-2.681699 -14.6397299,-2.681699 -17.3214279,0 -2.552529,2.552528 -2.552529,11.0189 0,13.571428 2.681698,2.681699 14.6397299,2.681699 17.3214279,0 z m 7.523303,-5.642476 c -0.40247,-0.65121 -1.264571,-0.854724 -1.91578,-0.452255 -0.65121,0.40247 -0.854724,1.264571 -0.452255,1.91578 0.40247,0.65121 1.264571,0.854723 1.91578,0.452255 0.65121,-0.40247 0.854724,-1.264572 0.452255,-1.91578 z m 0,-5.000001 c -0.40247,-0.65121 -1.264571,-0.854723 -1.91578,-0.452255 -0.65121,0.40247 -0.854724,1.264572 -0.452255,1.91578 0.40247,0.651211 1.264571,0.854724 1.91578,0.452256 0.65121,-0.402471 0.854724,-1.264572 0.452255,-1.915781 z"
+                                        id="svg-color"
+                                        inkscape:connector-curvature="0"/>
+                            </svg>
+                            <span class="nav-text fix-center2"> Television </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                    xmlns:svg="http://www.w3.org/2000/svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                    id="svg4136"
+                                    version="1.1"
+                                    inkscape:version="0.91 r13725"
+                                    width="24.075594"
+                                    height="25.921572"
+                                    viewBox="0 0 24.075594 25.921572"
+                                    sodipodi:docname="kids.svg">
+                                <metadata
+                                        id="metadata4142">
+                                    <rdf:RDF>
+                                        <cc:Work
+                                                rdf:about="">
+                                            <dc:format>image/svg+xml</dc:format>
+                                            <dc:type
+                                                    rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                            <dc:title></dc:title>
+                                        </cc:Work>
+                                    </rdf:RDF>
+                                </metadata>
+                                <defs
+                                        id="defs4140"/>
+                                <sodipodi:namedview
+                                        pagecolor="#ffffff"
+                                        bordercolor="#666666"
+                                        borderopacity="1"
+                                        objecttolerance="10"
+                                        gridtolerance="10"
+                                        guidetolerance="10"
+                                        inkscape:pageopacity="0"
+                                        inkscape:pageshadow="2"
+                                        inkscape:window-width="1858"
+                                        inkscape:window-height="1058"
+                                        id="namedview4138"
+                                        showgrid="false"
+                                        fit-margin-top="0"
+                                        fit-margin-left="0"
+                                        fit-margin-right="0"
+                                        fit-margin-bottom="0"
+                                        inkscape:zoom="3.6791667"
+                                        inkscape:cx="13.689307"
+                                        inkscape:cy="-36.825562"
+                                        inkscape:window-x="54"
+                                        inkscape:window-y="-8"
+                                        inkscape:window-maximized="1"
+                                        inkscape:current-layer="svg4136"/>
+                                <g
+                                        id="g4881"
+                                        transform="translate(-2.6394382,-2.0901731)">
+                                    <path
+                                            style="fill:#ebebeb"
+                                            d="m 2.7433055,22.499687 c 0.057127,-3.031632 0.4403269,-5.240225 0.8515554,-4.907985 0.4112285,0.332241 1.9389717,-0.274183 3.3949849,-1.347607 2.244735,-1.654897 2.6430082,-1.724102 2.6190956,-0.455099 -0.038674,2.052381 8.7002516,2.150472 9.7230446,0.109138 0.593107,-1.183749 1.008718,-1.115225 2.830903,0.466744 1.174655,1.019803 2.61545,1.620414 3.201765,1.334691 0.620833,-0.302543 1.023409,1.742278 0.963975,4.89634 l -0.102054,5.415836 -4.702928,0 -4.702928,0 3.065374,-2.50699 c 3.501996,-2.864079 3.788018,-3.965771 1.437686,-5.537635 -1.32965,-0.889249 -2.016822,-0.882468 -3.421343,0.03376 -0.966633,0.630575 -1.521469,1.655931 -1.232968,2.278567 0.638898,1.378855 -1.834953,5.715634 -3.265927,5.725325 -0.566351,0.0038 -0.686597,-0.262058 -0.267215,-0.590874 0.419383,-0.328817 -0.08867,-1.358951 -1.128998,-2.289187 -1.630279,-1.457752 -1.662896,-1.802786 -0.236173,-2.498293 1.426256,-0.695278 1.395084,-1.017276 -0.225245,-2.326726 -1.5549972,-1.256654 -2.1857882,-1.320679 -3.6434222,-0.369803 -2.3632604,1.541654 -2.2485301,2.913782 0.478837,5.726696 l 2.2835362,2.35516 -4.0127115,0 -4.0127113,0 0.1038673,-5.512058 z M 22.011702,13.263265 C 16.957547,9.0482674 11.92989,8.9595198 6.6263334,12.991684 L 2.8686368,15.84857 2.998266,8.9693712 3.1278951,2.0901731 l 5.1346149,0 c 4.667832,0 4.971752,0.1276925 3.343123,1.4046173 C 9.4284829,5.2017823 9.3792535,5.7621199 11.226142,7.8142284 13.277304,10.09331 18.047029,9.3915598 18.570575,6.7336723 18.793789,5.6004767 18.381245,4.0921094 17.653809,3.3817449 16.532991,2.287228 17.12333,2.0901731 21.523116,2.0901731 l 5.191916,0 -0.134747,7.1507786 C 26.506175,13.17388 26.29197,16.39173 26.104274,16.39173 c -0.187695,0 -2.029353,-1.407809 -4.092572,-3.128465 z"
+                                            id="path4885"
+                                            inkscape:connector-curvature="0"/>
+                                    <path
+
+                                            d="M 8.3813248,25.656584 C 5.6539577,22.84367 5.5392274,21.471542 7.9024878,19.929888 c 1.457634,-0.950876 2.088425,-0.886851 3.6434222,0.369803 1.620329,1.30945 1.651501,1.631448 0.225245,2.326726 -1.426723,0.695507 -1.394106,1.040541 0.236173,2.498293 1.754066,1.568437 1.531185,2.887035 -0.487991,2.887035 -0.469962,0 -1.8820674,-1.059822 -3.1380122,-2.355161 z m 6.6375512,1.067143 c 0.01335,-0.708411 0.555145,-1.546724 1.20399,-1.862919 0.648846,-0.316194 0.908479,-1.288723 0.576963,-2.161174 -0.865349,-2.277345 2.324047,-4.203774 4.52395,-2.732514 2.406026,1.609112 2.038281,2.929333 -1.571787,5.642776 -3.605649,2.710122 -4.768352,2.983738 -4.733116,1.113831 z M 3.3955703,17.275566 C 2.9437045,16.679256 4.2151895,14.93839 6.3824652,13.186031 11.812591,8.7954813 16.784642,8.9259398 22.440658,13.607372 c 2.421607,2.004341 3.701333,3.713387 3.026732,4.042133 -0.64282,0.313258 -2.129846,-0.264824 -3.304501,-1.284627 -1.822185,-1.581969 -2.237796,-1.650493 -2.830903,-0.466744 -1.022793,2.041334 -9.761719,1.943243 -9.7230446,-0.109138 0.023675,-1.256397 -0.4095133,-1.173882 -2.6991877,0.514146 -1.8993692,1.400282 -2.966255,1.695504 -3.5141834,0.972424 z M 10.966557,7.5715796 C 9.5074433,5.3393631 10.519133,3.2181209 13.386659,2.4972747 16.438172,1.730177 19.002906,3.7115025 18.545865,6.4829002 18.045831,9.5150034 12.73549,10.277772 10.966557,7.5715796 Z"
+                                            id="svg-color"
+                                            inkscape:connector-curvature="0"/>
+                                </g>
+                            </svg>
+                            <span class="nav-text">Kids</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
-        </header>
-        <nav class="alfavit">
-            <ul>
-                <li><a>А</a></li>
-                <li><a href="#">Б</a></li>
-                <li><a href="#">В</a></li>
-                <li><a href="#">Г</a></li>
-                <li><a href="#">Д</a></li>
-                <li><a href="#">Е</a></li>
-                <li><a href="#">Ё</a></li>
-                <li><a href="#">Ж</a></li>
-                <li><a href="#">З</a></li>
-                <li><a href="#">И</a></li>
-                <li><a href="#">Й</a></li>
-                <li><a href="#">К</a></li>
-                <li><a href="#">Л</a></li>
-                <li><a href="#">М</a></li>
-                <li><a href="#">Н</a></li>
-                <li><a href="#">О</a></li>
-                <li><a href="#">П</a></li>
-                <li><a href="#">Р</a></li>
-                <li><a href="#">С</a></li>
-                <li><a href="#">Т</a></li>
-                <li><a href="#">У</a></li>
-                <li><a href="#">Ф</a></li>
-                <li><a href="#">Х</a></li>
-                <li><a href="#">Ц</a></li>
-                <li><a href="#">Ч</a></li>
-                <li><a href="#">Ш</a></li>
-                <li><a href="#">Щ</a></li>
-                <li><a href="#">Ы</a></li>
-                <li><a href="#">Ь</a></li>
-                <li><a href="#">Э</a></li>
-                <li><a href="#">Ю</a></li>
-                <li><a href="#">Я</a></li>
-            </ul>
-        </nav>
-    </section>
-    <!-- Site -->
-    <div id="sb-site" class="clearfix">
-        <div class="container">
-            <div class="hero-body-m clearfix">
-                <div class="container">
-                    <div class="m-contact">
-                        <form method="get" action="#">
-                            <input name="search" value="Что ищем?" type="text">
+        </div>
+    </div>
+</section>
+<section class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3 tags-container">
+                        <ul class="tags">
+                            <li>
+                                <a href="#">
+                                    <svg
+                                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                            xmlns:cc="http://creativecommons.org/ns#"
+                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                            xmlns:svg="http://www.w3.org/2000/svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                            id="svg4136"
+                                            version="1.1"
+                                            inkscape:version="0.91 r13725"
+                                            width="31.203165"
+                                            height="32.244915"
+                                            viewBox="0 0 31.203165 32.244915"
+                                            sodipodi:docname="magazine.svg">
+                                        <metadata
+                                                id="metadata4142">
+                                            <rdf:RDF>
+                                                <cc:Work
+                                                        rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type
+                                                            rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <defs
+                                                id="defs4140"/>
+                                        <sodipodi:namedview
+                                                pagecolor="#ffffff"
+                                                bordercolor="#666666"
+                                                borderopacity="1"
+                                                objecttolerance="10"
+                                                gridtolerance="10"
+                                                guidetolerance="10"
+                                                inkscape:pageopacity="0"
+                                                inkscape:pageshadow="2"
+                                                inkscape:window-width="1858"
+                                                inkscape:window-height="1058"
+                                                id="namedview4138"
+                                                showgrid="false"
+                                                fit-margin-top="0"
+                                                fit-margin-left="0"
+                                                fit-margin-right="0"
+                                                fit-margin-bottom="0"
+                                                inkscape:zoom="3.4687516"
+                                                inkscape:cx="7.6435377"
+                                                inkscape:cy="-22.314662"
+                                                inkscape:window-x="54"
+                                                inkscape:window-y="-8"
+                                                inkscape:window-maximized="1"
+                                                inkscape:current-layer="svg4136"/>
+                                        <path
+                                                style="fill:#000000"
+                                                d=""
+                                                id="path4146"
+                                                inkscape:connector-curvature="0"/>
+                                        <path
+                                                style="fill:#fefefe;fill-opacity:0.0558659"
+                                                d="m 104.50362,41.888563 c -0.96258,-0.962585 -1.5,-5.888889 -1.5,-13.75 l 0,-12.249999 11.25,0 c 9.16667,0 11.25,0.347222 11.25,1.875 0,1.354166 1.38889,1.874999 5,1.874999 l 5,0 0,10.375 c 0,6.402777 -0.57429,10.949297 -1.5,11.875 -2.05705,2.057052 -27.44295,2.057052 -29.5,0 z m 18.5,-12.25 0,-11.249999 -8.75,0 -8.75,0 0,9.158508 0,9.158508 3.75,-0.550382 c 2.25102,-0.330379 3.75,0.006 3.75,0.841491 0,0.76553 -1.54687,1.400488 -3.4375,1.411015 -2.67867,0.01492 -3.02359,0.286628 -1.5625,1.230859 1.03125,0.666445 4.82813,1.220331 8.4375,1.230859 l 6.5625,0.01914 0,-11.25 z m -8.75,7.5 c 0,-0.6875 1.6875,-1.25 3.75,-1.25 2.0625,0 3.75,0.5625 3.75,1.25 0,0.6875 -1.6875,1.25 -3.75,1.25 -2.0625,0 -3.75,-0.5625 -3.75,-1.25 z m -7.5,-3.75 c 0,-0.6875 1.40625,-1.249999 3.125,-1.249999 1.71875,0 3.125,0.562499 3.125,1.249999 0,0.6875 -1.40625,1.25 -3.125,1.25 -1.71875,0 -3.125,-0.5625 -3.125,-1.25 z m 7.5,0 c 0,-0.6875 1.6875,-1.249999 3.75,-1.249999 2.0625,0 3.75,0.562499 3.75,1.249999 0,0.6875 -1.6875,1.25 -3.75,1.25 -2.0625,0 -3.75,-0.5625 -3.75,-1.25 z m -7.5,-3.75 c 0,-0.6875 1.40625,-1.25 3.125,-1.25 1.71875,0 3.125,0.5625 3.125,1.25 0,0.6875 -1.40625,1.250001 -3.125,1.250001 -1.71875,0 -3.125,-0.562501 -3.125,-1.250001 z m 7.5,0 c 0,-0.6875 1.6875,-1.25 3.75,-1.25 2.0625,0 3.75,0.5625 3.75,1.25 0,0.6875 -1.6875,1.250001 -3.75,1.250001 -2.0625,0 -3.75,-0.562501 -3.75,-1.250001 z m -7.5,-6.25 c 0,-2.222222 0.83334,-2.5 7.5,-2.5 6.66667,0 7.5,0.277778 7.5,2.5 0,2.222223 -0.83333,2.5 -7.5,2.5 -6.66666,0 -7.5,-0.277777 -7.5,-2.5 z m 25.99715,7.812501 c 0.23098,-4.849008 -0.12464,-7.812501 -0.9375,-7.812501 -0.75412,0 -1.30965,2.916256 -1.30965,6.875 0,3.78125 -0.5625,6.875 -1.25,6.875 -0.69444,0 -1.25,-3.333334 -1.25,-7.5 0,-4.166666 -0.55555,-7.5 -1.25,-7.5 -1.36438,0 -1.7317,12.290235 -0.4659,15.588856 0.46248,1.205195 1.87247,1.888034 3.4375,1.664734 2.33324,-0.332909 2.69831,-1.321251 3.02555,-8.191089 z"
+                                                id="path4325"
+                                                inkscape:connector-curvature="0"/>
+                                        <image
+                                                y="-0.16098219"
+                                                x="-0.78011698"
+                                                id="image4461"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAC+ElEQVRIS61Wy5HaQBBFUAXclhAg
+    AzYCQwRmI7CJwOyBz83rG5/DaiOwHIFxBNZGYG0ExhFYewOqAL837lY1I2FY21M1JYF6+vV7/ZGC
+    0n9cw+GwXS6X38HlW+zVbDZrqfvgX3AGg0GjWq12giB4BT897KbxdznQZDJpHg6HjyeC6fwpSIB/
+    mE6ndxcxGo/HBKEM51YCgxib4G3sdLPZtMIwTM8Cid7fxHCJCJ8s2n6/T5CPFFEToEQZa7XaT7EJ
+    kZ9ba38yR2DzVSLMooOUZNcESLrdbiMbMZ7dQeb3HvUU//Xn8/myEAiHOjAgUEm1Ho1GPdx/zqQI
+    gq6y4X8IjGwavsZ6vhDIsMkqx48YrK4XiwVzUyJTLRpcb+CcJc58MdAWAlrlgOwhGPVhFBU4u4Uc
+    oUaPwL5TUuyYZwDG31xL5OrGAfpUzSHHRiTLIhT7GM6+EMxKKmxew4a5tOuYkcemS0vNlR8Qo0cg
+    XSsz2HQNm6MjGSMpT1JmQn0nORw63e12KUrctYBIxgnh2DCHeMaCor8oA7LJphM8LJoKbMAlnDyw
+    EExDpzhzbdhE+P1Dy50F4YA8Ni6BLHE8WrFiaMMG5rVSqfTg4AqHH9QxS1hkdn3ks4G/vgNCZPfE
+    EwlaMGxLzyzxHwFjbA5NtxghQFgg2Rn8poROJtw/wYY+HSjZBzI4tRwjokvlUSbupvh3lcZ7TIUY
+    40bzmZNJCojnXK5dcHZwMqFIcKKNqAx4pbz1ep3ycWq80QBySQ+CR21e5lqnB4EO1uEL70M4e7ZJ
+    L2KjjF4K5CoPAJ/W63XiSWjZZFNFgYqGIZ0lcPaI60p2iY5PTWwpEL6/OrS3r3EFyiruAtkyULFl
+    zn43JBiaiX/ExgFJD7GDXZ/8zTrHxgFpRUFrNpvrC7P4GlAZ+YZtFgQS21EEVkeTXe2Pprf0FAHZ
+    nLmXmILiyvw96+tcmpdnct8KhUA2Whn/HJKdS2X1v3ysv4u/6zj7OJowkRtgwAC4GISuk2xo8Av/
+    O/Jez7xyygAAAABJRU5ErkJggg==
+    "
+                                                style="image-rendering:optimizeQuality"
+                                                preserveAspectRatio="none"
+                                                height="32.5"
+                                                width="32.5"/>
+                                        <path
+
+                                                d="M 11.094883,30.95808 C -1.6415946,28.080121 -2.6808685,25.199956 4.2636501,12.026518 l 5.1068688,-9.6875002 5.4908651,0 c 3.019976,0 6.925961,-0.6538729 8.679965,-1.45305071 3.916413,-1.7844369 5.080396,-0.8506129 3.23583,2.59599271 -1.132721,2.1165082 -1.034176,2.607058 0.523724,2.607058 1.057835,0 1.91898,1.0751334 1.91898,2.3958334 0,1.3177082 0.703125,2.6365958 1.5625,2.9308618 1.094374,0.374733 0.08314,3.589197 -3.375279,10.729166 -5.415875,11.181178 -5.538789,11.247586 -16.312221,8.813201 z m 13.107006,-8.583416 c 2.072396,-4.105395 3.740938,-7.90227 3.70787,-8.4375 -0.03306,-0.53523 -1.729586,2.261229 -3.77004,6.214353 -3.604312,6.98291 -3.860562,7.191047 -9.002375,7.3121 -4.502516,0.106003 -4.826028,0.273978 -2.167461,1.1254 6.345317,2.032127 7.349715,1.476422 11.232006,-6.214353 z m -1.9823,-5.205882 c 1.829569,-4.21863 3.104726,-7.8919983 2.833685,-8.1630398 -0.271041,-0.2710417 -1.672672,2.2498778 -3.114736,5.6020448 -3.164194,7.355367 -4.554059,8.620213 -10.223674,9.304053 -3.8455264,0.463827 -3.6770127,0.551092 1.404128,0.727131 l 5.77411,0.200046 3.326487,-7.670235 z m -2.787236,-3.579764 c 1.858494,-3.7812502 3.414731,-7.4633571 3.458305,-8.1824598 0.05011,-0.8269642 -2.102825,-1.0566536 -5.858275,-0.625 -5.814979,0.668377 -6.023501,0.8450944 -10.1051945,8.5639318 l -4.1676946,7.881472 6.6468889,-0.381472 6.6468892,-0.381473 3.379081,-6.874999 z m -13.33747,4.999999 c 0.4248984,-0.687499 2.8487204,-1.241386 5.386271,-1.230858 3.439053,0.01427 4.136345,0.32765 2.738729,1.230858 -2.494743,1.612227 -9.1214109,1.612227 -8.125,0 z m 1.875,-3.739407 c 0,-0.681674 1.125,-1.941982 2.5,-2.800683 1.375,-0.858702 2.5,-2.2697186 2.5,-3.1355927 0,-0.8658741 0.903931,-1.5743165 2.008736,-1.5743165 1.252513,0 1.743649,0.6908051 1.304593,1.8349687 -0.387279,1.0092325 -0.138897,2.1843105 0.551961,2.6112845 0.816704,0.504751 0.744066,1.393285 -0.207648,2.540032 -1.65773,1.997441 -8.657642,2.421356 -8.657642,0.524307 z"
+                                                id="svg-tags-color"
+                                                inkscape:connector-curvature="0"/>
+                                    </svg>
+                                    <span class="nav-text">Daily News</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg
+                                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                            xmlns:cc="http://creativecommons.org/ns#"
+                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                            xmlns:svg="http://www.w3.org/2000/svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                            id="svg4136"
+                                            version="1.1"
+                                            inkscape:version="0.91 r13725"
+                                            width="31.203165"
+                                            height="32.244915"
+                                            viewBox="0 0 31.203165 32.244915"
+                                            sodipodi:docname="magazine.svg">
+                                        <metadata
+                                                id="metadata4142">
+                                            <rdf:RDF>
+                                                <cc:Work
+                                                        rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type
+                                                            rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <defs
+                                                id="defs4140"/>
+                                        <sodipodi:namedview
+                                                pagecolor="#ffffff"
+                                                bordercolor="#666666"
+                                                borderopacity="1"
+                                                objecttolerance="10"
+                                                gridtolerance="10"
+                                                guidetolerance="10"
+                                                inkscape:pageopacity="0"
+                                                inkscape:pageshadow="2"
+                                                inkscape:window-width="1858"
+                                                inkscape:window-height="1058"
+                                                id="namedview4138"
+                                                showgrid="false"
+                                                fit-margin-top="0"
+                                                fit-margin-left="0"
+                                                fit-margin-right="0"
+                                                fit-margin-bottom="0"
+                                                inkscape:zoom="3.4687516"
+                                                inkscape:cx="7.6435377"
+                                                inkscape:cy="-22.314662"
+                                                inkscape:window-x="54"
+                                                inkscape:window-y="-8"
+                                                inkscape:window-maximized="1"
+                                                inkscape:current-layer="svg4136"/>
+                                        <path
+                                                style="fill:#000000"
+                                                d=""
+                                                id="path4146"
+                                                inkscape:connector-curvature="0"/>
+                                        <path
+                                                style="fill:#fefefe;fill-opacity:0.0558659"
+                                                d="m 104.50362,41.888563 c -0.96258,-0.962585 -1.5,-5.888889 -1.5,-13.75 l 0,-12.249999 11.25,0 c 9.16667,0 11.25,0.347222 11.25,1.875 0,1.354166 1.38889,1.874999 5,1.874999 l 5,0 0,10.375 c 0,6.402777 -0.57429,10.949297 -1.5,11.875 -2.05705,2.057052 -27.44295,2.057052 -29.5,0 z m 18.5,-12.25 0,-11.249999 -8.75,0 -8.75,0 0,9.158508 0,9.158508 3.75,-0.550382 c 2.25102,-0.330379 3.75,0.006 3.75,0.841491 0,0.76553 -1.54687,1.400488 -3.4375,1.411015 -2.67867,0.01492 -3.02359,0.286628 -1.5625,1.230859 1.03125,0.666445 4.82813,1.220331 8.4375,1.230859 l 6.5625,0.01914 0,-11.25 z m -8.75,7.5 c 0,-0.6875 1.6875,-1.25 3.75,-1.25 2.0625,0 3.75,0.5625 3.75,1.25 0,0.6875 -1.6875,1.25 -3.75,1.25 -2.0625,0 -3.75,-0.5625 -3.75,-1.25 z m -7.5,-3.75 c 0,-0.6875 1.40625,-1.249999 3.125,-1.249999 1.71875,0 3.125,0.562499 3.125,1.249999 0,0.6875 -1.40625,1.25 -3.125,1.25 -1.71875,0 -3.125,-0.5625 -3.125,-1.25 z m 7.5,0 c 0,-0.6875 1.6875,-1.249999 3.75,-1.249999 2.0625,0 3.75,0.562499 3.75,1.249999 0,0.6875 -1.6875,1.25 -3.75,1.25 -2.0625,0 -3.75,-0.5625 -3.75,-1.25 z m -7.5,-3.75 c 0,-0.6875 1.40625,-1.25 3.125,-1.25 1.71875,0 3.125,0.5625 3.125,1.25 0,0.6875 -1.40625,1.250001 -3.125,1.250001 -1.71875,0 -3.125,-0.562501 -3.125,-1.250001 z m 7.5,0 c 0,-0.6875 1.6875,-1.25 3.75,-1.25 2.0625,0 3.75,0.5625 3.75,1.25 0,0.6875 -1.6875,1.250001 -3.75,1.250001 -2.0625,0 -3.75,-0.562501 -3.75,-1.250001 z m -7.5,-6.25 c 0,-2.222222 0.83334,-2.5 7.5,-2.5 6.66667,0 7.5,0.277778 7.5,2.5 0,2.222223 -0.83333,2.5 -7.5,2.5 -6.66666,0 -7.5,-0.277777 -7.5,-2.5 z m 25.99715,7.812501 c 0.23098,-4.849008 -0.12464,-7.812501 -0.9375,-7.812501 -0.75412,0 -1.30965,2.916256 -1.30965,6.875 0,3.78125 -0.5625,6.875 -1.25,6.875 -0.69444,0 -1.25,-3.333334 -1.25,-7.5 0,-4.166666 -0.55555,-7.5 -1.25,-7.5 -1.36438,0 -1.7317,12.290235 -0.4659,15.588856 0.46248,1.205195 1.87247,1.888034 3.4375,1.664734 2.33324,-0.332909 2.69831,-1.321251 3.02555,-8.191089 z"
+                                                id="path4325"
+                                                inkscape:connector-curvature="0"/>
+                                        <image
+                                                y="-0.16098219"
+                                                x="-0.78011698"
+                                                id="image4461"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAC+ElEQVRIS61Wy5HaQBBFUAXclhAg
+    AzYCQwRmI7CJwOyBz83rG5/DaiOwHIFxBNZGYG0ExhFYewOqAL837lY1I2FY21M1JYF6+vV7/ZGC
+    0n9cw+GwXS6X38HlW+zVbDZrqfvgX3AGg0GjWq12giB4BT897KbxdznQZDJpHg6HjyeC6fwpSIB/
+    mE6ndxcxGo/HBKEM51YCgxib4G3sdLPZtMIwTM8Cid7fxHCJCJ8s2n6/T5CPFFEToEQZa7XaT7EJ
+    kZ9ba38yR2DzVSLMooOUZNcESLrdbiMbMZ7dQeb3HvUU//Xn8/myEAiHOjAgUEm1Ho1GPdx/zqQI
+    gq6y4X8IjGwavsZ6vhDIsMkqx48YrK4XiwVzUyJTLRpcb+CcJc58MdAWAlrlgOwhGPVhFBU4u4Uc
+    oUaPwL5TUuyYZwDG31xL5OrGAfpUzSHHRiTLIhT7GM6+EMxKKmxew4a5tOuYkcemS0vNlR8Qo0cg
+    XSsz2HQNm6MjGSMpT1JmQn0nORw63e12KUrctYBIxgnh2DCHeMaCor8oA7LJphM8LJoKbMAlnDyw
+    EExDpzhzbdhE+P1Dy50F4YA8Ni6BLHE8WrFiaMMG5rVSqfTg4AqHH9QxS1hkdn3ks4G/vgNCZPfE
+    EwlaMGxLzyzxHwFjbA5NtxghQFgg2Rn8poROJtw/wYY+HSjZBzI4tRwjokvlUSbupvh3lcZ7TIUY
+    40bzmZNJCojnXK5dcHZwMqFIcKKNqAx4pbz1ep3ycWq80QBySQ+CR21e5lqnB4EO1uEL70M4e7ZJ
+    L2KjjF4K5CoPAJ/W63XiSWjZZFNFgYqGIZ0lcPaI60p2iY5PTWwpEL6/OrS3r3EFyiruAtkyULFl
+    zn43JBiaiX/ExgFJD7GDXZ/8zTrHxgFpRUFrNpvrC7P4GlAZ+YZtFgQS21EEVkeTXe2Pprf0FAHZ
+    nLmXmILiyvw96+tcmpdnct8KhUA2Whn/HJKdS2X1v3ysv4u/6zj7OJowkRtgwAC4GISuk2xo8Av/
+    O/Jez7xyygAAAABJRU5ErkJggg==
+    "
+                                                style="image-rendering:optimizeQuality"
+                                                preserveAspectRatio="none"
+                                                height="32.5"
+                                                width="32.5"/>
+                                        <path
+
+                                                d="M 11.094883,30.95808 C -1.6415946,28.080121 -2.6808685,25.199956 4.2636501,12.026518 l 5.1068688,-9.6875002 5.4908651,0 c 3.019976,0 6.925961,-0.6538729 8.679965,-1.45305071 3.916413,-1.7844369 5.080396,-0.8506129 3.23583,2.59599271 -1.132721,2.1165082 -1.034176,2.607058 0.523724,2.607058 1.057835,0 1.91898,1.0751334 1.91898,2.3958334 0,1.3177082 0.703125,2.6365958 1.5625,2.9308618 1.094374,0.374733 0.08314,3.589197 -3.375279,10.729166 -5.415875,11.181178 -5.538789,11.247586 -16.312221,8.813201 z m 13.107006,-8.583416 c 2.072396,-4.105395 3.740938,-7.90227 3.70787,-8.4375 -0.03306,-0.53523 -1.729586,2.261229 -3.77004,6.214353 -3.604312,6.98291 -3.860562,7.191047 -9.002375,7.3121 -4.502516,0.106003 -4.826028,0.273978 -2.167461,1.1254 6.345317,2.032127 7.349715,1.476422 11.232006,-6.214353 z m -1.9823,-5.205882 c 1.829569,-4.21863 3.104726,-7.8919983 2.833685,-8.1630398 -0.271041,-0.2710417 -1.672672,2.2498778 -3.114736,5.6020448 -3.164194,7.355367 -4.554059,8.620213 -10.223674,9.304053 -3.8455264,0.463827 -3.6770127,0.551092 1.404128,0.727131 l 5.77411,0.200046 3.326487,-7.670235 z m -2.787236,-3.579764 c 1.858494,-3.7812502 3.414731,-7.4633571 3.458305,-8.1824598 0.05011,-0.8269642 -2.102825,-1.0566536 -5.858275,-0.625 -5.814979,0.668377 -6.023501,0.8450944 -10.1051945,8.5639318 l -4.1676946,7.881472 6.6468889,-0.381472 6.6468892,-0.381473 3.379081,-6.874999 z m -13.33747,4.999999 c 0.4248984,-0.687499 2.8487204,-1.241386 5.386271,-1.230858 3.439053,0.01427 4.136345,0.32765 2.738729,1.230858 -2.494743,1.612227 -9.1214109,1.612227 -8.125,0 z m 1.875,-3.739407 c 0,-0.681674 1.125,-1.941982 2.5,-2.800683 1.375,-0.858702 2.5,-2.2697186 2.5,-3.1355927 0,-0.8658741 0.903931,-1.5743165 2.008736,-1.5743165 1.252513,0 1.743649,0.6908051 1.304593,1.8349687 -0.387279,1.0092325 -0.138897,2.1843105 0.551961,2.6112845 0.816704,0.504751 0.744066,1.393285 -0.207648,2.540032 -1.65773,1.997441 -8.657642,2.421356 -8.657642,0.524307 z"
+                                                id="svg-tags-color"
+                                                inkscape:connector-curvature="0"/>
+                                    </svg>
+                                    <span class="nav-text">Magazine</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg
+                                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                            xmlns:cc="http://creativecommons.org/ns#"
+                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                            xmlns:svg="http://www.w3.org/2000/svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                            id="svg4136"
+                                            version="1.1"
+                                            inkscape:version="0.91 r13725"
+                                            width="32.5"
+                                            height="32.314518"
+                                            viewBox="0 0 32.500001 32.314519"
+                                            sodipodi:docname="map.svg">
+                                        <metadata
+                                                id="metadata4142">
+                                            <rdf:RDF>
+                                                <cc:Work
+                                                        rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type
+                                                            rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <defs
+                                                id="defs4140"/>
+                                        <sodipodi:namedview
+                                                pagecolor="#ffffff"
+                                                bordercolor="#666666"
+                                                borderopacity="1"
+                                                objecttolerance="10"
+                                                gridtolerance="10"
+                                                guidetolerance="10"
+                                                inkscape:pageopacity="0"
+                                                inkscape:pageshadow="2"
+                                                inkscape:window-width="1858"
+                                                inkscape:window-height="1058"
+                                                id="namedview4138"
+                                                showgrid="false"
+                                                fit-margin-top="0"
+                                                fit-margin-left="0"
+                                                fit-margin-right="0"
+                                                fit-margin-bottom="0"
+                                                inkscape:zoom="3.532"
+                                                inkscape:cx="-63.014163"
+                                                inkscape:cy="56.747614"
+                                                inkscape:window-x="54"
+                                                inkscape:window-y="-8"
+                                                inkscape:window-maximized="1"
+                                                inkscape:current-layer="svg4136"/>
+                                        <path
+                                                style="fill:#000000"
+                                                d=""
+                                                id="path4146"
+                                                inkscape:connector-curvature="0"/>
+                                        <image
+                                                y="0.033550449"
+                                                x="3.2275391e-006"
+                                                id="image4257"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAACQ0lEQVRIS61Wy3HCMBDFcICj6QA6
+SDqADnAFgQoCF+AGufE5xKkgpoLQQSiBDkIH+AgHcN5TJM+OsGwIaIZBlvbt259W8kaj0d7zvI9S
+qRTNZrMd/nPHeDzuJknyCqEnLbglHtgoC6jlJx6IEiEQAbQCaCNBEG5xDbKfWO86LInm83mPe/1+
+36/Van0Y9ILPBtdsIqNDWckPCE8wf9NzEjkH5Hqn02lbLpe/IeRLQUkUYqNjLJBCsJRyBLf0enQ8
+HgecV6vVd+HlBrJtEaXI7KVEsKbN8DBMOgck5QgBHsgQg6QehmFswgSyvTGMRkHHFN8q5wZ3QSQ9
+YayNQhaNCQeMaprCgdIGDPvRuBhEdanjKiILIAthez6fVeKRD66bCkwLwmBvJtIhZZ6cA+TPy+Vy
+e5dHBFsFYROuEbbAXrzZIyrI80rm7W6PtFdZh/YiN3k56rnaiLTQqjK15fJGG6Y6T1ZnWKNcV4vF
+Yu3KutWKnN4UERn9TgXD4bADL74oCKOCAqOcHtmObNAJAnNwRexVN7APaGHV5Z0PNlXkb2pVkzpT
+7G152IvyzhPGXgyvmrZXBRi1fSsRMbw6AlwDfqVS8fEf210gi/g/RFl6diiGwaOKoTBCvPBcZ/BR
+HhkjnDl8NBHPE0PIWzodsou43gyF4coQUNc41zXBBNOukeO1y+cTFxtXaI/1o4VFYGN4tUf48VGS
+EvBoEOMZ5RlvBcmrhA+HA47S31tBW26/L5yYlEiA+QbgA1FZlUVge65DlYv5BZ19q+5+gJWuAAAA
+AElFTkSuQmCC
+"
+                                                preserveAspectRatio="none"
+                                                height="32.5"
+                                                width="32.5"/>
+                                        <path
+
+                                                d="M 4.0625,30.669962 0,28.904232 0,14.452122 0,0 4.50779,1.883476 C 6.98708,2.919388 9.51833,3.456239 10.13279,3.07648 10.74726,2.69672 11.25,2.99936 11.25,3.74901 11.25,5.893672 7.94784,6.611182 5.09768,5.085822 2.64928,3.775483 2.5,4.013582 2.5,9.229062 c 0,4.87717 0.37503,5.6276 3.16206,6.32709 1.73914,0.4365 4.37182,2.18498 5.85042,3.88552 1.4786,1.70053 4.01933,3.09188 5.64608,3.09188 1.94881,0 3.66398,1.23059 5.02821,3.60763 1.80456,3.14426 2.43932,3.4396 4.94187,2.29936 C 29.80856,27.219492 30,26.395592 30,16.082902 30,7.094592 29.65026,5.033552 28.125,5.033552 c -2.90487,0 -2.21513,-1.943743 1.25,-3.52256 l 3.125,-1.423845 0,14.316105 0,14.3161 -3.73361,1.93072 c -3.3358,1.72501 -4.21243,1.73066 -8.22755,0.053 -3.97756,-1.66193 -4.90594,-1.66465 -8.07932,-0.0236 -4.21804,2.18124 -3.3544,2.18221 -8.39702,-0.01 z m 11.13639,-17.44019 c -1.7315,-4.00081 -2.59846,-7.79344 -2.12356,-9.289722 1.55112,-4.887154 9.79822,-4.887154 11.34934,0 0.73366,2.311572 -4.12377,16.050832 -5.67467,16.050832 -0.34375,0 -1.94175,-3.0425 -3.55111,-6.76111 z m 5.49342,-5.80514 c 1.28815,-2.08427 -1.60901,-4.474384 -3.3334,-2.75 -1.4424,1.44241 -0.53965,4.10892 1.39109,4.10892 0.60635,0 1.48039,-0.61151 1.94231,-1.35892 z"
+                                                id="svg-tags-color"
+                                                inkscape:connector-curvature="0"/>
+                                    </svg>
+
+                                    <span class="nav-text">Maps</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg
+                                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                            xmlns:cc="http://creativecommons.org/ns#"
+                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                            xmlns:svg="http://www.w3.org/2000/svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                            id="svg4136"
+                                            version="1.1"
+                                            inkscape:version="0.91 r13725"
+                                            width="27.523312"
+                                            height="32.5"
+                                            viewBox="0 0 27.523312 32.500001"
+                                            sodipodi:docname="science.svg">
+                                        <metadata
+                                                id="metadata4142">
+                                            <rdf:RDF>
+                                                <cc:Work
+                                                        rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type
+                                                            rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <defs
+                                                id="defs4140"/>
+                                        <sodipodi:namedview
+                                                pagecolor="#ffffff"
+                                                bordercolor="#666666"
+                                                borderopacity="1"
+                                                objecttolerance="10"
+                                                gridtolerance="10"
+                                                guidetolerance="10"
+                                                inkscape:pageopacity="0"
+                                                inkscape:pageshadow="2"
+                                                inkscape:window-width="1858"
+                                                inkscape:window-height="1058"
+                                                id="namedview4138"
+                                                showgrid="false"
+                                                fit-margin-top="0"
+                                                fit-margin-left="0"
+                                                fit-margin-right="0"
+                                                fit-margin-bottom="0"
+                                                inkscape:zoom="3.532"
+                                                inkscape:cx="-10.235991"
+                                                inkscape:cy="-10.241343"
+                                                inkscape:window-x="54"
+                                                inkscape:window-y="-8"
+                                                inkscape:window-maximized="1"
+                                                inkscape:current-layer="svg4136"/>
+                                        <path
+                                                style="fill:#000000"
+                                                d=""
+                                                id="path4146"
+                                                inkscape:connector-curvature="0"/>
+                                        <path
+
+                                                d="m 1.3980743,31 c -2.51542,-2.515424 -1.70784395,-5.514694 3.00315,-11.153386 3.880075,-4.644146 4.415399,-6.044154 3.868946,-10.118267 L 7.6359653,5 13.648074,5 19.660183,5 19.025978,9.728347 c -0.546453,4.074113 -0.01113,5.474121 3.868946,10.118267 C 30.984988,29.52979 28.814415,32.5 13.648074,32.5 6.9536303,32.5 2.3321823,31.934109 1.3980743,31 Z m 5.123261,-6.625 C 8.3942093,20.447544 9.1211753,20 13.62785,20 c 4.76308,0 6.498782,-1.438659 3.770224,-3.125 -0.6875,-0.424899 -1.25,-2.708095 -1.25,-5.073771 0,-3.467896 -0.484357,-4.301229 -2.5,-4.301229 -1.375,0 -2.5,0.5625 -2.5,1.25 0,0.6875 0.84375,1.25 1.875,1.25 2.250084,0 2.553523,3.716401 0.3125,3.827373 -1.512133,0.07488 -9.2009717,9.700287 -10.5436537,13.199261 -1.433621,3.735957 1.769377,1.458609 3.729415,-2.651634 z m 12.8190527,3.016085 c 1.288151,-2.084274 -1.609011,-4.474387 -3.333399,-2.75 C 14.564584,26.08349 15.467338,28.75 17.398074,28.75 c 0.606351,0 1.480393,-0.611512 1.942314,-1.358915 z M 12.398074,23.4375 c 0,-1.46386 -1.820943,-1.099671 -2.34375,0.46875 -0.2578117,0.773438 0.164063,1.195313 0.9375,0.9375 0.773438,-0.257812 1.40625,-0.890625 1.40625,-1.40625 z m 1.25,-21.5625 c 0,-1.03125 0.84375,-1.875 1.875,-1.875 1.03125,0 1.875,0.84375 1.875,1.875 0,1.03125 -0.84375,1.875 -1.875,1.875 -1.03125,0 -1.875,-0.84375 -1.875,-1.875 z"
+                                                id="svg-tags-color"
+                                                inkscape:connector-curvature="0"/>
+                                    </svg>
+                                    <span class="nav-text">Science</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg
+                                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                            xmlns:cc="http://creativecommons.org/ns#"
+                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                            xmlns:svg="http://www.w3.org/2000/svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                            id="svg4136"
+                                            version="1.1"
+                                            inkscape:version="0.91 r13725"
+                                            width="38.011536"
+                                            height="26.521759"
+                                            viewBox="0 0 38.011536 26.52176"
+                                            sodipodi:docname="education.svg">
+                                        <metadata
+                                                id="metadata4142">
+                                            <rdf:RDF>
+                                                <cc:Work
+                                                        rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type
+                                                            rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <defs
+                                                id="defs4140"/>
+                                        <sodipodi:namedview
+                                                pagecolor="#ffffff"
+                                                bordercolor="#666666"
+                                                borderopacity="1"
+                                                objecttolerance="10"
+                                                gridtolerance="10"
+                                                guidetolerance="10"
+                                                inkscape:pageopacity="0"
+                                                inkscape:pageshadow="2"
+                                                inkscape:window-width="1858"
+                                                inkscape:window-height="1058"
+                                                id="namedview4138"
+                                                showgrid="false"
+                                                fit-margin-top="0"
+                                                fit-margin-left="0"
+                                                fit-margin-right="0"
+                                                fit-margin-bottom="0"
+                                                inkscape:zoom="3.532"
+                                                inkscape:cx="-59.662166"
+                                                inkscape:cy="49.669908"
+                                                inkscape:window-x="54"
+                                                inkscape:window-y="-8"
+                                                inkscape:window-maximized="1"
+                                                inkscape:current-layer="svg4136"/>
+                                        <path
+                                                style="fill:#000000"
+                                                d=""
+                                                id="path4146"
+                                                inkscape:connector-curvature="0"/>
+                                        <image
+                                                y="-0.80985343"
+                                                x="-0.73846418"
+                                                id="image4296"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAXCAYAAABqBU3hAAADKUlEQVRIS72WS2gTURSGnSSY56Ig
+IrqpQasFJRZ81GXAjW19VDF2UTdZWBRsoaSvFISCi6QNWBQfu64lsWB9tGIRqZtCFVGr1Fpw043Q
+hSA0SbVt/E6ZhElMJpMpdOAyM/ee//z/OeeeuaNsM3kNDAy40ul0g8AdDscE70kzrpRKQEKaTCYb
+FUW5DK6J4VLxQv4ik8nEXS7XeCViygrQkAZUUncZ0cuqmIQRMUUFdHZ2Ou12eyMRZSMtR1pK04YY
+MhZfWVkZHx4eThUa5gRkSdfX1wMAzmBYjvQXAkex9WJ7ykApl7F/brFYEloxSjgc3gHpPRycNUD6
+F5u3OLkZiUSm+/v7d62trT1izm9AgNZEMvMMPzeUUChUbbPZnjBRp+NkAfV3h4aG7re1tdmqqqqa
+AAeZawRjq5A8a/5xdXW1OVeCvr6+/Wr6g1jUMDKMN6T4ajQa/dHV1eWzWq2y1srYaZL0E6IT0i2x
+WGxBfORtQkjckCwy/5PR4nQ65+j1KwCu8V5vhpQAPhNYHL8Jyva95CaUhZ6eng4AdwAcReEHmevu
+7q6RvmdIGx4xIkJIJVLKFC9GqvWRl4He3t7XLHoGBwfrKUkIIR7e49R+TkBs2APMbYiBwFcgZlZs
+hRj7eTWgg6rwOnxeKia+UIAA32PcSjYmAJ8WEE6/iHNVTKFzWc+RlhA5j89aXQFEfx2DBzhb5Au2
+l9r7eZ5kzpKXsiI1NVAmQwKmITqpkvlQPIuoGd6P69T9m7pWNDoNrrwAUh4k5SOygWg7+SZkEPCO
++zEjG0/PBp9T+PTrloDa1bLBZLPdJvqQpJVd/F/bmBGDgAYEvNQVQAbOYTiG0WMESMtJW8rcQx73
+mCEGMw++A/JXpfC5LiDdoxhdZMxIG2YBgUDA6vV6m3B0gbGPjSmHjwjK25waggXsJsnmpHoc/9Et
+jyxCfoib9LEI+oqAw3qg9vZ2u8fjqYZExGxH1JIMt9u9xP/D70qypQBwpFKpKUAnVOAYAporcbIZ
+W4XoR3Agh8zGRSTn+ZI93YzTSrAKZ/puzvQwoBbIb0Eu/wZbdmk/xfIsR/CWXv8A0mV2HbeG2eEA
+AAAASUVORK5CYII=
+"
+                                                preserveAspectRatio="none"
+                                                height="28.75"
+                                                width="40"/>
+                                        <path
+
+                                                d="m 0.15992894,25.921873 c -0.42255,-0.42255 0.02152,-1.973643 0.98681496,-3.446875 0.965298,-1.473231 1.701336,-3.799384 1.63564,-5.169226 -0.0657,-1.369844 0.301218,-4.0375 0.815363,-5.928125 0.737694,-2.712663 0.51087,-3.4375 -1.075701,-3.4375 -4.694289,0 -1.359722,-2.26395 7.36449,-5 L 19.261536,0 l 9.375,2.940147 c 5.15625,1.617081 9.375,3.292895 9.375,3.724032 0,0.942736 -16.205264,6.275968 -19.06981,6.275968 -1.109592,0 -3.592205,-0.598724 -5.516917,-1.330499 L 9.9253319,10.27915 14.905935,7.960833 c 2.73933,-1.275075 4.136851,-2.351497 3.105601,-2.392049 -1.03125,-0.04055 -4.265625,1.011413 -7.1875,2.3377 -5.4220191,2.461146 -6.2462071,4.445973 -5.3652441,12.920695 0.37713,3.627919 -3.26441,7.129148 -5.29886296,5.094694 z M 10.285024,20.127647 c -2.2255941,-1.779371 -3.8616911,-7.1875 -2.1744021,-7.1875 0.61327,0 3.5494761,0.651114 6.5249011,1.446919 4.449194,1.189977 6.450131,1.092465 11.26794,-0.549128 l 5.858073,-1.996046 0,2.978247 c 0,1.660614 -1.229099,3.839143 -2.778132,4.924128 -3.383182,2.369672 -15.893154,2.626169 -18.69838,0.38338 z"
+                                                id="svg-tags-color"
+                                                inkscape:connector-curvature="0"/>
+                                    </svg>
+
+                                    <span class="nav-text">Education</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+
+                                    <svg
+                                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                            xmlns:cc="http://creativecommons.org/ns#"
+                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                            xmlns:svg="http://www.w3.org/2000/svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                            id="svg4136"
+                                            version="1.1"
+                                            inkscape:version="0.91 r13725"
+                                            width="32.155472"
+                                            height="31.008518"
+                                            viewBox="0 0 32.155473 31.008519"
+                                            sodipodi:docname="game.svg">
+                                        <metadata
+                                                id="metadata4142">
+                                            <rdf:RDF>
+                                                <cc:Work
+                                                        rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type
+                                                            rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <defs
+                                                id="defs4140"/>
+                                        <sodipodi:namedview
+                                                pagecolor="#ffffff"
+                                                bordercolor="#666666"
+                                                borderopacity="1"
+                                                objecttolerance="10"
+                                                gridtolerance="10"
+                                                guidetolerance="10"
+                                                inkscape:pageopacity="0"
+                                                inkscape:pageshadow="2"
+                                                inkscape:window-width="1858"
+                                                inkscape:window-height="1058"
+                                                id="namedview4138"
+                                                showgrid="false"
+                                                fit-margin-top="0"
+                                                fit-margin-left="0"
+                                                fit-margin-right="0"
+                                                fit-margin-bottom="0"
+                                                inkscape:zoom="3.532"
+                                                inkscape:cx="43.895517"
+                                                inkscape:cy="-39.974184"
+                                                inkscape:window-x="54"
+                                                inkscape:window-y="-8"
+                                                inkscape:window-maximized="1"
+                                                inkscape:current-layer="svg4136"/>
+                                        <path
+                                                style="fill:#000000"
+                                                d=""
+                                                id="path4146"
+                                                inkscape:connector-curvature="0"/>
+                                        <path
+
+                                                d="M 1.0072943,28.550718 C -3.2399621,20.614647 6.9853213,6.6201231 12.327736,13.057339 c 0.855861,1.03125 2.543361,1.875 3.749999,1.875 1.206639,0 2.894139,-0.84375 3.75,-1.875 5.342416,-6.4372159 15.567698,7.557308 11.320442,15.493379 -1.815647,3.392566 -3.091698,3.31469 -8.084333,-0.493379 -2.253397,-1.71875 -5.397146,-3.125 -6.986109,-3.125 -1.588962,0 -4.732711,1.40625 -6.9861077,3.125 -4.992635,3.808069 -6.268687,3.885945 -8.084333,0.493379 z m 9.6240127,-6.743379 c 1.666667,-1.666666 1.656746,-2.093253 -0.08929,-3.839286 -1.7768467,-1.776846 -2.1497507,-1.77882 -3.9078887,-0.02069 -1.60844,1.60844 -1.662329,2.262302 -0.3125,3.791738 2.050789,2.323664 2.054186,2.323718 4.3096747,0.06822 z m 15,0 c 1.666666,-1.666666 1.656746,-2.093253 -0.08929,-3.839286 -1.776847,-1.776846 -2.149751,-1.77882 -3.90789,-0.02069 -1.60844,1.60844 -1.662328,2.262302 -0.3125,3.791738 2.050789,2.323664 2.054187,2.323718 4.309675,0.06822 z m -3.303572,-1.875 c 0,-0.6875 0.5625,-1.25 1.25,-1.25 0.6875,0 1.25,0.5625 1.25,1.25 0,0.6875 -0.5625,1.25 -1.25,1.25 -0.6875,0 -1.25,-0.5625 -1.25,-1.25 z m -7.499999,-9.30412 c 0,-2.4023339 4.852843,-5.6958799 8.392539,-5.6958799 1.559952,0 3.53885,-1.125 4.397552,-2.5 1.795676,-2.87533555 3.459908,-3.26915055 3.459908,-0.8187345 0,2.6732346 -4.270773,5.8187345 -7.900333,5.8187345 -1.974723,0 -3.963483,1.016799 -4.889758,2.5 -1.829343,2.9292439 -3.459908,3.2571949 -3.459908,0.6958799 z"
+                                                id="svg-tags-color"
+                                                inkscape:connector-curvature="0"/>
+                                    </svg>
+                                    <span class="nav-text">Game</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg
+                                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                            xmlns:cc="http://creativecommons.org/ns#"
+                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                            xmlns:svg="http://www.w3.org/2000/svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                            id="svg4136"
+                                            version="1.1"
+                                            inkscape:version="0.91 r13725"
+                                            width="31.701033"
+                                            height="32.319714"
+                                            viewBox="0 0 31.701033 32.319714"
+                                            sodipodi:docname="events.svg">
+                                        <metadata
+                                                id="metadata4142">
+                                            <rdf:RDF>
+                                                <cc:Work
+                                                        rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type
+                                                            rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <defs
+                                                id="defs4140"/>
+                                        <sodipodi:namedview
+                                                pagecolor="#ffffff"
+                                                bordercolor="#666666"
+                                                borderopacity="1"
+                                                objecttolerance="10"
+                                                gridtolerance="10"
+                                                guidetolerance="10"
+                                                inkscape:pageopacity="0"
+                                                inkscape:pageshadow="2"
+                                                inkscape:window-width="1858"
+                                                inkscape:window-height="1058"
+                                                id="namedview4138"
+                                                showgrid="false"
+                                                fit-margin-top="0"
+                                                fit-margin-left="0"
+                                                fit-margin-right="0"
+                                                fit-margin-bottom="0"
+                                                inkscape:zoom="3.532"
+                                                inkscape:cx="40.631671"
+                                                inkscape:cy="-37.192775"
+                                                inkscape:window-x="54"
+                                                inkscape:window-y="-8"
+                                                inkscape:window-maximized="1"
+                                                inkscape:current-layer="svg4136"/>
+                                        <path
+                                                style="fill:#000000"
+                                                d=""
+                                                id="path4146"
+                                                inkscape:connector-curvature="0"/>
+                                        <image
+                                                y="-2.6336693e-009"
+                                                x="-0.17396696"
+                                                id="image4218"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABXUlEQVRIS91WwXHCMBCMXvaTdBA6
+oARSAeMOoAP/7F/gZ7sJ6AA6wCXQAXSQfP1ydhmLMYpknRhPhuE+1sh7t7fS6ST15rAsy775qyzL
+dxemP+/DqwGitiNyYgyiQbxK03QSRdEeTnPtCBUKGd4c9diVlAdfN02TMOCxT6JVjEjEkPUt8362
+bdsmSqkt5zBeYUzFTpPgrUSIeILzhpFB8oXPzFMQXryLSFJoQZgXJmKJBq2FEKyr9+68CH2DYM9H
+lOf5HKXOQ+20oWUXK/pPog9IWRqdY9E7xDUUfbrkihWZAbomfMb8pOscq6IodqMTYSnX2DO2JdqP
+7756SJFFzQZq1kOF8hCRoYYNdwqiy+hEyI57w+KgHbBsie/0BiuCmiX25npH0XgHVVV1GJ3IUHOB
+mqmPhP+DFUmC2jB/iLCx3goKIWOFxnGc6qNgfZyEBBRia+tzS+gshV2fW79UAhIC3vZfQgAAAABJ
+RU5ErkJggg==
+"
+                                                preserveAspectRatio="none"
+                                                height="32.5"
+                                                width="32.5"/>
+                                        <path
+
+                                                d="M 0.38039485,30.891665 C 0.02462525,29.964544 -0.10502325,23.337768 0.09228705,16.165495 0.42792245,3.9650766 0.62171925,3.1006435 3.1005927,2.7469136 c 1.8080487,-0.2580046 2.8626452,0.4367543 3.320475,2.1875 0.857566,3.2793348 3.442039,3.3188212 4.2927793,0.065586 0.945814,-3.6167993 9.778559,-3.6167993 10.724373,0 0.85074,3.2532348 3.435213,3.2137484 4.292778,-0.065586 0.45783,-1.7507458 1.512427,-2.4455047 3.320475,-2.1875 2.523898,0.3601545 2.64956,1.0598595 2.64956,14.7530864 l 0,14.375 -15.336892,0.351169 C 4.4018682,32.50007 0.88491965,32.206435 0.38039485,30.891665 Z M 29.826033,20.625 l 0,-9.375 -13.75,0 -13.7499999,0 0,9.375 0,9.375 13.7499999,0 13.75,0 0,-9.375 z m -15.6571,3.187075 C 16.705772,18.906369 16.573671,17.5 13.576033,17.5 c -1.375,0 -2.5,-0.5625 -2.5,-1.25 0,-0.6875 2.25,-1.25 5,-1.25 2.75,0 5,0.403069 5,0.895709 0,0.49264 -0.92017,3.30514 -2.044822,6.25 C 17.619865,25.841269 16.254567,27.5 14.624111,27.5 12.410593,27.5 12.38193,27.267759 14.168933,23.812075 Z M 7.3260327,3.125 c 0,-1.71875 0.5625,-3.125 1.25,-3.125 0.6875,0 1.25,1.40625 1.25,3.125 0,1.71875 -0.5625,3.125 -1.25,3.125 -0.6875,0 -1.25,-1.40625 -1.25,-3.125 z m 15.0000003,0 c 0,-1.71875 0.5625,-3.125 1.25,-3.125 0.6875,0 1.25,1.40625 1.25,3.125 0,1.71875 -0.5625,3.125 -1.25,3.125 -0.6875,0 -1.25,-1.40625 -1.25,-3.125 z"
+                                                id="svg-tags-color"
+                                                inkscape:connector-curvature="0"/>
+                                    </svg>
+
+                                    <span class="nav-text">Events</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+
+                                    <svg
+                                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                            xmlns:cc="http://creativecommons.org/ns#"
+                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                            xmlns:svg="http://www.w3.org/2000/svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                            id="svg4136"
+                                            version="1.1"
+                                            inkscape:version="0.91 r13725"
+                                            width="32.128132"
+                                            height="32.349072"
+                                            viewBox="0 0 32.128132 32.349071"
+                                            sodipodi:docname="blogs.svg">
+                                        <metadata
+                                                id="metadata4142">
+                                            <rdf:RDF>
+                                                <cc:Work
+                                                        rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type
+                                                            rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <defs
+                                                id="defs4140"/>
+                                        <sodipodi:namedview
+                                                pagecolor="#ffffff"
+                                                bordercolor="#666666"
+                                                borderopacity="1"
+                                                objecttolerance="10"
+                                                gridtolerance="10"
+                                                guidetolerance="10"
+                                                inkscape:pageopacity="0"
+                                                inkscape:pageshadow="2"
+                                                inkscape:window-width="1858"
+                                                inkscape:window-height="1058"
+                                                id="namedview4138"
+                                                showgrid="false"
+                                                fit-margin-top="0"
+                                                fit-margin-left="0"
+                                                fit-margin-right="0"
+                                                fit-margin-bottom="0"
+                                                inkscape:zoom="3.532"
+                                                inkscape:cx="41.534186"
+                                                inkscape:cy="-38.755907"
+                                                inkscape:window-x="54"
+                                                inkscape:window-y="-8"
+                                                inkscape:window-maximized="1"
+                                                inkscape:current-layer="svg4136"/>
+                                        <path
+                                                style="fill:#000000"
+                                                d=""
+                                                id="path4146"
+                                                inkscape:connector-curvature="0"/>
+                                        <path
+
+                                                d="M 0,30.741649 C 0,29.816953 1.129554,28.038151 2.51012,26.788757 4.790742,24.724822 4.843,24.321283 3.08169,22.375057 -2.877139,15.790624 1.305362,4.5810869 10.97825,1.2114578 c 4.636827,-1.61527706 5.906675,-1.61527706 10.543502,0 9.907561,3.4513794 13.844775,14.5908942 7.597129,21.4944652 -3.014184,3.330637 -8.328941,5.966991 -12.02915,5.966991 -1.668931,0 -5.053798,0.84375 -7.521927,1.875 C 3.999265,32.874598 0,32.955578 0,30.741649 Z m 10.718251,-3.469618 c 0.373611,-0.604514 2.952345,-1.099117 5.730521,-1.099117 4.077868,0 5.870195,-0.818966 9.301229,-4.25 5.293794,-5.293793 5.4593,-9.357115 0.602536,-14.7927783 -3.227094,-3.6117451 -4.39141,-4.0822205 -10.102536,-4.0822205 -5.711127,0 -6.875443,0.4704754 -10.102537,4.0822205 -4.342747,4.8603783 -4.613939,8.7269573 -0.939701,13.3979953 2.212018,2.812125 2.440872,3.869723 1.25,5.776612 C 5.655994,27.588579 5,28.875213 5,29.163929 c 0,0.913719 5.008391,-0.74332 5.718251,-1.891898 z"
+                                                id="svg-tags-color"
+                                                inkscape:connector-curvature="0"/>
+                                    </svg>
+
+                                    <span class="nav-text">Blogs</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg
+                                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                            xmlns:cc="http://creativecommons.org/ns#"
+                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                            xmlns:svg="http://www.w3.org/2000/svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                            id="svg4136"
+                                            version="1.1"
+                                            inkscape:version="0.91 r13725"
+                                            width="21.264114"
+                                            height="32.930782"
+                                            viewBox="0 0 21.264115 32.930783"
+                                            sodipodi:docname="explorers.svg">
+                                        <metadata
+                                                id="metadata4142">
+                                            <rdf:RDF>
+                                                <cc:Work
+                                                        rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type
+                                                            rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <defs
+                                                id="defs4140"/>
+                                        <sodipodi:namedview
+                                                pagecolor="#ffffff"
+                                                bordercolor="#666666"
+                                                borderopacity="1"
+                                                objecttolerance="10"
+                                                gridtolerance="10"
+                                                guidetolerance="10"
+                                                inkscape:pageopacity="0"
+                                                inkscape:pageshadow="2"
+                                                inkscape:window-width="1858"
+                                                inkscape:window-height="1058"
+                                                id="namedview4138"
+                                                showgrid="false"
+                                                fit-margin-top="0"
+                                                fit-margin-left="0"
+                                                fit-margin-right="0"
+                                                fit-margin-bottom="0"
+                                                inkscape:zoom="3.532"
+                                                inkscape:cx="35.462175"
+                                                inkscape:cy="-36.455942"
+                                                inkscape:window-x="54"
+                                                inkscape:window-y="-8"
+                                                inkscape:window-maximized="1"
+                                                inkscape:current-layer="svg4136"/>
+                                        <path
+                                                style="fill:#000000"
+                                                d=""
+                                                id="path4146"
+                                                inkscape:connector-curvature="0"/>
+                                        <path
+
+                                                d="m 2.8029193,30.430782 c 2.7139309,-7.864585 3.4579489,-9.305644 4.4787639,-8.674745 1.992454,1.231403 1.212991,4.068443 -2.106617,7.66754 -2.5133049,2.724907 -3.0424229,2.949568 -2.3721469,1.007205 z M 12.159919,28.56168 c 0,-2.80321 -1.041908,-5.331618 -3.0689078,-7.447351 C 6.2699522,18.169778 6.1308042,17.482832 7.3680592,12.60843 8.8274052,6.8590595 10.48601,6.1513626 15.224582,9.2561944 17.946094,11.039396 18.302565,11.025635 19.382625,9.0956741 21.312634,5.6469395 21.665589,8.503615 20.860349,21.055782 l -0.7618,11.875 -0.222165,-10 -0.222167,-10 -3.747148,-0.133102 c -3.084385,-0.109558 -3.74715,0.360822 -3.74715,2.659444 0,1.5359 0.886737,3.528473 1.970527,4.427938 1.451635,1.204751 1.755179,2.808555 1.15273,6.090556 -1.141535,6.218811 -3.123257,7.85968 -3.123257,2.586062 z M 0.25402933,14.7558 C -0.85241567,12.965535 1.8632953,7.6870793 4.3895723,6.7176558 7.1009582,5.6771995 7.4377052,6.5096186 6.2147142,11.229296 5.1132972,15.479803 1.8827303,17.391095 0.25402933,14.7558 Z M 10.11516,4.1891435 C 9.6822012,3.0608708 9.9273432,1.5383581 10.659919,0.80578214 12.56443,-1.098729 16.172931,0.64192164 15.675447,3.2251475 15.12132,6.1024999 11.115863,6.7969325 10.11516,4.1891435 Z"
+                                                id="svg-tags-color"
+                                                inkscape:connector-curvature="0"/>
+                                    </svg>
+
+                                    <span class="nav-text">Explorers</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <svg
+                                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                            xmlns:cc="http://creativecommons.org/ns#"
+                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                            xmlns:svg="http://www.w3.org/2000/svg"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                            id="svg4136"
+                                            version="1.1"
+                                            inkscape:version="0.91 r13725"
+                                            width="32.500027"
+                                            height="25.821428"
+                                            viewBox="0 0 32.500027 25.821429"
+                                            sodipodi:docname="trips.svg">
+                                        <metadata
+                                                id="metadata4142">
+                                            <rdf:RDF>
+                                                <cc:Work
+                                                        rdf:about="">
+                                                    <dc:format>image/svg+xml</dc:format>
+                                                    <dc:type
+                                                            rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                                    <dc:title></dc:title>
+                                                </cc:Work>
+                                            </rdf:RDF>
+                                        </metadata>
+                                        <defs
+                                                id="defs4140"/>
+                                        <sodipodi:namedview
+                                                pagecolor="#ffffff"
+                                                bordercolor="#666666"
+                                                borderopacity="1"
+                                                objecttolerance="10"
+                                                gridtolerance="10"
+                                                guidetolerance="10"
+                                                inkscape:pageopacity="0"
+                                                inkscape:pageshadow="2"
+                                                inkscape:window-width="1858"
+                                                inkscape:window-height="1058"
+                                                id="namedview4138"
+                                                showgrid="false"
+                                                fit-margin-top="0"
+                                                fit-margin-left="0"
+                                                fit-margin-right="0"
+                                                fit-margin-bottom="0"
+                                                inkscape:zoom="3.532"
+                                                inkscape:cx="0.63462139"
+                                                inkscape:cy="37.279548"
+                                                inkscape:window-x="54"
+                                                inkscape:window-y="-8"
+                                                inkscape:window-maximized="1"
+                                                inkscape:current-layer="svg4136"/>
+                                        <path
+                                                style="fill:#000000"
+                                                d=""
+                                                id="path4146"
+                                                inkscape:connector-curvature="0"/>
+                                        <path
+
+                                                d="M 0,24.785714 C 0,24.216071 7.3124998,23.75 16.25,23.75 c 8.9375,0 16.25,0.466071 16.25,1.035714 0,0.569643 -7.3125,1.035715 -16.25,1.035715 C 7.3124998,25.821429 0,25.355357 0,24.785714 Z m 0,-3.75 C 0,20.466071 0.675,20 1.4999998,20 c 1.166667,0 1.166667,-0.333334 0,-1.5 -1.8164208,-1.816421 -1.9907368,-6 -0.25,-6 0.6875,0 1.25,-1.96875 1.25,-4.375 0,-2.40625 0.5625,-4.375 1.25,-4.375 0.6875,0 1.25,-0.84375 1.25,-1.875 0,-1.03125 0.5625,-1.875 1.25,-1.875 0.6875,0 1.25,0.84375 1.25,1.875 0,1.03125 0.869239,1.875 1.931641,1.875 1.5305912,0 1.7612352,0.908344 1.1108872,4.375 l -0.8207552,4.375 4.9453802,0 c 3.357888,0 5.671641,-0.802512 7.207847,-2.5 2.552261,-2.820217 10.62809,-3.533103 10.620328,-0.9375 -0.0026,0.859375 -1.127571,3.40422 -2.5,5.655213 C 26.910155,19.777859 26.910351,20 30.000028,20 c 1.375,0 2.5,0.466071 2.5,1.035714 0,0.569643 -7.3125,1.035715 -16.25,1.035715 -8.9375002,0 -16.25,-0.466072 -16.25,-1.035715 z"
+                                                id="svg-tags-color"
+                                                inkscape:connector-curvature="0"/>
+                                    </svg>
+
+                                    <span class="nav-text">Trips</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-9 decor-border">
+                        <div class="nav-slider">
                             <ul>
-                                <li><a href="#">Вход</a></li>
-                                <li><a href="#">РЕГИСТРАЦИЯ</a></li>
-                                <li><a href="#">ВОСТАНОВЛЕНИЕ ПАРОЛЯ</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Animals </a></li>
+                                <li><a href="#">Ancient </a></li>
+                                <li><a href="#">Energy </a></li>
+                                <li><a href="#">Environment </a></li>
+                                <li><a href="#">Travel </a></li>
+
                             </ul>
-                        </form>
+                        </div>
+                        <div class="slider-box">
+                            <ul>
+                                <li>
+                                    <img src="images/pic-1.jpg" alt="slider_one_image">
+                                    <div class="description-box">
+                                        <div class="text-container">
+                                            <h2>Lion Cubs Playing</h2>
+                                            <p class="description-slide"> African lion cubs play in the grass in the
+                                                Okavango Delta</p>
+                                        </div>
+                                        <div class="pause-slide"><i class="fa fa-pause" aria-hidden="true"></i></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="letest-news">
+                            <ul>
+                                <li><i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    <span>Latest News</span>
+                                </li>
+                                <li>
+                                    <span>Most Recent</span>
+                                    <a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-list" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-list" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <section class="contact">
-                <div class="container">
-                    <a class="logo-contact" href="#">DARKGAMES</a>
-                    <form class="search-form" action="#" method="post">
-                        <input type="text" name="text" id="search-input" placeholder="ЧТО ИЩЕМ?">
-                        <input type="submit" value="" id="search-button">
-                    </form>
-                    <ul class="links">
-                        <li><a href="#">Вход</a></li>
-                        <li><a class="marked" href="#">Регистрация</a></li>
-                        <li><a href="#">Восстановление пароля</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="news">
-                <div class="container">
-                    <div class="grid">
-                        <h3>НОВЫЕ ПУБЛИКАЦИИ</h3>
-                        <ul>
-                            <li><a href="#">Create. Креативное мышление</a></li>
-                            <li><a href="#">Poker Night at the Inventory. Пока ты спал</a></li>
-                            <li><a href="#">Вести недели от PlayGround.ru</a></li>
-                            <li><a href="#">Inversion. Наперекор Эйнштейну</a></li>
-                            <li><a href="#">Faery: Legends of Avalon. Фея из косплея</a></li>
-                        </ul>
-                    </div>
-                    <div class="grid">
-                        <h3>ЛУЧШИЕ ПУБЛИКАЦИИ</h3>
-                        <ul>
-                            <li><a href="#">Create. Креативное мышление</a></li>
-                            <li><a href="#">Poker Night at the Inventory. Пока ты спал</a></li>
-                            <li><a href="#">Вести недели от PlayGround.ru</a></li>
-                            <li><a href="#">Inversion. Наперекор Эйнштейну</a></li>
-                            <li><a href="#">Faery: Legends of Avalon. Фея из косплея</a></li>
-                        </ul>
-                    </div>
-                    <div class="grid">
-                        <h3>ТОП ЗАКАЧЕК</h3>
-                        <ul>
-                            <li><a href="#">Create. Креативное мышление</a></li>
-                            <li><a href="#">Poker Night at the Inventory. Пока ты спал</a></li>
-                            <li><a href="#">Вести недели от PlayGround.ru</a></li>
-                            <li><a href="#">Inversion. Наперекор Эйнштейну</a></li>
-                            <li><a href="#">Faery: Legends of Avalon. Фея из косплея</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <aside class="left-side-bar">
-                <nav>
-                    <ul>
-                        <li class="header">НАВИГАЦИЯ</li>
-                        <li class="sb-close"><a href="#">Главная</a></li>
-                        <li class="sb-close"><a href="#">Автосимуляторы</a></li>
-                        <li class="sb-close"><a href="#">Главная</a></li>
-                        <li class="sb-close"><a href="#">Автосимуляторы</a></li>
-                        <li class="sb-close"><a href="#">Главная</a></li>
-
-                        <li class="header">ИГРЫ ПО ЖАНРАМ</li>
-                        <li class="sb-close"><a href="#">Главная</a></li>
-                        <li class="sb-close"><a href="#">Автосимуляторы</a></li>
-                        <li class="sb-close"><a href="#">Главная</a></li>
-                        <li class="sb-close"><a href="#">Автосимуляторы</a></li>
-                        <li class="sb-close"><a href="#">Главная</a></li>
-
-                        <li class="header">РЕКЛАМА</li>
-                        <li class="reclame">
-                            <a href="#"><img src="images/baner.jpg"><span>Banner<br>max-width 200x</span></a>
-                        </li>
-                    </ul>
-                </nav>
-            </aside>
-            <aside class="right-sidebar">
-                <div class="gallery">
-                    <h3><a class="block-title" href="#">Галерея</a></h3>
-                    <ul class="gallery-list">
-                        <li><a href="#"><img src="images/gallery.jpg" alt="Gallery photo"></a></li>
-                        <li><a href="#"><img src="images/gallery.jpg" alt="Gallery photo"></a></li>
-                        <li><a href="#"><img src="images/gallery.jpg" alt="Gallery photo"></a></li>
-                        <li><a href="#"><img src="images/gallery.jpg" alt="Gallery photo"></a></li>
-                    </ul>
-                    <a class="view-button" href="#">Просмотр ></a>
-                </div>
-                <div class="video">
-                    <h3><a class="block-title" href="#">Видео</a></h3>
-                    <ul class="video-list">
-                        <li>
-                            <a href="#"><img src="images/video-link.jpg" alt="Video picture"></a>
-                            <a class="video-name" href="#">Star Wars The For-ce: Unleashed 2</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="images/video-link.jpg" alt="Video picture"></a>
-                            <a class="video-name" href="#">Star Wars The For-ce: Unleashed 2</a>
-                        </li>
-                    </ul>
-                    <a class="view-button" href="#">Просмотр ></a>
-                </div>
-                <div class="advertise">
-                    <h3><a class="block-title" href="#">Реклама</a></h3>
-                    <a href="#"><img src="images/baner.jpg" alt="Advertise pic"></a>
-                    <span class="banner-text">Banner max-width 200x</span>
-                </div>
-                <div class="advertising-poll">
-                    <h3><a class="block-title" href="#">Реклама</a></h3>
-                    <form action="#" method="post">
-                        <p>Какие игры вы предпочитаете?</p>
-                        <ul>
-                            <li>
-                                <input id="action-point" type="radio" name="games_genres" value="action">
-                                <label for="action-point">Экшены</label>
-                            </li>
-                            <li>
-                                <input id="arcade-point" type="radio" name="games_genres" value="arcade">
-                                <label for="arcade-point">Аркады</label>
-                            </li>
-                            <li>
-                                <input id="sport-point" type="radio" name="games_genres" value="sport">
-                                <label for="sport-point">Спортивные</label>
-                            </li>
-                            <li>
-                                <input id="strategy-point" type="radio" name="games_genres" value="strategy">
-                                <label for="strategy-point">Стратегии</label>
-                            </li>
-                            <li>
-                                <input id="logic-point" type="radio" name="games_genres" value="logic">
-                                <label for="logic-point">Логитеческие</label>
-                            </li>
-                        </ul>
-                        <a class="marked-button" href="#">Голосовать</a>
-                        <a class="unmarked-button" href="#">Результаты</a>
-                    </form>
-                </div>
-            </aside>
-            <div class="center-grid">
-                <section class="intro">
-                    <div class="container">
-                        <div class="row">
-                            <div class="slider">
-                                <ul class="bxslider">
-                                    <li><img src="images/main-slider.jpg">
-                                        <span><p>РЕЦЕНЗИИ К ИГРЕ TOM CLANCY’S GHOST RECON II FUTURE SOLDIER</p></span>
-                                    </li>
-                                    <li><img src="images/main-slider.jpg">
-                                        <span><p>РЕЦЕНЗИИ К ИГРЕ TOM CLANCY’S GHOST RECON II FUTURE SOLDIER</p></span>
-                                    </li>
-                                    <li><img src="images/main-slider.jpg">
-                                        <span><p>РЕЦЕНЗИИ К ИГРЕ TOM CLANCY’S GHOST RECON II FUTURE SOLDIER</p></span>
-                                    </li>
-                                    <li><img src="images/main-slider.jpg">
-                                        <span><p>РЕЦЕНЗИИ К ИГРЕ TOM CLANCY’S GHOST RECON II FUTURE SOLDIER</p></span>
-                                    </li>
-                                    <li><img src="images/main-slider.jpg">
-                                        <span><p>РЕЦЕНЗИИ К ИГРЕ TOM CLANCY’S GHOST RECON II FUTURE SOLDIER</p></span>
-                                    </li>
-                                </ul>
-                                <div id="bx-pager">
-                                    <a data-slide-index="0" href=""><img src="images/mini-slider.jpg"></a>
-                                    <a data-slide-index="1" href=""><img src="images/mini-slider.jpg"></a>
-                                    <a data-slide-index="2" href=""><img src="images/mini-slider.jpg"></a>
-                                    <a data-slide-index="3" href=""><img src="images/mini-slider.jpg"></a>
-                                    <a data-slide-index="4" href=""><img src="images/mini-slider.jpg"></a>
+                <div class="row">
+                    <div class="col-md-6">
+                        <article>
+                            <div class="info-post-container">
+                                <img src="images/lion.jpg" alt="lion">
+                                <div class="left-meta">
+                                    <h2>African Lion Cub</h2>
+                                    <span class="poat-date">3 hourse ago</span>
+                                </div>
+                                <div class="right-meta">
+                                         <span class="star-box">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                          </span>
+                                    <span class="votes">1,291 votes</span>
                                 </div>
                             </div>
-                        </div>
+                            <p class="description-post">
+                                An African lion cub rests in the tall grasses of Botswana’s Okavango Delta. Once ranging
+                                across the African continent and into Syria, Israel, Iraq, Pakistan, Iran, and even
+                                northwest India, lions have declined to as few as 20,000 animals from about 450,000 just
+                                50 years ago.
+                            </p>
+                        </article>
                     </div>
-                </section>
+                    <div class="col-md-6">
+                        <article>
+                            <div class="info-post-container">
+                                <img src="images/monkey.jpg" alt="lion">
+                                <div class="left-meta">
+                                    <h2>Young Mountain Gorilla</h2>
+                                    <span class="poat-date">3 hourse ago</span>
+                                </div>
+                                <div class="right-meta">
+                                         <span class="star-box">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                          </span>
+                                    <span class="votes">1,291 votes</span>
+                                </div>
+                            </div>
+                            <p class="description-post">
+                                This young mountain gorilla, named Kwibesha, is a member of the Kabrizi family of
+                                gorillas in Virunga National Park. Wildlife rangers in the park have had to suspend
+                                their monitoring of the gorillas because rebel militias and the Congolese army occupy
+                                much of their habitat.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article>
+                            <div class="info-post-container">
+                                <img src="images/pin.jpg" alt="lion">
+                                <div class="left-meta">
+                                    <h2>King Penguins</h2>
+                                    <span class="poat-date">3 hourse ago</span>
+                                </div>
+                                <div class="right-meta">
+                                         <span class="star-box">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                          </span>
+                                    <span class="votes">1,291 votes</span>
+                                </div>
+                            </div>
+                            <p class="description-post">
+                                King penguins live on the more temperate islands north of Antarctica. Although their
+                                habitat is warmer than that of emperor penguins, king penguins have four layers of
+                                feathers and huddle together for warmth.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article>
+                            <div class="info-post-container">
+                                <img src="images/shark.jpg" alt="shark">
+                                <div class="left-meta">
+                                    <h2>Great White Shark</h2>
+                                    <span class="poat-date">3 hourse ago</span>
+                                </div>
+                                <div class="right-meta">
+                                         <span class="star-box">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                          </span>
+                                    <span class="votes">1,291 votes</span>
+                                </div>
+                            </div>
+                            <p class="description-post">The legendary great white shark is far more fearsome in our
+                                imaginations than in reality. As scientific research on these elusive predators
+                                increases, their image as mindless killing machines is beginning to fade.
+                            </p>
+                        </article>
+                    </div>
+                </div>
             </div>
-            <section class="main ">
-                <div class="container">
-                    <div class="slider-one">
-                        <div class="slide"><img src="images/slider-game-0.jpg"></div>
-                        <div class="slide"><img src="images/slider-game-1.jpg"></div>
-                        <div class="slide"><img src="images/slider-game-3.jpg"></div>
-                        <div class="slide"><img src="images/slider-game-4.jpg"></div>
-                        <div class="slide"><img src="images/slider-game-5.jpg"></div>
-                        <div class="slide"><img src="images/slider-game-3.jpg"></div>
-                        <div class="slide"><img src="images/slider-game-1.jpg"></div>
-
-                    </div>
+            <div class="col-md-3 right-bar">
+                <div class="right-bar-header">
+                    <span class="star-box"><i class="fa fa-star" aria-hidden="true"></i></span>
+                    <h2>Most Popular News</h2></div>
+                <ul class="right-bar-post">
+                    <li>
+                        <img src="images/pic.jpg" alt="snake">
+                        <div class="left-meta">
+                            <h2>The Bite That Heals</h2>
+                            <span class="poat-date">6 days ago</span>
+                        </div>
+                        <div class="right-meta">
+                            <span class="star-box">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                            <span class="counter">
+                                71,482 votes
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/pic-2.jpg" alt="toad">
+                        <div class="left-meta"><h2>Stranger Than Nature</h2>
+                            <span class="poat-date">8 days ago</span>
+                        </div>
+                        <div class="right-meta">
+                            <span class="star-box">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                            <span class="counter">
+                              64,159 votes
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="right-bar-header">
+                    <img src="images/icon-cam.png" alt="icon camera" class="icon">
+                    <h2>Most Popular Videos</h2>
                 </div>
-            </section>
-            <section id="posts">
-                <div class="container">
-                    <div class="posts">
-                        <nav class="post-nav">
-                            <a href="#"><img src="images/post-before-img-1.png">DarkGames</a> »
-                            <a href="#">Новости</a> »
-                            <a href="#">Экшены</a> »
-                            <a href="#">Mass Effect 2</a>
-                        </nav>
-                        <div class="post-header">
-                            <h4><a class="post-title" href="#">MASS EFFECT 2 - ОБЗОР ЭКШЕНА</a></h4>
-                            <i class="fa fa-pencil"></i>
-                            <i class="fa fa-heart"></i>
+                <ul>
+                    <li>
+                        <img src="images/video-preload-1.jpg" alt="video-click">
+                        <img src="images/play.png" alt="play" class="play">
+                        <div class="discription-video">
+                            <p>Most Rare Birds Ever</p>
+                            211,482 views
                         </div>
-                        <ul class="post-info clearfix">
-                            <li><img src="images/post-before-img-1.png">Автор: <a href="#">predator</a></li>
-                            <li><img src="images/post-before-img-1.png">Сегодня: <span class="time">23:00</span></li>
-                            <li><img src="images/post-before-img-1.png">Просмотров: <span
-                                    class="views-counter">23 000</span></li>
-                            <li><img src="images/post-before-img-1.png"><a href="#">Новости</a> » <a href="#">Экшены</a>
-                            </li>
-                            <li class="clearfix">
-                                <i class="marked fa fa-star"></i>
-                                <i class="marked fa fa-star"></i>
-                                <i class="marked fa fa-star"></i>
-                                <i class="marked fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </li>
-                        </ul>
-                        <div class="post-main">
-                            <img src="images/review-img.jpg" alt="Post image 1">
-                            <p><span class="bold-text">Mass Effect 2</span> — игра в жанре action RPG, разработанная
-                                канадской компанией BioWare и выпущенная американским издательством Electronic Arts в
-                                январе 2010 года для платформ Xbox 360 и PC. Действие снова разворачивается в созданной
-                                Дрю Карпишиным вымышленной вселенной. Mass Effect 2 — вторая часть трилогии Mass Effect.
-                                17 августа 2010 года представитель Electronic Arts объявил, что в январе 2011 года игра
-                                Mass Effect 2 появится и для консоли PlayStation 3</p>
-                            <span class="comments-button" href="#">Комментариев: <span class="comments-counter">1</span></span>
-                            <a class="more-button" href="#">Подробнее</a>
+                    </li>
+                    <li>
+                        <img src="images/video-preload-2.jpg" alt="toad">
+                        <img src="images/play.png" alt="play" class="play">
+                        <div class="discription-video">
+                            <p>Most Rare Birds Ever</p>
+                            211,482 views
                         </div>
-                        <div class="namber-page">
-                            <ul class="pagination">
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">6</a></li>
-                                <li><a href="#">7</a></li>
-                                <li><a href="#">8</a></li>
-                                <li><a href="#">9</a></li>
-                                <li><a href="#">10..302</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="down-banner">
-                        <a class="book-button" href="#"><img src="images/order.png" alt="Order button"></a>
-                        <a class="banner-pic" href="#"><img src="images/down-banner.png" alt="Banner pic"></a>
-                        <span class="banner-text">Banner 468x60</span>
-                    </div>
+                    </li>
+                </ul>
+                <div class="right-bar-header">
+                    <img src="images/events-icon.png" alt="icon camera" class="icon">
+                    <h2>Upcoming Events</h2>
+                    <a href="#"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
                 </div>
-            </section>
+                <div class="events">
+                    <h4>NatGeo Live Student Matinees</h4>
+                    <a href="#"><img src="images/right-long-baner.jpg" alt="baner">
+                                <span class="time-events"><i class="fa fa-clock-o"
+                                                             aria-hidden="true"></i>April 17, 2013</span>
+                    </a>
+                    <p class="description-events">Live Student Matinees offer students in USA and Canada
+                        entertaining
+                        and visually spectacular presentations by leading explorers</p>
+
+                </div>
+                <a href="#" class="shop">
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    Shopping
+                </a>
+                <a href="#" class="subscriptions">
+                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                    Subscriptions
+                </a>
+            </div>
         </div>
-        <!-- /.container -->
-    </div><!-- /#sb-site -->
-    <footer>
-        <div class="container clearfix">
-            <ul>
-                <li class="footer-grid">
-                    <div class="logo-footer">
-                        <div class="logo">
-                            <a href="#"><img src="images/logo-1.png" alt="Footer-logo"></a>
-                            <span class="line"></span>
-                        </div>
-                    </div>
-                </li>
-                <li class="footer-grid">
-                    <div class="copyright">
-                        Copyright &copy; 2011. <a href="#">DARKGAMES.</a> All rights reserved.
-                        <span class="rules">Администрация сайта не несет отвественности за материалы размещенные на сайте.</span>
-                        <a class="author" href="#">DESIGNED BY ELCREATIVO</a>
-                    </div>
-                </li>
-                <li class="footer-grid">
-                    <div class="square-group">
-                        <div class="square">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                        <a class="up-button" href="#hero">
-                            <img src="images/top-icon-scroll.png" alt="Scroll top"><span>НАВЕРХ</span>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </footer>
-
-
-    <!-- Slidebars-mobile -->
-    <div class="sb-slidebar sb-left  sb-style-overlay">
-        <nav>
-            <ul class="sb-menu">
-                <li>
-                    <div class="logo">
-                        <a href="#"><img src="images/logo-1.png" alt="Slidebars Logo"></a>
-                        <span class="line"></span>
-                    </div>
-                </li>
-
-                <li class="sb-close"><a href="#hero">Главная</a></li>
-                <li class="sb-close"><a href="#team">Лучшее</a></li>
-                <li class="sb-close"><a href="#services">новости</a></li>
-                <li class="sb-close"><a href="#info">Статьи</a></li>
-                <li class="sb-close"><a href="#info">Форум</a></li>
-                <li class="sb-close"><a href="#contact">Сервера</a></li>
-                <li class="sb-close"><a href="#contact">Файлы</a></li>
-                <li class="sb-close"><a href="#contact">Читы</a></li>
-                <li class="sb-close"><a href="#contact">Клубы</a></li>
-
-                <li class="header">НАВИГАЦИЯ</li>
-                <li class="sb-close"><a href="#">Главная</a></li>
-                <li class="sb-close"><a href="#">Автосимуляторы</a></li>
-                <li class="sb-close"><a href="#">Главная</a></li>
-                <li class="sb-close"><a href="#">Автосимуляторы</a></li>
-                <li class="sb-close"><a href="#">Главная</a></li>
-
-                <li class="header">ИГРЫ ПО ЖАНРАМ</li>
-                <li class="sb-close"><a href="#">Главная</a></li>
-                <li class="sb-close"><a href="#">Автосимуляторы</a></li>
-                <li class="sb-close"><a href="#">Главная</a></li>
-                <li class="sb-close"><a href="#">Автосимуляторы</a></li>
-                <li class="sb-close"><a href="#">Главная</a></li>
-            </ul>
-        </nav>
     </div>
-    <script src="js/jquery.1.7.1.min.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
-    <!-- Slidebars -->
-    <script src="bower_components/Slidebars/dist/slidebars.min.js"></script>
-    <script>
-        (function ($) {
-            $(document).ready(function () {
-                // Initiate Slidebars
-                $.slidebars();
-            });
-        })(jQuery);
-    </script>
-    <!-- Smooth Page Scrolling -->
-    <script>
-        (function ($) {
-            $(document).ready(function () {
-                $('a[href^="#"]').on('touchend click', function (e) {
-                    e.preventDefault();
-                    var id = $(this).attr("href");
-                    var offset = 70;
-                    var target = $(id).offset().top - offset;
+</section>
+<section class="magazines">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header-magazine">
+                    <img src="images/magazine.png" alt="magazine">
+                    <h2>National Geographic Magazines</h2>
+                    <div class="arrow-box">
+                        <a href="#"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="book-container">
+                            <div class="book-field">
+                                <a href="#"><img src="images/layer-4.jpg" alt="Book"></a>
+                                <h3>National Geographic Magazine </h3>
+                            </div>
+                            <div class="left-block">
+                                <span class="star-box">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                               </span>
+                                <span class="votes">7,726 votes</span>
+                            </div>
+                            <a href="#" class="add-book"><i class="fa fa-plus-circle" aria-hidden="true"></i> subscribe</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="book-container">
+                            <div class="book-field">
+                                <a href="#"><img src="images/layer-5.jpg" alt="Book"></a>
+                                <h3>National Geographic Magazine </h3>
+                            </div>
+                            <div class="left-block">
+                                <span class="star-box">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                               </span>
+                                <span class="votes">7,726 votes</span>
+                            </div>
+                            <a href="#" class="add-book"><i class="fa fa-plus-circle" aria-hidden="true"></i> subscribe</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="book-container">
+                            <div class="book-field">
+                                <a href="#"><img src="images/layer-6.jpg" alt="Book"></a>
+                                <h3>National Geographic Magazine </h3>
+                            </div>
+                            <div class="left-block">
+                                <span class="star-box">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                               </span>
+                                <span class="votes">7,726 votes</span>
+                            </div>
+                            <a href="#" class="add-book"><i class="fa fa-plus-circle" aria-hidden="true"></i> subscribe</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
 
-                    $('html, body').animate({scrollTop: target}, 500);
-                });
-            });
-        })(jQuery);
-    </script>
-    <script>
-        $('.filter').ready(function () {
-            $('.filter').bxSlider({
-                responsive: 'true',
-                auto: 'true',
-                pause: '10000',
-                pagerCustom: '#bx-pager',
-                controls: 'true'
-            });
-        })
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.bxslider').bxSlider({
-                pagerCustom: '#bx-pager',
-                controls: 'true'
-            });
-            $('.slider-one').bxSlider({
-                slideWidth: 76,
-                minSlides: 3,
-                maxSlides: 6,
-                slideMargin: 0
-            });
-        });
-    </script>
-    </body>
+                        <div class="book-container">
+                            <div class="book-field">
+                                <a href="#"><img src="images/layer-7.jpg" alt="Book"></a>
+                                <h3>National Geographic Magazine </h3>
+                            </div>
+                            <div class="left-block">
+                                <span class="star-box">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                               </span>
+                                <span class="votes">7,726 votes</span>
+                            </div>
+                            <a href="#" class="add-book"><i class="fa fa-plus-circle" aria-hidden="true"></i> subscribe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="#" method="POST" class="search-form">
+                    <input type="email" placeholder="type your email" name="email" required>
+                    <input type="submit" name="send" class="send" value="Subscribe">
+                </form>
+                  <span class="social-block">
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-caret-right fa-2x" aria-hidden="true"></i></a>
+                  </span>
+            </div>
+            <div class="col-md-6">
+            <ul class="footer-nav">
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Advertise With Us </a></li>
+                <li><a href="#">Terms of Service </a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <div class="copying">© 1996-2013 National Geographic Society. All rights reserved</div>
+        </div>
+    </div>
+</footer>
+<div class="hidden"></div>
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+<script src="libs/waypoints/waypoints.min.js"></script>
+<script src="libs/animate/animate-css.js"></script>
+<script src="js/common.js"></script>
+</body>
 </html>
