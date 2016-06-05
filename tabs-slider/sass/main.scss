@@ -1,0 +1,93 @@
+@import "bourbon/bourbon";
+
+ .js .loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+	.loader_inner{
+		background-image: url("../img/preloader.gif");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-color: #fff;
+		height: 60px;
+		width: 60px;
+		margin-top: -30px;
+		margin-left: -30px;
+		left: 50%;
+		top: 50%;
+		position: absolute;
+}
+
+body{
+	font-family: "RobotoRegular", sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: red;
+}
+body input:required:valid,
+body textarea:required:valid {
+	color: green;
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+
+.etabs {
+	margin: 0; padding: 0;
+}
+.tab {
+	display: inline-block;
+	zoom:1;
+	*display:inline;
+	background: #eee;
+	border: solid 1px #999;
+	border-bottom: none; -moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+}
+.tab a {
+	font-size: 14px;
+	line-height: 2em;
+	display: block;
+	padding: 0 10px;
+	outline: none;
+}
+.tab a:hover {
+	text-decoration: underline;
+}
+.tab.active {
+	background: #fff;
+	padding-top: 6px;
+	position: relative;
+	top: 1px;
+	border-color: #666;
+}
+.tab a.active {
+	font-weight: bold;
+}
+.tab-container .panel-container {
+	background: #fff;
+	border: solid #666 1px;
+	padding: 10px;
+
+}
