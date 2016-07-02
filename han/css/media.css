@@ -1,0 +1,343 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 100%; }
+  body .how .arrow:after {
+    display: none; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 90%; }
+  body.benefits {
+    min-height: 100%; }
+  .right-header-block .call-back {
+    display: none; }
+  header.right-header-block a img {
+    margin-right: 15px; }
+  header {
+    height: 62px; }
+  header .left-header-block li:nth-child(2) {
+    float: left;
+    margin-top: -35px; }
+  header .left-header-block li:first-child {
+    margin-left: 55px; }
+  header .left-header-block li:last-child {
+    margin-left: 55px; }
+  header .left-header-block li {
+    display: block; }
+  body .hero {
+    height: 350px; }
+  body .hero {
+    background: url(../img/flowers-pattern.png) bottom center/cover no-repeat, url(../img/photo-hero_3.png) center center/contain no-repeat, url(../img/bg-hero.png) top center/cover no-repeat; }
+  .item {
+    text-align: center; }
+    .item .descr-item {
+      position: relative;
+      max-width: 480px;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      left: 50%; }
+  body .last-info li {
+    float: none;
+    display: block; }
+  body .last-info .mobile {
+    display: block; }
+  body .last-info .desktop {
+    display: none; }
+  body .last-info .img-center img {
+    padding-top: 10px; }
+  body .funds {
+    padding: 40px 0;
+    position: relative; }
+    body .funds .mobile {
+      position: relative;
+      z-index: 5;
+      display: block; }
+    body .funds .desktop {
+      display: none; }
+    body .funds .count .count-container {
+      max-width: 342px;
+      margin: 10px auto 0; }
+    body .funds:after {
+      content: "";
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      height: 240px;
+      background: url(../img/light-bg.jpg) bottom center/cover no-repeat; }
+  .img-center {
+    text-align: center; }
+  body .how-work {
+    padding: 35px 0 30px 0; }
+  body .effects .desktop {
+    display: none; }
+  body .effects .mobile {
+    display: block; }
+  body .how-to-buy .arrow::after {
+    display: none; }
+  footer .right-footer-block {
+    margin: 0 auto;
+    text-align: center; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 80%; }
+  .benefits {
+    min-height: 100%; }
+  body .hero {
+    height: 300px; }
+  .item {
+    text-align: center; }
+    .item .descr-item {
+      max-width: 480px;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      left: 50%; }
+  body .how .arrow:after {
+    display: none; }
+  .how .item-how, .how-work .item-how, .trustworthiness .item-how {
+    margin-bottom: 20px; }
+  body .funds:after {
+    height: 230px; }
+  body .how-work {
+    padding: 35px 0 30px 0; }
+  .how-work .container .row .main-descr {
+    margin: 0 auto 20px; }
+  .how-work .item-how p {
+    margin-bottom: 10px; }
+  body .form .container .mobile {
+    display: block; }
+  body .form .container .desktop {
+    display: none; }
+  body .form .container form input {
+    margin-bottom: 20px;
+    margin-right: 0; }
+  body .form .total, body.form .bought-today {
+    padding-left: 0px; }
+  body .how-to-buy .arrow::after {
+    display: none; }
+  footer .right-footer-block {
+    float: none;
+    margin: 0 auto;
+    text-align: center; }
+  .form button {
+    display: block;
+    margin: 20px auto; }
+  .form form {
+    margin: 0 auto 30px; }
+  footer .mobile {
+    display: none; }
+  footer li {
+    width: 100%;
+    text-align: center; }
+  footer .right-footer-block a {
+    display: block; }
+  footer .contact-block {
+    margin-bottom: 25px; }
+  footer ul {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+  body .bx-wrapper .bx-controls-direction a {
+    top: 110%; }
+  body .bx-wrapper .bx-prev {
+    left: 0; }
+  body .bx-wrapper .bx-next {
+    right: 0; }
+  body .bx-wrapper .bx-pager {
+    display: none; }
+  body .reviews {
+    padding: 28px 0 20px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  body .reviews {
+    padding: 28px 0 40px;
+    background: #a3ceec; }
+    body .reviews p {
+      font-size: 12px; }
+  body header h1 a {
+    font-size: 24px; }
+  body header .discription-logo {
+    color: #fefefe;
+    font-family: "SitkaText-Bold";
+    font-size: 12px; }
+  .header-benefits h2 {
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 0; }
+  .header-benefits p {
+    font-size: 1.1rem;
+    margin-bottom: 0; }
+  .how .title-section span, .trustworthiness .title-section span {
+    font-size: 20px; }
+  .how .title-section h2, .how-work .title-section h2, .trustworthiness .title-section h2 {
+    font-size: 34px; }
+  .how .item-how p, .how-work .item-how p, .trustworthiness .item-how p {
+    font-size: 17px; }
+  .funds .funds-title {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    line-height: 2.25rem; }
+  .funds .descr-funds {
+    margin-bottom: 6px;
+    font-size: 15px;
+    line-height: 1.625rem; }
+  body .last-info .img-center img {
+    padding-top: 10px;
+    max-width: 230px;
+    margin-bottom: 10px; }
+  .last-info li:first-child, .last-info .desktop, .last-info .mobile {
+    margin-right: 0.5rem; }
+  .last-info li:first-child .new-price, .last-info .desktop .new-price, .last-info .mobile .new-price {
+    font-size: 2.9rem; }
+  .funds a {
+    width: 16.425rem;
+    height: 3.5rem;
+    border-radius: 7px; }
+  .origin .section-title {
+    font-size: 23px; }
+  .origin .description {
+    font-size: 13px; }
+  .advantages a {
+    margin: 0 auto 25px;
+    width: 16.425rem;
+    height: 3.5rem;
+    border-radius: 7px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 3.5rem; }
+  .great-khan {
+    font-size: 23px; }
+  .advantages-item-1 img {
+    margin-left: 12px;
+    margin-right: 10px;
+    float: left;
+    max-width: 61px; }
+  .advantages-item-1 .advantages-descr {
+    padding-top: 15px; }
+  .how-work .title-section span {
+    font-size: 25px;
+    font-weight: 700; }
+  .how-work .title-section {
+    margin: 0 auto 14px; }
+  .how-work .item-how p {
+    font-size: 15px; }
+  .how-work .container .row .main-descr {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: none;
+    max-width: 297px; }
+  .form button {
+    width: 16.475rem;
+    height: 3.5rem;
+    border-radius: 7px;
+    font-size: 30px;
+    font-size: 1.875rem; }
+  .effects .mobile ul li {
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 5px; }
+  .effects .section-title {
+    margin-bottom: 2.375rem; }
+  .effects .votvi img {
+    max-width: 77px;
+    height: auto; }
+  .effects .nevi img {
+    max-width: 77px;
+    height: auto; }
+  .mobile .expert img {
+    width: 221px; }
+  .interviewer {
+    margin-bottom: 20px;
+    height: auto; }
+    .interviewer img {
+      float: left;
+      width: 88px; }
+  .reviews li .name {
+    padding-top: 67px; }
+  .form h4 {
+    text-align: center;
+    margin: 0 auto 15px;
+    font-size: 22px;
+    font-weight: 400; }
+    .form h4 span {
+      font-size: 23px; }
+  .form button {
+    margin: 5px auto; }
+  .form .countet-today .buyer {
+    font-size: 22px; }
+  .trustworthiness .item-how img {
+    width: 100px;
+    display: block;
+    height: auto;
+    min-width: 80px;
+    float: left; }
+  .trustworthiness .container .row .main-descr {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: none;
+    margin: 0;
+    height: 80px;
+    padding: 17px 0 0 0; }
+  .trustworthiness .item-how {
+    margin-bottom: 40px; }
+  .how-to-buy .arrow
+:after {
+    content: " ";
+    display: block;
+    width: 38px;
+    height: 49px;
+    position: absolute;
+    top: 245px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    background: url(../img/arrow-down.png) center/contain no-repeat; }
+  .how-to-buy .arrow {
+    margin-bottom: 80px; }
+  .item-ok .descr-item img {
+    margin-left: 15px; }
+  .benefits .header-benefits {
+    background: none; }
+  body .hero {
+    height: 200px; }
+  html {
+    font-size: 70%; }
+  body.benefits.header-benefits a {
+    width: 17.125rem;
+    height: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem; }
+  body .header-benefits h2 {
+    padding-top: 21px;
+    margin-bottom: 5px; }
+  body .header-benefits p {
+    margin-bottom: 1rem;
+    line-height: 23px; }
+  body .funds:after {
+    height: 220px; }
+  .origin .description {
+    line-height: 20px; }
+  .advantages .advantages-title span {
+    display: block; }
+  body .header-benefits {
+    min-height: 19.75rem; } }
+
+@media only screen and (max-width: 320px) {
+  body .hero {
+    height: 140px; }
+  /**/ }

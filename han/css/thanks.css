@@ -1,0 +1,21 @@
+.thanks {
+  height: 800px;
+  background: url(../img/girl.png) bottom left/contain no-repeat, url(../img/bg-thanks-2.png) center right/contain no-repeat, #fff7ea; }
+
+.main-thanks {
+  position: relative;
+  left: 50px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 372px;
+  margin-top: 18rem; }
+  .main-thanks h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #d41920;
+    font-size: 35px; }
+  .main-thanks p {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    font-size: 23px; }
