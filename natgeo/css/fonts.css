@@ -8,5 +8,8 @@
   font-style: normal;
   font-weight: bold;
   src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype"); }
-
-/*# sourceMappingURL=fonts.css.map */
+@font-face {
+  font-family: "ArialRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ArialRegular/ArialRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialRegular/ArialRegular.woff") format("woff"), url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype"); }

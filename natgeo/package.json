@@ -1,0 +1,25 @@
+{
+  "name": "natgeo1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dedn/NatGeo.git"
+  },
+  "author": "dedn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dedn/NatGeo/issues"
+  },
+  "homepage": "https://github.com/dedn/NatGeo#readme"
+}

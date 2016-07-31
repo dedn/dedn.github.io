@@ -3,16 +3,141 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	header form {
+		float: left; 
+	}
+	.nav-menu li {
+		margin-right: 5%;
+		
+	}
+	body .ui-tabs .ui-tabs-nav li{
+		display: inline-block;
+	}
+
+	body .ui-tabs .ui-tabs-nav {
+		text-align: center;
+
+	}
+
+	body .ui-tabs .ui-tabs-nav li{
+		float:none;
+	}
+
+	body .ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+		padding: 5px 17px;
+	}
+	body .bx-wrapper .bx-pager {
+		right: -382px;
+	}
+
+	body .description {
+
+		left: 105px;
+	}
+	body .letest-news {
+		margin-bottom: 30px;
+
+		left: 108px;
+	}
+	.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+		right: 117px;
+	}
+
+	.right-bar-post{
+		display : flex ;
+		width: 100% ;
+		flex-direction :  row ; 
+		flex-wrap : wrap ; 
+		justify-content : space-around ; 
+		padding : 20 px ;
+	}
+
+	.right-video-post{
+		display : flex ;
+		width: 100% ;
+		flex-direction :  row ; 
+		flex-wrap : wrap ; 
+		justify-content : space-around ; 
+		padding : 20 px ;
+	}
+
+	body .bx-wrapper .bx-controls-auto{
+		right:118px;
+	}
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
+	header form {
+		float: left; 
+	}
+	.nav-menu li {
+		margin-right: 5%;
+		margin-bottom: 15px;
+
+	}
+
+	body .ui-tabs .ui-tabs-nav li{
+		display: inline-block;
+	}
+
+	body .ui-tabs .ui-tabs-nav {
+		text-align: center;
+
+	}
+
+	body .ui-tabs .ui-tabs-nav li{
+		float:none;
+	}
+
+	body .ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+		padding: 5px 17px;
+	}
+	body .bx-wrapper .bx-pager {
+		right: -382px;
+	}
+
+	body .description {
+
+		left: 82px;
+	}
+	body .letest-news {
+		margin-bottom: 30px;
+
+		left: 83px;
+	}
+	
+	.right-bar-post{
+		display : flex ;
+		width: 100% ;
+		flex-direction :  row ; 
+		flex-wrap : wrap ; 
+		justify-content : space-around ; 
+		padding : 20 px ;
+	}
+
+	body .sign-form-container{
+		margin-left: 0;
+	}
+	body .nav-menu:after {
+		width: 0;
+		height: 0;
+
+	}
+
+	 body .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+		right:-369px;
+	}
+	.navigation{
+		display:none;
+	}
 
 }
 
@@ -50,7 +175,7 @@
 
 }
 
- /* Large Devices, Wide Screens */
+/* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
 }
