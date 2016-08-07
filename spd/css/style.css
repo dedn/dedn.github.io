@@ -60,6 +60,20 @@ a :hover, a:focus, a:active, input:hover, input:focus {
 
 img {
   max-width: 100%; }
+  
+  article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
