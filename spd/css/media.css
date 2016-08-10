@@ -4,8 +4,15 @@
   /**/ }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  /**/ }
+@media only screen and (max-width: 989px) {
+  .container {
+    width: 768px;
+    transition: .3s; }
+  html, body {
+    font-size: 80%;
+    transition: .3s; }
+  body .dealings {
+    width: 47.5rem; } }
 
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
@@ -19,15 +26,10 @@
   /**/ }
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /**/ }
-
+/**/
 /* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /**/ }
-
 /* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 989px) {
   /**/ }
 
 /* Large Devices, Wide Screens */
