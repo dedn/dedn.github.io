@@ -1,13 +1,13 @@
 $(function () {
     $("#tabs").tabs();
 });
-//$(function () {
-////Menu
-//    $('#toggle').click(function () {
-//        $(this).toggleClass('active');
-//        $('.nav').toggleClass('open');
-//    });
-//});
+$(function () {
+//Menu
+    $('#toggle').click(function () {
+        $(this).toggleClass('active');
+        $('.nav').toggleClass('open');
+    });
+});
 
 
 $(document).ready(function () {
