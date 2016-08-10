@@ -1,19 +1,25 @@
-$( function() {
-    $( "#tabs" ).tabs();
-} );
+$(function () {
+    $("#tabs").tabs();
+});
+$(function () {
+//Menu
+    $('#toggle').click(function () {
+        $(this).toggleClass('active');
+        $('.nav').toggleClass('open');
+    });
+});
 
 
-
-$(document).ready(function() {
+$(document).ready(function () {
 
 
     var clock = $('.clock').FlipClock({
         clockFace: 'DailyCounter',
         countdown: true,
         showSeconds: false,
-        autoStart : false,
-        callbacks : {
-            stop : function() {
+        autoStart: false,
+        callbacks: {
+            stop: function () {
                 $(".message").html("Время прошло");
             }
         }
@@ -22,13 +28,14 @@ $(document).ready(function() {
     var first = new Date(dt);
     var last = Date.now();
     var remaining = first - last;
-    remaining /=1000;
+    remaining /= 1000;
 
     if (first > last) {
         clock.setTime(remaining);
     } else {
         clock.setTime(first);
-    };
+    }
+    ;
 
     clock.setCountdown(true);
     clock.start();
@@ -37,9 +44,9 @@ $(document).ready(function() {
         clockFace: 'DailyCounter',
         countdown: true,
         showSeconds: false,
-        autoStart : false,
-        callbacks : {
-            stop : function() {
+        autoStart: false,
+        callbacks: {
+            stop: function () {
                 $(".message").html("Время прошло");
             }
         }
@@ -48,13 +55,14 @@ $(document).ready(function() {
     var first = new Date(dt);
     var last = Date.now();
     var remaining = first - last;
-    remaining /=1000;
+    remaining /= 1000;
 
     if (first > last) {
         clock.setTime(remaining);
     } else {
         clock.setTime(first);
-    };
+    }
+    ;
 
     clock.setCountdown(true);
     clock.start();
@@ -64,9 +72,9 @@ $(document).ready(function() {
         clockFace: 'DailyCounter',
         countdown: true,
         showSeconds: false,
-        autoStart : false,
-        callbacks : {
-            stop : function() {
+        autoStart: false,
+        callbacks: {
+            stop: function () {
                 $(".message").html("Время прошло");
             }
         }
@@ -75,13 +83,14 @@ $(document).ready(function() {
     var first = new Date(dt);
     var last = Date.now();
     var remaining = first - last;
-    remaining /=1000;
+    remaining /= 1000;
 
     if (first > last) {
         clock.setTime(remaining);
     } else {
         clock.setTime(first);
-    };
+    }
+    ;
 
     clock.setCountdown(true);
     clock.start();

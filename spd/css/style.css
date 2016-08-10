@@ -9,6 +9,7 @@ html, body {
 body {
   padding: 0;
   margin: 0;
+  background-color: #e20000;
   background: repeating-linear-gradient(transparent, transparent 18px, rgba(0, 0, 0, 0.1) 20px), repeating-linear-gradient(90deg, transparent, transparent 18px, rgba(0, 0, 0, 0.1) 20px), #e20000;
   color: #062033; }
 
@@ -61,6 +62,7 @@ img {
   max-width: 100%; }
 
 .header {
+  background-color: #e20000;
   background: repeating-linear-gradient(transparent, transparent 18px, rgba(0, 0, 0, 0.1) 20px), repeating-linear-gradient(90deg, transparent, transparent 18px, rgba(0, 0, 0, 0.1) 20px), linear-gradient(180deg, #e20000 50%, #500000 85%), #e20000;
   width: 100%;
   padding-top: 5.5rem;
@@ -139,7 +141,8 @@ img {
   padding: 1.1rem 1.2rem 1.1rem 1.2rem;
   background-color: #960000;
   margin-left: 10rem;
-  border-radius: 3px; }
+  border-radius: 10px;
+  behavior: url("border-radius.htc"); }
   .subscribe-block p {
     width: 25rem;
     padding-top: 0.3rem;
@@ -171,6 +174,7 @@ img {
       background-color: #ffe400;
       background-image: linear-gradient(to top, rgba(0, 0, 0, 0.056) 0%, rgba(255, 255, 255, 0.56) 100%);
       border-radius: 0.25rem;
+      behavior: url("border-radius.htc");
       border: none;
       color: #960000;
       font-size: 1.125rem;
@@ -191,6 +195,7 @@ img {
         background-color: #ffe400;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.056) 0%, rgba(255, 255, 255, 0.56) 100%);
         border-radius: 50%;
+        behavior: url("border-radius.htc");
         opacity: .99; }
       .subscribe-block form button:hover {
         background: #fff; }
@@ -269,11 +274,16 @@ img {
 .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
   margin-bottom: 1px;
   max-width: 9rem;
-  float: left;
+  display: block;
+  float: none;
   padding: .5rem 1rem;
   text-decoration: none;
   background-color: #2a2a2a;
   border-radius: 10px 0 0 10px; }
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  margin-bottom: 0;
+  padding-bottom: 0; }
 
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
   color: #929292;
@@ -595,7 +605,7 @@ img {
     height: 4px;
     background: url("../img/trinagle-facebook.png") no-repeat; }
 
-footer {
+.footer {
   margin-top: 2.125rem;
   padding: 2rem 0;
   background-color: #333; }
@@ -731,7 +741,7 @@ footer {
       -ms-transform: scale(0.97);
       transform: scale(0.97); }
 
-section {
+.section {
   background: #f1eff1;
   padding: 20px 0 60px; }
 
