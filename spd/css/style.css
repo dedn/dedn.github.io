@@ -620,7 +620,7 @@ footer {
     float: left; }
   .footer-informer .how-it-work li:nth-child(2) p, .footer-informer .communication li:nth-child(2) p {
     float: left;
-    padding: 1px 1px 1px 1.8rem;
+    padding: 1px 1px 1px 1.5rem;
     color: white;
     font-size: 0.875rem;
     font-weight: 400;
