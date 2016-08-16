@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style></style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadCSS( "libs/jquery-ui/jquery-ui.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+</head>
+<!--[if lte IE 9]>
+<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7..."></script>
+
+
+<script src="libs/rem/rem.js" type="text/javascript"></script>
+<![endif]-->
+<body>
+
+<!--[if lte IE 8]>
+<script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
+<![endif]-->
+<div id="fb-root"></div>
+<div class="header">
+	<div class="container">
+		<div class="nav-block clearfix">
+			<h1><a href="#"><img src="img/logo.png" alt="logo"></a></h1>
+			<div class="button_container" id="toggle">
+				<span class="top"></span>
+				<span class="middle"></span>
+				<span class="bottom"></span>
+			</div>
+			<div class="nav">
+				<ul class="main-nav clearfix">
+					<li><a href="#">Εγγραφή/Είσοδος </a></li>
+					<li><a href="#"><img src="img/fb-login.jpg" alt="facebook"><!--Add Facebook plugin--></a></li>
+					<li><a href="#">Επικοινωνία </a></li>
+					<li><a href="#">Συνεργάτες</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="subscribe-block clearfix">
+			<p> Προσφορές που χρειάζεσαι...<span>είσαι μέσα;</span></p>
+			<form action="#">
+				<input type="email" class="email" name="email" placeholder="συμπλήρωσε το email σου">
+				<button name="button" class="send">Εγγραφή</button>
+			</form>
+		</div>
+		<div id="tabs">
+			<ul class="clearfix">
+				<li><a href="#tabs-1">Προηγούμενα Deal</a></li>
+				<li><a href="#tabs-2">Πως λειτουργεί το Dealin</a></li>
+				<li><a href="#tabs-3">Εγγραφή στο Dealin</a></li>
+			</ul>
+			<div class="informer">
+				<p>Τελευταίο
+					Deal</p>
+				<span>24/07</span>
+			</div>
+			<div id="tabs-1">
+				<div class="block-header">
+					<h2>Allou! Fun Park</h2>
+					<p>Allou! Fun Park
+						12€ για Allou! Day Pass (ημερήσιο πάσο διασκέδασης) από το Allou! Fun Park, αξίας 25€ -
+						έκπτωση 52% Η προσφορά ισχύει από 28/9/2010 έως 9/12/2010, από Δευτέρα έως Κυριακή.
+					</p>
+				</div>
+				<div class="img-cont">
+					<img src="img/people_tabs_1.jpg" alt="people">
+				</div>
+				<ul class="info-block">
+					<li class="timer">
+						<p>Χρόνος που απομένει:</p>
+						<div class="counter-block">
+							<div class="clock"></div>
+						</div>
+					</li>
+					<li class="buy clearfix">
+						<span>23,15€</span>
+						<div class="container-btn">
+							<a class="now" href="#">Αγόρασέ το</a>
+							<a class="present" href="#">Αγόρασέ το ως δώρο</a>
+						</div>
+					</li>
+					<li>
+						<ul class="statistics">
+							<li>
+								<span>αξια</span>
+								<span>52,50€</span>
+							</li>
+							<li>
+								<span>εκπτωση</span>
+								<span>25€</span>
+							</li>
+							<li>
+								<span>αγορεσ</span>
+								<span>12</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<div class="social-block clearfix">
+					<ul>
+						<li class="more">* Σύστησε τους φίλους σου και κέρδισε! <a href="#">Μάθε πως...</a></li>
+						<li class="tweet">
+							<a href=""><img src="img/tweet.png" alt="tweet"></a>
+							<span>5</span>
+						</li>
+						<li class="like">
+							<a href=""><img src="img/likefacebook.png" alt="Like"></a>
+							<span>31</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="tabs-2">
+				<div class="block-header">
+					<h2>Allou! Fun Park</h2>
+					<p>Allou! Fun Park
+						12€ για Allou! Day Pass (ημερήσιο πάσο διασκέδασης) από το Allou! Fun Park, αξίας 25€ -
+						έκπτωση 52% Η προσφορά ισχύει από 28/9/2010 έως 9/12/2010, από Δευτέρα έως Κυριακή.
+					</p>
+				</div>
+				<div class="img-cont">
+					<img src="img/tabs-2.jpg" alt="people">
+				</div>
+				<ul class="info-block">
+					<li class="timer">
+						<p>Χρόνος που απομένει:</p>
+						<div class="counter-block">
+							<div class="clock-1"></div>
+						</div>
+
+					</li>
+					<li class="buy clearfix">
+						<span>23,15€</span>
+						<div class="container-btn">
+							<a class="now" href="#">Αγόρασέ το</a>
+							<a class="present" href="#">Αγόρασέ το ως δώρο</a>
+						</div>
+					</li>
+					<li>
+						<ul class="statistics">
+							<li>
+								<span>αξια</span>
+								<span>52,50€</span>
+							</li>
+							<li>
+								<span>εκπτωση</span>
+								<span>25€</span>
+							</li>
+							<li>
+								<span>αγορεσ</span>
+								<span>12</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<div class="social-block clearfix">
+					<ul>
+						<li class="more">* Σύστησε τους φίλους σου και κέρδισε! <a href="#">Μάθε πως...</a></li>
+						<li class="tweet">
+							<a href=""><img src="img/tweet.png" alt="tweet"></a>
+							<span>5</span>
+						</li>
+						<li class="like">
+							<a href=""><img src="img/likefacebook.png" alt="Like"></a>
+							<span>31</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="tabs-3">
+				<div class="block-header">
+					<h2>Allou! Fun Park</h2>
+					<p>Allou! Fun Park
+						12€ για Allou! Day Pass (ημερήσιο πάσο διασκέδασης) από το Allou! Fun Park, αξίας 25€ -
+						έκπτωση 52% Η προσφορά ισχύει από 28/9/2010 έως 9/12/2010, από Δευτέρα έως Κυριακή.
+					</p>
+				</div>
+				<div class="img-cont">
+					<img src="img/people_tabs_1.jpg" alt="people">
+				</div>
+				<ul class="info-block">
+					<li class="timer">
+						<p>Χρόνος που απομένει:</p>
+						<div class="counter-block">
+							<div class="clock-2"></div>
+						</div>
+					</li>
+					<li class="buy clearfix">
+						<span>23,15€</span>
+						<div class="container-btn">
+							<a class="now" href="#">Αγόρασέ το</a>
+							<a class="present" href="#">Αγόρασέ το ως δώρο</a>
+						</div>
+					</li>
+					<li>
+						<ul class="statistics">
+							<li>
+								<span>αξια</span>
+								<span>52,50€</span>
+							</li>
+							<li>
+								<span>εκπτωση</span>
+								<span>25€</span>
+							</li>
+							<li>
+								<span>αγορεσ</span>
+								<span>12</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<div class="social-block clearfix">
+
+					<ul>
+						<li class="more">* Σύστησε τους φίλους σου και κέρδισε! <a href="#">Μάθε πως...</a></li>
+						<li class="tweet">
+							<a href=""><img src="img/tweet.png" alt="tweet"></a>
+							<span>5</span>
+						</li>
+						<li class="like">
+							<a href=""><img src="img/likefacebook.png" alt="Like"></a>
+							<span>31</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class=" section clearfix">
+	<div class="container">
+		<div class="left-bar">
+			<ul>
+				<li class="iphone">
+					<img src="img/iphone.png" alt="iphone">
+				</li>
+				<li class="app-store">
+					<a href="#"></a>
+				</li>
+				<li class="f-plagin">
+					<!--Add Facebook Social Plugin-->
+					<img src="img/facebook.png" alt="">
+				</li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="content">
+				<h2>τι θα παρεισ</h2>
+				<p>Το Allou! Fun Park με τα δύο του πάρκα <b>Allou!</b> και <b>Kidom</b> αποτελεί όλο το χρόνο τον <b>πιο
+					fun προορισμό διασκέδασης</b> συγκεντρώνοντας νέους «κάθε ηλικίας». Είναι το ιδανικό
+					μέρος για όσους επιθυμούν να συνδυάσουν <b>παιχνίδι</b> μέχρι τελικής πτώσης, <b>φαγητό, βόλτα</b>
+					και όλα αυτά μέσα σε ένα πανέμορφο καταπράσινο περιβάλλον.
+					<a href="#">(περισσότερα)</a></p>
+			</div>
+			<div class="contact clearfix">
+				<h2>πωσ θα πασ</h2>
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6103.950470079343!2d23.72496468264006!3d38.060950192110255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a23ac08c740b%3A0xf5fe6516e17bb8bd!2zQWdpYXMgQW5uaXMsIEFjaGFybmVzIDEzNiA3NSwg0JPRgNC10YbQuNGP!5e0!3m2!1sru!2sua!4v1470750513078"
+							width="100%" height="234" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="info">
+					<img src="img/marker.png" alt="marker">
+					<div class="content-info">
+						<p>Allou! Fun Park Κηφισού & Πέτρου Ράλλη,
+							Αγ. Ιωάννης Ρέντης
+							τηλ.: 210 4256999
+						</p>
+						<a href="">info@allou.gr</a>
+						<a href="">www.allou.gr</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="right-block">
+			<h2>τι ισχυει</h2>
+			<p>Η προσφορά ισχύει από 28/9/2010 έως 9/12/2010, από Δευτέρα έως Κυριακή.</p>
+
+			<p> Το κουπόνι ισχύει για ένα άτομο και περιλαμβάνει ένα Allou! Day Pass (ημερήσιο πάσο διασκέδασης) που
+				μπορεί να χρησιμοποιηθεί στο Allou! αλλά και στο Kidom. Ισχύει και για το 4D Gate.</p>
+
+			<p>Μέγιστος αριθμός ημερησίων πάσων που μπορούν να διατεθούν ανά χρήστη: 4 Allou! Day Pass</p>
+		</div>
+		<div class="dealings">
+			<h2>oi προσφορεσ τησ εβδομαδασ</h2>
+			<div class="descriprion">
+				<p>Ένας αλλιώτικος, ένας παραμυθένιος κόσμος, ο κόσμος του Kidom περιμένει τους μικρούς φίλους του να το
+					γνωρίσουν, να παίξουν και να διασκεδάσουν με τη ψυχή τους στο πιο μαγευτικό πάρκο της πόλης.
+					<a href="#">(περισσότερα)</a></p>
+			</div>
+			<div class="tabs-block">
+				<div class="img-cont">
+					<img src="img/dealigins_img_1.jpg" alt="dealigins">
+				</div>
+				<div class="decoration-block">
+					<img src="img/decoration_img.png" alt="dealigins">
+				</div>
+			</div>
+			<ul>
+				<li>
+					<img src="img/dealigins_prewiew.jpg" alt="dealigins_prewiew">
+					<div>
+						<h3>Allou! Fun Park</h3>
+						<p>2 εισιτήρια για οποιαδήποτε προβολή σε όποιο Village Center θέλετε με έκπτωση 25%</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/dealigins_prewiew.jpg" alt="dealigins_prewiew">
+					<div>
+						<h3>Allou! Fun Park</h3>
+						<p>2 εισιτήρια για οποιαδήποτε προβολή σε όποιο Village Center θέλετε με έκπτωση 25%</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/dealigins_prewiew.jpg" alt="dealigins_prewiew">
+					<div>
+						<h3>Allou! Fun Park</h3>
+						<p>2 εισιτήρια για οποιαδήποτε προβολή σε όποιο Village Center θέλετε με έκπτωση 25%</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+	<div class="hidden"></div>
+
+
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+//		{"src" : "libs/jquery/jquery-1.12.0.min.js", "async" : true},
+//		{"src" : "libs/jquery-ui/jquery-ui.min.js", "async" : true},
+		{"src" : "js/libs.js", "async" : false },
+		{"src" : "js/common.js", "async" : false },
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>
