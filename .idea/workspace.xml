@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03f31d4b-2ddd-4309-9aa3-0c660a99897e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spdfast/index.html" afterPath="$PROJECT_DIR$/spdfast/index.html" />
     </list>
     <ignored path="app.iws" />
@@ -72,10 +73,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spdfast/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.6036036">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="74" />
+            <state vertical-scroll-proportion="0.22972973">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
-                <marker date="1471528268287" expanded="true" signature="21577:21651" placeholder="..." />
+                <marker date="1471528668268" expanded="true" signature="21485:21559" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -372,10 +373,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spdfast/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6036036">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="74" />
+        <state vertical-scroll-proportion="0.22972973">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <marker date="1471528268287" expanded="true" signature="21577:21651" placeholder="..." />
+            <marker date="1471528668268" expanded="true" signature="21485:21559" placeholder="..." />
           </folding>
         </state>
       </provider>
