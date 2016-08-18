@@ -72,10 +72,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spdfast/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6126126">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state vertical-scroll-proportion="2.6036036">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="74" />
               <folding>
-                <marker date="1471527120593" expanded="true" signature="21493:21567" placeholder="..." />
+                <marker date="1471528268287" expanded="true" signature="21577:21651" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -214,7 +214,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="1" width="1855" height="1078" extended-state="1" />
+    <frame x="64" y="1" width="1855" height="1078" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25231105" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -372,10 +372,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spdfast/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6126126">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state vertical-scroll-proportion="2.6036036">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="74" />
           <folding>
-            <marker date="1471527120593" expanded="true" signature="21493:21567" placeholder="..." />
+            <marker date="1471528268287" expanded="true" signature="21577:21651" placeholder="..." />
           </folding>
         </state>
       </provider>
