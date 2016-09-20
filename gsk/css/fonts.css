@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'SFUIDisplay';
+  src: url("../fonts/SFUIDisplay/SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay/SFUIDisplay-Regular.otf") format("opentype"), url("../fonts/SFUIDisplay/SFUIDisplay-Regular.woff") format("woff"), url("../fonts/SFUIDisplay/SFUIDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SFUIDisplay';
+  src: url("../fonts/SFUIDisplay/SFUIDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay/SFUIDisplay-Medium.otf") format("opentype"), url("../fonts/SFUIDisplay/SFUIDisplay-Medium.woff") format("woff"), url("../fonts/SFUIDisplay/SFUIDisplay-Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SFUIDisplay';
+  src: url("../fonts/SFUIDisplay/SFUIDisplay-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay/SFUIDisplay-Light.otf") format("opentype"), url("../fonts/SFUIDisplay/SFUIDisplay-Light.woff") format("woff"), url("../fonts/SFUIDisplay/SFUIDisplay-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SFUIDisplay';
+  src: url("../fonts/SFUIDisplay/SFUIDisplay-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay/SFUIDisplay-Thin.otf") format("opentype"), url("../fonts/SFUIDisplay/SFUIDisplay-Thin.woff") format("woff"), url("../fonts/SFUIDisplay/SFUIDisplay-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Calibri';
+  src: url("../fonts/callibri/Calibri-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/callibri/Calibri-Bold.woff") format("woff"), url("../fonts/callibri/Calibri-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Calibri';
+  src: url("../fonts/callibri/Calibri.eot?#iefix") format("embedded-opentype"), url("../fonts/callibri/Calibri.woff") format("woff"), url("../fonts/callibri/Calibri.ttf");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Glasten';
+  src: url("..fonts/glasten/GlastenNormal.eot?#iefix") format("embedded-opentype"), url("..fonts/glasten/GlastenNormal.woff") format("woff"), url("..fonts/glasten/GlastenNormal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
