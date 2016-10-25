@@ -5,7 +5,6 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -js-display: flex;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -18,7 +17,6 @@ header {
       display: -webkit-inline-flex;
       display: -ms-inline-flexbox;
       display: inline-flex;
-      -js-display: flex;
       width: 217px;
       -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
@@ -45,7 +43,6 @@ header {
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    -js-display: flex;
     width: 603px;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
