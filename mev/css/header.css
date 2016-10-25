@@ -1,0 +1,121 @@
+header {
+  /*==========  MAIN-LOGO  ==========*/
+  /*==========  MAIN-MENU ==========*/ }
+  header .pre-header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 12px; }
+    header .pre-header .sub-left {
+      color: #900;
+      font-size: 12px;
+      font-weight: 300; }
+    header .pre-header .top-sub-nav {
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      width: 217px;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      header .pre-header .top-sub-nav li a {
+        font-size: 12px;
+        font-weight: 300;
+        color: #666; }
+        header .pre-header .top-sub-nav li a:hover {
+          color: black; }
+      header .pre-header .top-sub-nav li:last-child a {
+        color: black; }
+      header .pre-header .top-sub-nav li:last-child .counter {
+        margin-left: 5px; }
+  header h1 {
+    text-align: center;
+    padding: 20px 0 40px; }
+    header h1 a:hover {
+      opacity: .9; }
+  header .container-menu nav {
+    max-width: 607px;
+    float: left; }
+  header .container-menu .main-nav {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 603px;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: flex-end;
+    -ms-flex-line-pack: end;
+    align-content: flex-end; }
+    header .container-menu .main-nav li a {
+      color: #525252;
+      font-family: "MyriadPro";
+      font-size: 16px;
+      font-weight: 400; }
+      header .container-menu .main-nav li a:hover {
+        color: black; }
+  header .right-menu-search {
+    float: right; }
+    header .right-menu-search form {
+      position: relative; }
+      header .right-menu-search form input[type="text"] {
+        padding-left: 10px;
+        width: 201px;
+        height: 22px;
+        background: #fff;
+        border: 1px solid #cbd4d6; }
+        header .right-menu-search form input[type="text"]:focus {
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
+      header .right-menu-search form input[type="submit"] {
+        position: absolute;
+        top: 1px;
+        right: 2px;
+        width: 20px;
+        height: 18px;
+        background: url("../img/search_btn.png") no-repeat;
+        border: none; }
+        header .right-menu-search form input[type="submit"]:hover {
+          opacity: .8; }
+    header .right-menu-search input[type="text"]::-webkit-input-placeholder {
+      text-indent: 0px;
+      transition: text-indent 0.3s ease;
+      color: #b2b2b2;
+      text-transform: uppercase; }
+    header .right-menu-search input[type="text"]::-moz-placeholder {
+      text-indent: 0px;
+      transition: text-indent 0.3s ease;
+      color: #b2b2b2;
+      text-transform: uppercase; }
+    header .right-menu-search input[type="text"]:-moz-placeholder {
+      text-indent: 0px;
+      transition: text-indent 0.3s ease;
+      color: #b2b2b2;
+      text-transform: uppercase; }
+    header .right-menu-search input[type="text"]:-ms-input-placeholder {
+      text-indent: 0px;
+      transition: text-indent 0.3s ease;
+      color: #b2b2b2;
+      text-transform: uppercase; }
+    header .right-menu-search input[type="text"]:focus::-webkit-input-placeholder {
+      text-indent: 500px;
+      transition: text-indent 0.3s ease;
+      color: #b2b2b2;
+      text-transform: uppercase; }
+    header .right-menu-search input[type="text"]:focus::-moz-placeholder {
+      text-indent: 500px;
+      transition: text-indent 0.3s ease;
+      color: #b2b2b2;
+      text-transform: uppercase; }
+    header .right-menu-search input[type="text"]:focus:-moz-placeholder {
+      text-indent: 500px;
+      transition: text-indent 0.3s ease;
+      color: #b2b2b2;
+      text-transform: uppercase; }
+    header .right-menu-search input[type="text"]:focus:-ms-input-placeholder {
+      text-indent: 500px;
+      transition: text-indent 0.3s ease;
+      color: #b2b2b2;
+      text-transform: uppercase; }
