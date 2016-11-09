@@ -1,0 +1,179 @@
+* {
+    cursor: crosshair;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.flex-nav-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 0;
+}
+
+.flex-nav-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.back-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height:85px;
+    border-top-right-radius: 40px; 
+}
+
+#menu {
+    background-image: url(../img/menu/menu-background.png);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: -34%;
+    height: 100%;
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    -webkit-transition: right 1s;
+    transition: right 1s;
+}
+
+#menu a {
+    max-width: 348px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#menu .sub-menu {
+    margin: auto 0;
+    width: 81%;
+    height: 8%;
+    align-self: flex-end;
+}
+
+hr {
+    display: block;
+    border: 0;
+    border-top: 2px solid #252525;
+    margin: 0;
+    padding: 0;
+}
+
+#menuButton {
+    background: transparent;
+    position: absolute;
+    padding: 0;
+    right: 100%;
+    width: 46px;
+    height: 169px;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#menuButton span {
+    background-image: url(../img/menu/menu-btn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-bottom-left-radius: 8px;
+    width: 37px;
+    height: 159px;
+    display: block;
+    margin: -10px 0 0 10px;
+}
+
+
+#menuToggleBtn {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}   
+
+#menu-foreground {
+    opacity: 0.6;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: black;
+}
+
+/*popup*/
+#reference-button,
+#training-button {
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 25px;    
+    width: 50px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    cursor: pointer;    
+}
+
+#reference-button {
+    background-image: url(../img/references-btn.png);
+}
+
+#training-button {
+    background-image: url(../img/training-btn.png);
+}
+
+.popup {
+    visibility: hidden;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    position: fixed;
+    z-index: 100;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+}
+
+.popup.show {
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+}
+
+.popup-close {
+    background: transparent;
+    position: absolute;
+    outline: 0;
+    width: 22px;
+    height: 24px;
+    top: 75px;
+    right: 75px;
+    border: 0;
+}
+
+.popup-close span {
+    background-image: url(../img/close-btn.png);
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 24px;
+}
