@@ -1,0 +1,20 @@
+body{
+  background: cornflowerblue;
+}
+
+.front {
+  fill: rgba(17, 126, 194, 0.9);
+}
+#back {
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 0.8);
+}
+#back2 {
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 0.8);
+}
+
+#back3 {
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 0.6);
+}
