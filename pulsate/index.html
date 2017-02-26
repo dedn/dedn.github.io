@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<section class="home-animation">
+  <div class="mark-block">
+    <div class="home-item-firs">
+
+                <span class="home-mark-first circle">
+                 <div>
+                    <svg width="65px" height="65px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+                        <animate xlink:href="#back" attributeName="r" from="5.3" to="20.5" dur="4s" begin="1.5s"
+                                 repeatCount="indefinite" fill="freeze" id="circ-anim"/>
+
+                        <animate xlink:href="#back" attributeType="CSS" attributeName="opacity" from="1" to="0" dur="4s"
+                                 begin="1.5s" repeatCount="indefinite" fill="freeze" id="circ-anim"/>
+
+                        <animate xlink:href="#back2" attributeName="r" from="5.3" to="20.5" dur="4s" begin="0s"
+                                 repeatCount="indefinite" fill="freeze" id="circ-anim2"/>
+
+                        <animate xlink:href="#back2" attributeType="CSS" attributeName="opacity" from="1" to="0"
+                                 dur="4s" begin="0s" repeatCount="indefinite" fill="freeze" id="circ-anim"/>
+
+                        <animate xlink:href="#back3" attributeName="r" from="6.3" to="6.3" dur="0" begin="0s"
+                                 repeatCount="indefinite" fill="freeze" id="circ-anim2"/>
+
+                        <animate xlink:href="#back3" attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0"
+                                 begin="0s" repeatCount="indefinite" fill="freeze" id="circ-anim"/>
+
+                        <circle class="front" cx="20.2" cy="20" r="5.5"/>
+                        <circle id="back3" cx="20.2" cy="20" r="20.5" stroke-width="1px"/>
+                        <circle id="back2" cx="20.2" cy="20" r="20.5" stroke-width="0.733"/>
+                        <circle id="back" cx="20.2" cy="20" r="20.5" stroke-width="0.733"/>
+
+                    </svg>
+                </div>
+                </span>
+
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
