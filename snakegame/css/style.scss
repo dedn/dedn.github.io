@@ -1,0 +1,63 @@
+$background: #9acc99;
+$border: #000;
+$btn-background: #9acc99;
+$btn-background-hover: #94bf85;
+$btn-background-disabled: #94bf85;
+$btn-text: #000;
+
+body {
+  background-color: $background;
+}
+
+.game {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.game-field {
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  border: 1px solid $border;
+  background-color: $background;
+}
+
+button {
+  float: right;
+  background-color: $btn-background;
+  color: $btn-text;
+  border: 1px solid $border;
+  bottom: 0;
+  height: 30px;
+  font-size: 14px;
+  width: 100px;
+  margin-top: 10px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 5px;
+  }
+
+  &:hover {
+    background-color: $btn-background-hover;
+  }
+
+  &:disabled {
+    background-color: $btn-background-disabled;
+  }
+}
+
+.control {
+  width: 350px;
+  margin: 0 auto;
+
+  span {
+    float: left;
+    display: block;
+    margin: 20px 0 5px;
+    text-transform: uppercase;
+  }
+}
+
+
+
