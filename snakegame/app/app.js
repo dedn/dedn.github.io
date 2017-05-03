@@ -1,4 +1,4 @@
-(function (window, document, drawModule) {
+(function (drawModule) {
 
   var btn = document.getElementById('btn');
   btn.addEventListener("click", function () {
@@ -6,9 +6,7 @@
   });
 
   document.onkeydown = function (event) {
-
-    keyCode = window.event.keyCode;
-    keyCode = event.keyCode;
+    var keyCode = event.keyCode;
 
     switch (keyCode) {
 
@@ -41,8 +39,4 @@
         break;
     }
   };
-})(window, document, drawModule);
-
-/**
- * Starts the game
- */
+})(drawModule);
