@@ -1,16 +1,17 @@
-var canvas = document.getElementById('canvas');
+const canvas = document.getElementById('canvas');
 canvas.width = width;
 canvas.height = height;
-var ctx = canvas.getContext('2d');
+const ctx = canvas.getContext('2d');
 
 var fieldWidth = width / snakeSize;
 var fieldHeight = height / snakeSize;
+
 
 /**
  * draw of the canvas board
  */
 
-var canvasBoard = function canvasBoard() {
+var canvasBoard = () => {
   ctx.fillStyle = snakeborder;
   ctx.fillRect(0, 0, w, h);
   ctx.strokeStyle = snakecolor;
@@ -18,23 +19,23 @@ var canvasBoard = function canvasBoard() {
 };
 canvasBoard();
 
-var drawModule = function () {
+var drawModule = ((() => {
 
-  var bodySnake = function bodySnake(x, y) {
+  var bodySnake = (x, y) => {
     ctx.fillStyle = snakecolor;
     ctx.fillRect(x * snakeSize, y * snakeSize, snakeSize, snakeSize);
     ctx.strokeStyle = snakeborder;
     ctx.strokeRect(x * snakeSize, y * snakeSize, snakeSize, snakeSize);
   };
 
-  var eat = function eat(x, y) {
+  var eat = (x, y) => {
     ctx.fillStyle = eatcolor;
     ctx.fillRect(x * snakeSize, y * snakeSize, snakeSize, snakeSize);
     ctx.fillStyle = eatborder;
     ctx.fillRect(x * snakeSize + 1, y * snakeSize + 1, snakeSize - 2, snakeSize - 2);
   };
 
-  var scoreText = function scoreText() {
+  var scoreText = () => {
     var scoreText = 'Score:' + score;
     ctx.font = "14px Arial";
     ctx.fillStyle = textColor;
@@ -42,7 +43,7 @@ var drawModule = function () {
     ctx.fillText(scoreText, width / 2, h - 10);
   };
 
-  var gameOver = function gameOver() {
+  var gameOver = () => {
     var loseText = 'You lose, try again';
     ctx.fillStyle = textColor;
     ctx.font = "14px Arial";
@@ -51,7 +52,7 @@ var drawModule = function () {
     ctx.fillText(loseText, width / 2, height / 2);
   };
 
-  var restartText = function restartText() {
+  var restartText = () => {
     var restartText = 'You started anew';
     ctx.fillStyle = textColor;
     ctx.font = "14px Arial";
@@ -61,7 +62,7 @@ var drawModule = function () {
   };
 
   var reset = document.getElementById('btn-restart');
-  reset.addEventListener("click", function () {
+  reset.addEventListener("click", () => {
     btn.removeAttribute('disabled', true);
     ctx.clearRect(0, 0, w, h);
     clearInterval(gameloop);
@@ -72,29 +73,32 @@ var drawModule = function () {
   /**
    * Drawing a snake
    */
-  var drawSnake = function drawSnake() {
+  var drawSnake = () => {
     var length = 1;
     snake = [];
-    for (var i = length - 1; i >= 0; i--) {
-      snake.push({
-        x: i,
-        y: 0
-      });
+    for (let i = length - 1; i >= 0; i--) {
+      snake.push(
+        {
+          x: i,
+          y: 0
+        });
     }
   };
 
   /**
    * ThroughWall
    */
-  var throughWall = function throughWall(i) {
+  var throughWall = (i) => {
     if (snake[i].x < 0) {
       snake[i].x = fieldWidth - 1;
-    } else if (snake[i].x > fieldWidth - 1) {
+    }
+    else if (snake[i].x > fieldWidth - 1) {
       snake[i].x = 0;
     }
     if (snake[i].y < 0) {
       snake[i].y = fieldHeight - 1;
-    } else if (snake[i].y > fieldHeight - 1) {
+    }
+    else if (snake[i].y > fieldHeight - 1) {
       snake[i].y = 0;
     }
   };
@@ -102,19 +106,19 @@ var drawModule = function () {
   /**
    * Food generator
    */
-  var createEat = function createEat() {
+  var createEat = () => {
     food = {
-      x: Math.floor(Math.random() * foodX + 1),
-      y: Math.floor(Math.random() * foodY + 1)
+      x: Math.floor((Math.random() * foodX) + 1),
+      y: Math.floor((Math.random() * foodY) + 1)
     };
 
-    for (var i = 0; i > snake.length; i++) {
-      var snakeX = snake[i].x;
-      var snakeY = snake[i].y;
+    for (let i = 0; i > snake.length; i++) {
+      const snakeX = snake[i].x;
+      const snakeY = snake[i].y;
 
       if (food.x === snakeX && food.y === snakeY || food.y === snakeY && food.x === snakeX) {
-        food.x = Math.floor(Math.random() * foodX + 1);
-        food.y = Math.floor(Math.random() * foodY + 1);
+        food.x = Math.floor((Math.random() * foodX) + 1);
+        food.y = Math.floor((Math.random() * foodY) + 1);
       }
     }
   };
@@ -122,14 +126,15 @@ var drawModule = function () {
   /**
    * The collision handler
    */
-  var checkCollision = function checkCollision(x, y, array) {
-    for (var i = 0; i < array.length; i++) {
-      if (array[i].x === x && array[i].y === y) return true;
+  var checkCollision = (x, y, array) => {
+    for (let i = 0; i < array.length; i++) {
+      if (array[i].x === x && array[i].y === y)
+        return true;
     }
     return false;
   };
 
-  init = function init() {
+  init = () => {
     direction = 'right';
     drawSnake();
     createEat();
@@ -137,7 +142,8 @@ var drawModule = function () {
     gameloop = setInterval(paint, currentLoopDelay);
   };
 
-  var paint = function paint() {
+
+  var paint = () => {
     canvasBoard();
 
     btn.setAttribute('disabled', true);
@@ -147,9 +153,11 @@ var drawModule = function () {
 
     if (direction == 'right') {
       snakeX++;
-    } else if (direction == 'left') {
+    }
+    else if (direction == 'left') {
       snakeX--;
-    } else if (direction == 'up') {
+    }
+    else if (direction == 'up') {
       snakeY--;
     } else if (direction == 'down') {
       snakeY++;
@@ -201,7 +209,7 @@ var drawModule = function () {
 
     snake.unshift(tail);
 
-    for (var i = 0; i < snake.length; i++) {
+    for (let i = 0; i < snake.length; i++) {
       throughWall(i);
       bodySnake(snake[i].x, snake[i].y);
     }
@@ -216,6 +224,8 @@ var drawModule = function () {
   };
 
   return {
-    init: init
+    init
   };
-}();
+
+})());
+
