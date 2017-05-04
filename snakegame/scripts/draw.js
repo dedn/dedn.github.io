@@ -1,50 +1,43 @@
-const width = 600;
-const height = 600;
-
 const canvas = document.getElementById('canvas');
 canvas.width = width;
 canvas.height = height;
 const ctx = canvas.getContext('2d');
-const snakeSize = 10;
 
-var w = width;
-var h = height;
-var score = 0;
-var snake;
-var food;
-var snakecolor = 'black';
-var snakeborder = '#fff';
-var eatcolor = '#fff';
-var eatborder = 'black';
-var text_color = 'black';
-var foodX = width / 11;
-var foodY = height / 11;
-var defaultLoopDelay = 80;
-var currentLoopDelay = defaultLoopDelay;
-var gameloop = null;
-var speedBoost = 10;
-var foodForBoost = 4;
-var foodRemainForBoost = foodForBoost;
-var needBoost;
-var tail;
+var fieldWidth = canvas.width / snakeSize;
+var fieldHeight = canvas.height / snakeSize;
 
-drawCanvasBoard = () => {
+((() => {
   ctx.strokeStyle = snakecolor;
   ctx.strokeRect(0, 0, w, h);
+})());
+
+var throughWall = (i) => {
+    if (snake[i].x < 0) {
+        snake[i].x = fieldWidth - 1;
+    }
+    else if (snake[i].x > fieldWidth - 1) {
+        snake[i].x = 0;
+    }
+    if (snake[i].y < 0) {
+        snake[i].y = fieldHeight - 1;
+    }
+    else if (snake[i].y > fieldHeight - 1) {
+        snake[i].y = 0;
+    }
 };
 
-drawCanvasBoard();
 
-const drawModule = ((() => {
 
-  const bodySnake = (x, y) => {
+var drawModule = ((() => {
+
+  var bodySnake = (x, y) => {
     ctx.fillStyle = snakecolor;
     ctx.fillRect(x * snakeSize, y * snakeSize, snakeSize, snakeSize);
     ctx.strokeStyle = snakeborder;
     ctx.strokeRect(x * snakeSize, y * snakeSize, snakeSize, snakeSize);
   };
 
-  const eat = (x, y) => {
+  var eat = (x, y) => {
     ctx.fillStyle = eatcolor;
     ctx.fillRect(x * snakeSize, y * snakeSize, snakeSize, snakeSize);
     ctx.fillStyle = eatborder;
@@ -52,7 +45,7 @@ const drawModule = ((() => {
   };
 
   scoreText = () => {
-    const score_text = 'Score:' + score;
+    var score_text = 'Score:' + score;
     ctx.font = "14px Arial";
     ctx.fillStyle = text_color;
     ctx.textAlign = "center";
@@ -60,7 +53,7 @@ const drawModule = ((() => {
   };
 
   gameOver = () => {
-    const lose_text = 'You lose, try again';
+    var lose_text = 'You lose, try again';
     ctx.fillStyle = text_color;
     ctx.font = "14px Arial";
     ctx.textAlign = "center";
@@ -69,7 +62,7 @@ const drawModule = ((() => {
   };
 
   restartText = () => {
-    const restart_text = 'You started anew';
+    var restart_text = 'You started anew';
     ctx.fillStyle = text_color;
     ctx.font = "14px Arial";
     ctx.textAlign = "center";
@@ -97,8 +90,8 @@ const drawModule = ((() => {
 
     btn.setAttribute('disabled', true);
 
-    let snakeX = snake[0].x;
-    let snakeY = snake[0].y;
+    var snakeX = snake[0].x;
+    var snakeY = snake[0].y;
 
     if (direction == 'right') {
       snakeX++;
@@ -112,7 +105,7 @@ const drawModule = ((() => {
       snakeY++;
     }
 
-    if (snakeX == -1 || snakeX == w / snakeSize || snakeY == -1 || snakeY == h / snakeSize || checkCollision(snakeX, snakeY, snake)) {
+    if (checkCollision(snakeX, snakeY, snake)) {
 
       btn.removeAttribute('disabled', true);
       ctx.clearRect(0, 0, w, h);
@@ -131,9 +124,11 @@ const drawModule = ((() => {
 
       needBoost = false;
       foodRemainForBoost--;
+
       if (!foodRemainForBoost) {
         foodRemainForBoost = foodForBoost;
         currentLoopDelay -= speedBoost;
+
         if (currentLoopDelay < 0) {
           currentLoopDelay = 0;
         }
@@ -149,7 +144,10 @@ const drawModule = ((() => {
 
     snake.unshift(tail);
 
+
+
     for (let i = 0; i < snake.length; i++) {
+        throughWall(i);
       bodySnake(snake[i].x, snake[i].y);
     }
 
