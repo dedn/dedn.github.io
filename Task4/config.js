@@ -1,0 +1,24 @@
+var width = 600;
+var height = 600;
+var snakeSize = 10;
+
+var w = width;
+var h = height;
+var score = 0;
+var snake = void 0,
+    food = void 0,
+    needBoost = void 0,
+    tail = void 0;
+var snakecolor = 'black';
+var snakeborder = '#fff';
+var eatcolor = '#fff';
+var eatborder = 'black';
+var textColor = 'black';
+var foodX = width / 11;
+var foodY = height / 11;
+var defaultLoopDelay = 80;
+var currentLoopDelay = defaultLoopDelay;
+var gameloop = null;
+var speedBoost = 10;
+var foodForBoost = 4;
+var foodRemainForBoost = foodForBoost;
