@@ -1,0 +1,50 @@
+body{
+  background: #e4f8f7 ;
+  margin-left: 0;
+  padding: 0;
+  width: 100%;
+  height: 1000px;
+
+}
+img{
+  position: absolute;
+  z-index: 5;
+}
+[draggable]{
+  cursor: move;
+}
+
+input{
+  position: absolute;
+  top: 550px;
+  left:10px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  background: #EAE3CB;
+  border: none;
+  text-transform: uppercase;
+}
+
+input:hover{
+  transition: .3s;
+  opacity: .7;
+}
+
+input[value="reset"]{
+  left:140px;
+}
+
+.grid {
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 700px;
+  height: 524px;
+  border-collapse: collapse;
+}
+
+tr, td {
+border: 1px solid #000;
+
+}
