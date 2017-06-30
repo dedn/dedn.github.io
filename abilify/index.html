@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="noindex"/>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Patient Journey">
+    <meta name="format-detection" content="telephone=no">
+    <title>Tresiba</title>
+    <link href="css/jquery.mobile-1.4.5.min.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+    <link href="css/app.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="script/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="script/swipe.js"></script>
+    <script src="script/_assets/js/h2widget.js"></script>
+    <script src="script/_assets/js/jqm-demos.js"></script>
+    <script src="script/_assets/js/view-source.js"></script>
+    <script src="script/jquery.mobile-1.4.5.js"></script>
+    <script src="script/pdf.js"></script>
+    <script src="script/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="script/app.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+    <script>
+        // Specify the main script used to create a new PDF.JS web worker.
+        // In production, change this to point to the combined `pdf.js` file.
+        PDFJS.workerSrc = 'script/pdf.worker.js';
+
+        // Specify the PDF with AcroForm here
+        var pdfWithFormsPath = 'pdf/test.pdf';
+    </script>
+   </head>
+<body>
+<div data-role="page" id="page_1">
+    <div data-role="header" data-theme="b">
+        <header>
+            <nav>
+                <a class="cap" title="#home" href="#page_1" data-transition="pop"></a>
+                <a data-rel="popup" data-transition="pop" class="cap search" href="#searchPopUp1"></a>
+                <a href="#left-panel1" data-icon="caret-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon menu"></a>
+
+                <span class="headertext">ABILIFY MAINTENA<sup>&#174;</sup> PRESCRIBING INFORMATION</span>
+            </nav>
+        </header>
+    </div>
+        
+    <div role="main" class="ui-content">
+        <div class="container">
+            <section  class="on home">
+                <img src="img/content/main_content_text.png" class="contenttext">
+                <a  class="cap on mainbutton"  href="#page_2" data-transition="pop">Get started</a>
+            </section>
+        </div>
+        <footer>
+            <a dhref="#OpenURL" class="brand_logo"></a>
+            <ul class="copyright">
+                <li>&#169;&nbsp;2017 Otsuka America Pharmaceuticals, Inc.</li>
+                <li>All rights reserved.</li>
+                <li>XXXXXXXXXXXXX</li>
+                <li> July 2017</li>
+            </ul>
+            <a dhref="#" class="tresiba_logo"></a>
+        </footer>
+        <div  data-role="popup" id="searchPopUp1" class="refPopUp" data-display="overlay" data-position="right">
+            <div class="refDiv">
+                <form class="ui-filterable">
+                        <input id="autocomplete-input1" data-type="search" placeholder="Search" class="searchinput">
+                </form>
+                <ul id="autocompleateitem1" data-role="listview" data-filter="true" data-filter-reveal="true" data-input="#autocomplete-input1">
+                    <li><a href="#page_2" data-transition="pop" title="#Page 2">Indications and usage</a></li>
+                    <li><a href="#page_2" data-transition="pop" title="#Page 2">Dosage and administration</a></li>
+                    <li><a href="#page_2" data-transition="pop" title="#Page 2">Dosage forms and strengths</a></li>
+                    <li><a href="#page_2" data-transition="pop" title="#Page 2">Contraindications</a></li>
+                    <li><a href="#page_2" data-transition="pop" title="#Page 2">Warnings and precautions</a></li>
+                    <li><a href="#page_2" data-transition="pop" title="#Page 2">Adverse reactions</a></li>
+                    <li><a href="#page_2" data-transition="pop" title="#Page 2">Drug interactions</a></li>
+                    <li><a href="#page_2" data-transition="pop" title="#Page 2">Use in specific populations</a></li>
+                    <li><a href="#page_2" data-transition="pop" title="#Page 2">Overdosage</a></li>
+                    <li><a href="#page_2" data-transition="pop" title="#Page 2">Description</a></li>
+                    <li><a href="#page_2" data-transition="pop" title="#Page 2">Clinical pharmacology</a></li>
+                    <li><a href="#page_2" data-transition="pop" title="#Page 2">Nonclinical toxicology</a></li>
+                    <li><a href="#page_2" data-transition="pop" title="#Page 2">Clinical studies</a></li>
+                    <li><a href="#page_2" data-transition="pop" title="#Page 2">How supplied/storage and handling</a></li>
+                    <li><a href="#page_2" data-transition="pop" title="#Page 2">Patient counseling information</a></li>
+                </ul>
+                <div  class="searchresult">
+                </div>
+            </div>
+        </div>   
+    </div>
+    <div  data-role="panel" id="left-panel1" data-theme="b" data-display="overlay" data-position="right">
+        <a href="/" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-right"></a>
+        <p>TABLE OF CONTENTS</p>
+        <ul>
+            <li><a href="#Page 2">1. Indications and usage</a></li>
+            <li><a href="#Page 2">2. Dosage and administration</a></li>
+            <li><a href="#Page 15">3. Dosage forms and strengths</a></li>
+            <li><a href="#Page 15">4. Contraindications</a></li>
+            <li><a href="#Page 16">5. Warnings and precautions</a></li>
+            <li><a href="#Page 26">6. Adverse reactions</a></li>
+            <li><a href="#Page 34">7. Drug interactions</a></li>
+            <li><a href="#Page 36">8. Use in specific populations</a></li>
+            <li><a href="#Page 40">10. Overdosage</a></li>
+            <li><a href="#Page 40">11. Description</a></li>
+            <li><a href="#Page 41">12. Clinical pharmacology</a></li>
+            <li><a href="#Page 45">13. Nonclinical toxicology</a></li>
+            <li><a href="#Page 48">14. Clinical studies</a></li>
+            <li><a href="#Page 55">16. How supplied/storage and handling</a></li>
+            <li><a href="#Page 57">17. Patient counseling information</a></li>
+        </ul>
+    </div>
+</div>
+<div data-role="page" id="page_2">
+    <div data-role="header" data-theme="b">
+        <header>
+            <nav>
+                <a class="cap" title="#home" href="#page_1" data-transition="pop"></a>
+                <a data-rel="popup" data-transition="pop" class="cap search" href="#searchPopUp2"></a>
+                <a href="#left-panel2" data-icon="caret-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon menu"></a>
+                <span class="headertext">TRESIBA<sup>&#174;</sup> (insulin degludec injection) PRESCRIBING INFORMATION </span>
+            </nav>
+        </header>
+    </div>
+        
+    <div role="main" class="ui-content">
+        <div class="container">
+            <section  class="on home" id="pdfviewesection">
+                <div id="viewer"></div>
+            </section>
+        </div>
+        <footer>
+            <a dhref="#OpenURL" class="brand_logo"></a>
+            <ul class="copyright">
+                <li>&#169;&nbsp;2017 Otsuka America Pharmaceuticals, Inc.</li>
+                <li>All rights reserved.</li>
+                <li>XXXXXXXXXXXXX</li>
+                <li> July 2017</li>
+            </ul>
+            <a dhref="#" class="tresiba_logo"></a>
+        </footer>
+        <div data-role="popup" id="searchPopUp2" class="refPopUp">
+            <div class="refDiv">
+                <form class="ui-filterable">
+                        <input id="autocomplete-input2" data-type="search" placeholder="Search" class="searchinput">
+                </form>
+                <ul id="autocompleateitem2" data-role="listview" data-filter="true" data-filter-reveal="true" data-input="#autocomplete-input2"></ul>
+                <div  class="searchresult">
+                </div>
+            </div>
+        </div>   
+    </div>
+    <div data-role="panel" id="left-panel2" data-theme="b" data-display="overlay" data-position="right">
+        <p>TABLE OF CONTENTS</p>
+        <ul>
+            <li><a href="#Page 2">1. Indications and usage</a></li>
+            <li><a href="#Page 2">2. Dosage and administration</a></li>
+            <li><a href="#Page 15">3. Dosage forms and strengths</a></li>
+            <li><a href="#Page 15">4. Contraindications</a></li>
+            <li><a href="#Page 16">5. Warnings and precautions</a></li>
+            <li><a href="#Page 26">6. Adverse reactions</a></li>
+            <li><a href="#Page 34">7. Drug interactions</a></li>
+            <li><a href="#Page 36">8. Use in specific populations</a></li>
+            <li><a href="#Page 40">10. Overdosage</a></li>
+            <li><a href="#Page 40">11. Description</a></li>
+            <li><a href="#Page 41">12. Clinical pharmacology</a></li>
+            <li><a href="#Page 45">13. Nonclinical toxicology</a></li>
+            <li><a href="#Page 48">14. Clinical studies</a></li>
+            <li><a href="#Page 55">16. How supplied/storage and handling</a></li>
+            <li><a href="#Page 57">17. Patient counseling information</a></li>
+        </ul>
+    </div>
+</div>
+<script src="script/pdfforms.js"></script>
+</body>
+</html>
+<!--<li><a href="#page_2">1. Indications and usage</a></li>-->
+<!--<li><a href="#page_2">2. Dosage and administration</a></li>-->
+<!--<li><a href="#page_15">3. Dosage forms and strengths</a></li>-->
+<!--<li><a href="#page_15">4. Contraindications</a></li>-->
+<!--<li><a href="#page_16">5. Warnings and precautions</a></li>-->
+<!--<li><a href="#page_26">6. Adverse reactions</a></li>-->
+<!--<li><a href="#page_34">7. Drug interactions</a></li>-->
+<!--<li><a href="#page_36">8. Use in specific populations</a></li>-->
+<!--<li><a href="#page_40">10. Overdosage</a></li>-->
+<!--<li><a href="#page_40">11. Description</a></li>-->
+<!--<li><a href="#page_41">12. Clinical pharmacology</a></li>-->
+<!--<li><a href="#page_45">13. Nonclinical toxicology</a></li>-->
+<!--<li><a href="#page_48">14. Clinical studies</a></li>-->
+<!--<li><a href="#page_55">16. How supplied/storage and handling</a></li>-->
+<!--<li><a href="#page_57">17. Patient counseling information</a></li>-->
