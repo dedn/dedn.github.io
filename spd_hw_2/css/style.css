@@ -137,7 +137,7 @@
     font: 300 22px/36px 'SuisseBPNeue', serif;
     margin-bottom: 50px;
     color: #666; }
-    .post p:first-child:first-letter {
+    .post p:first-child::first-letter {
       float: left;
       color: #1d1d1b;
       padding: 8px 8px 0 3px;
@@ -200,21 +200,21 @@
     transition: .3s;
     opacity: .7; }
 
-.nav-post {
+.navPost {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .nav-post ul {
+  .navPost ul {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     list-style-type: none;
     padding-left: 0; }
-  .nav-post a {
+  .navPost a {
     position: relative;
     font: 300 22px/48px 'SuisseBPNeue', serif;
     color: #666;
     text-decoration: none; }
-    .nav-post a::after {
+    .navPost a::after {
       content: '';
       position: absolute;
       width: 100%;
@@ -222,12 +222,12 @@
       left: 0;
       height: 2px;
       background-color: #ccc; }
-    .nav-post a:hover {
+    .navPost a:hover {
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s;
       color: #111; }
-      .nav-post a:hover::after {
+      .navPost a:hover::after {
         background-color: #f44336; }
 
 .nav-post__title {
