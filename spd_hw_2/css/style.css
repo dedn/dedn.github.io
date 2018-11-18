@@ -200,21 +200,21 @@
     transition: .3s;
     opacity: .7; }
 
-.navPost {
+.nav-post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .navPost ul {
+  .nav-post ul {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     list-style-type: none;
     padding-left: 0; }
-  .navPost a {
+  .nav-post a {
     position: relative;
     font: 300 22px/48px 'SuisseBPNeue', serif;
     color: #666;
     text-decoration: none; }
-    .navPost a::after {
+    .nav-post a::after {
       content: '';
       position: absolute;
       width: 100%;
@@ -222,12 +222,12 @@
       left: 0;
       height: 2px;
       background-color: #ccc; }
-    .navPost a:hover {
+    .nav-post a:hover {
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s;
       color: #111; }
-      .navPost a:hover::after {
+      .nav-post a:hover::after {
         background-color: #f44336; }
 
 .nav-post__title {
