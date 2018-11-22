@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<style>
+  .container {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+</style>
+<div class="container" id="toogle">
+  <svg width="400" height="500" viewBox="0 0 300 500">
+    <polygon points="100,450 250,450 250,440, 100,440" stroke="#000" stroke-width="2" fill="brown"/>
+    <polygon points="165,440 185,440 180,370, 170,370" stroke="#000" stroke-width="2" fill="brown"/>
+    <g transform="translate(75,10)">
+      <g>
+        <polygon points="29 382,41 401,51 387,67 399,88 377,99 400,111 381,134 402,156 385,174 400,169 388,192 395,188 386,101 179,2 404" fill="green" stroke="#000"
+                 stroke-width="2">
+        </polygon>
+      </g>
+      <g transform="translate(15,40)">
+        <polygon points="35 251,70 273,85 250,99 262,110 247,156 266,78 98,7 271" fill="green" stroke="#000" stroke-width="2">
+        </polygon>
+      </g>
+      <g transform="translate(15,-40)">
+        <polygon points="43 248,49 264,85 250,95 265,115 250,140 262,80 155,19 267" fill="green" stroke="#000" stroke-width="2">
+        </polygon>
+      </g>
+      <g transform="translate(65,75) scale(0.3)">
+        <polyline points="50,180 100,20 150,180 20,80 180,80 50,180 100,20" fill="red">
+          <animate
+              attributeName="fill"
+              dur="1440ms"
+              repeatCount="indefinite"
+              keyTimes="0; .0625; .645833333; 1"
+              calcMode="spline"
+              keySplines="0,0,1,1; .42,0,.58,1; .42,0,.58,1"
+              values="#ff3f3f; #ff3f3f; #f99543; #ff3f3f;">
+          </animate>
+        </polyline>
+      </g>
+      <g>
+        <symbol id="toys">
+          <circle r="6" cx="100" cy="150" fill="#ff3f3f" stroke="#000" stroke-width="2">
+            <animate
+                begin=""
+                end=""
+                id="startAnimation"
+                attributeName="fill"
+                dur="1440ms"
+                repeatCount="indefinite"
+                keyTimes="0;.05;.2; .3; .4; .8; 1"
+                calcMode="spline"
+                keySplines="0,0,1,1; .4,0,.5,1; .4,0,1,1; 0,0,.5,1; .4,0,.5,1; .4,0,.5,1"
+                values="#ff3f3f; ##ff3f3f; #1ca69e; #188fc2; #003af9; #ca5f52; #ff3f3f;">
+            </animate>
+          </circle>
+        </symbol>
+        <use xlink:href="#toys"></use>
+        <use xlink:href="#toys" y="60"></use>
+        <use xlink:href="#toys" y="40" x="20"></use>
+        <use xlink:href="#toys" y="45" x="-30"></use>
+        <use xlink:href="#toys" y="100" x="10"></use>
+        <use xlink:href="#toys" y="105" x="-35"></use>
+        <use xlink:href="#toys" y="115" x="35"></use>
+        <use xlink:href="#toys" y="200" x="50"></use>
+        <use xlink:href="#toys" y="230" x="-60"></use>
+        <use xlink:href="#toys" y="180" x="-50"></use>
+        <use xlink:href="#toys" y="210" x="10"></use>
+        <use xlink:href="#toys" y="190" x="-20"></use>
+      </g>
+      <g>
+  </svg>
+</div>
+<script>
+    let clickState = 0;
+    let btn = document.querySelector('.container');
+    let el = document.getElementById("startAnimation");
+    btn.addEventListener('click', () => {
+        if (clickState === 0) {
+            el.beginElement();
+            clickState = 1;
+        } else {
+            el.endElement();
+            clickState = 0;
+        }
+    });
+</script>
+</body>
+</html>
