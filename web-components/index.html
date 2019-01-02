@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .slides {
+        position: relative;
+        height: 400px;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    .slide {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+        transition: opacity 1s;
+    }
+
+    .showing {
+        opacity: 1;
+        z-index: 2;
+    }
+
+    .slide {
+        font-size: 40px;
+        padding: 40px;
+        box-sizing: border-box;
+        background: #8F8E90;
+        color: #fff;
+    }
+
+    .controls {
+        width: 50px;
+        cursor: pointer;
+    }
+</style>
+
+<template>
+    <style>
+        li {
+            width: 700px;
+            display: flex;
+            justify-content: space-between;
+            font-family: Arial;
+        }
+
+        .img-block {
+            display: block;
+            width: 400px;
+            height: 265px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            width: 213px;
+            height: 55px;
+            background-color: #363636;
+            color: #fff;
+            font: 400 13px/55px 'Arial';
+            text-align: center;
+            letter-spacing: 2.6px;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 0;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transition: .3s;
+            background-color: #fff;
+            color: #363636;
+            box-shadow: inset 0 0 8px 1px rgba(0, 0, 0, .75);
+        }
+    </style>
+
+    <li>
+        <div class="img-block">
+            <slot name="img">
+                empty img
+            </slot>
+        </div>
+        <div class="description">
+            <div class="title-block">
+                <slot name="text">empty</slot>
+            </div>
+            <div class="price">
+                <slot name="price">empty price</slot>
+            </div>
+            <button> choose</button>
+        </div>
+    </li>
+</template>
+
+<custom-slider>
+    <ul id="slides" class="slides">
+        <custom-slide class="slide showing">
+            <img slot="img" src="https://picsum.photos/400/300/?image=42" alt="">
+            <p slot="text">Slide 1</p>
+            <p slot="price">11$</p>
+        </custom-slide>
+        <custom-slide class="slide">
+            <img slot="img" src="https://picsum.photos/400/300/?image=41" alt="">
+            <p slot="text">Slide 2</p>
+            <p slot="price">7$</p>
+        </custom-slide>
+        <custom-slide class="slide">
+            <img slot="img" src="https://picsum.photos/400/300/?image=40" alt="">
+            <p slot="text">Slide 3</p>
+            <p slot="price">14$</p>
+        </custom-slide>
+        <custom-slide class="slide">
+            <img slot="img" src="https://picsum.photos/400/300/?image=43" alt="">
+            <p slot="text">Slide 4</p>
+            <p slot="price">11$</p>
+        </custom-slide>
+        <custom-slide class="slide">
+            <img slot="img" src="https://picsum.photos/400/300/?image=44" alt="">
+            <p slot="text">Slide 5</p>
+            <p slot="price">20$</p>
+        </custom-slide>
+    </ul>
+    <div class="buttons">
+        <button class="controls" id="previous">&lt;</button>
+
+
+        <button class="controls" id="next">&gt;</button>
+    </div>
+</custom-slider>
+
+<script>
+    class CustomSlider extends HTMLElement {
+        constructor() {
+            super();
+            let controls = document.querySelectorAll('.controls');
+            let next = document.getElementById('next');
+            let previous = document.getElementById('previous');
+            let slides = document.querySelectorAll('#slides .slide');
+            let currentSlide = 0;
+
+            for (let i = 0; i < controls.length; i++) {
+                controls[i].style.display = 'inline-block';
+            }
+
+            let nextSlide = () => {
+                goToSlide(currentSlide + 1);
+            };
+
+            let previousSlide = () => {
+                goToSlide(currentSlide - 1);
+            };
+
+            let goToSlide = (n) => {
+                slides[currentSlide].className = 'slide';
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].className = 'slide showing';
+            };
+
+            next.onclick = function () {
+                nextSlide();
+            };
+
+            previous.onclick = function () {
+                previousSlide();
+            };
+        }
+    }
+
+    customElements.define('custom-slider', CustomSlider);
+
+    const template = document.querySelector('template')
+
+    class CustomSlide extends HTMLElement {
+        constructor() {
+            super();
+            const shadow = this.attachShadow({mode: 'open'});
+            const content = document.importNode(template.content, true);
+            shadow.appendChild(content);
+        }
+    }
+
+    customElements.define('custom-slide', CustomSlide);
+
+</script>
+</body>
+</html>
